@@ -34,6 +34,9 @@ const Muses = () => {
               </span>
             </div>
           </div>
+          <div className="mt-10 flex justify-center">
+            <SeedanceStamp size="lg" />
+          </div>
         </div>
       </div>
     </section>
