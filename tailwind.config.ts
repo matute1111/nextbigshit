@@ -13,7 +13,14 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Anton", "Archivo Black", "Impact", "sans-serif"],
+        black: ["Archivo Black", "Impact", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
       colors: {
+        "background-deeper": "hsl(var(--background-deeper))",
+        "primary-glow": "hsl(var(--primary-glow))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
