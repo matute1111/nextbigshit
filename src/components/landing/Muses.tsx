@@ -1,3 +1,5 @@
+import SeedanceStamp from "./SeedanceStamp";
+
 const Muses = () => {
   return (
     <section id="muses" className="relative bg-background-deeper border-y border-border py-28 md:py-40 px-6 md:px-10 overflow-hidden">
@@ -31,6 +33,9 @@ const Muses = () => {
                 ✦
               </span>
             </div>
+          </div>
+          <div className="mt-10 flex justify-center">
+            <SeedanceStamp size="lg" />
           </div>
         </div>
       </div>

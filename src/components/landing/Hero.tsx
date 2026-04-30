@@ -17,8 +17,8 @@ const Hero = () => {
       {/* THE GIANT TYPE */}
       <div className="relative z-10 px-3 md:px-6 flex flex-col items-stretch justify-center flex-1">
         <h1
-          className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.04em] text-center select-none"
-          style={{ fontSize: "clamp(4.5rem, 19.5vw, 22rem)" }}
+          className="font-display uppercase text-foreground leading-[0.74] tracking-[-0.065em] text-center select-none w-full"
+          style={{ fontSize: "clamp(5.5rem, 28vw, 36rem)" }}
         >
           <span className="block">THE NEXT</span>
           <span className="block">
