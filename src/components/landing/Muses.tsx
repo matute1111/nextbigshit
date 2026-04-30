@@ -1,4 +1,6 @@
 import SeedanceStamp from "./SeedanceStamp";
+
+const Muses = () => {
   return (
     <section id="muses" className="relative bg-background-deeper border-y border-border py-28 md:py-40 px-6 md:px-10 overflow-hidden">
       <div className="pointer-events-none absolute -top-20 right-0 w-[40vw] h-[40vw] rounded-full bg-secondary/20 blur-[120px]" />
