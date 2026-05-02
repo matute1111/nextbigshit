@@ -8,7 +8,7 @@ const CTA = () => {
   const reveal = useReveal<HTMLDivElement>(0.2);
 
   return (
-    <section id="contact" className="relative py-36 md:py-56 px-6 md:px-10 overflow-hidden">
+    <section id="contact" className="relative py-24 md:py-36 px-6 md:px-10 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.06]" />
       <div
         ref={blob.ref}

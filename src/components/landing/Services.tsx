@@ -13,7 +13,7 @@ const Services = () => {
     { n: "04", title: t("service.04.t"), desc: t("service.04.d") },
   ];
   return (
-    <section id="services" className="relative py-32 md:py-48 px-6 md:px-10 overflow-hidden">
+    <section id="services" className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div
           ref={headerP.ref}
