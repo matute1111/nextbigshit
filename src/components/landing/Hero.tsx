@@ -11,7 +11,7 @@ const Hero = () => {
   const handParallax = useParallax<HTMLDivElement>(0.08);
 
   return (
-    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-28 pb-4 md:pt-32 md:pb-8 gap-3 md:gap-6 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
+    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-20 pb-4 md:pt-24 md:pb-8 gap-3 md:gap-6 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.07] mix-blend-overlay" />
       <div
         ref={blob1.ref}
