@@ -107,4 +107,8 @@ const CTA = () => {
           </a>
         </div>
       </div>
+    </section>
+  );
+};
+
 export default CTA;
