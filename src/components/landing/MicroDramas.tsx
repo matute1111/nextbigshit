@@ -72,16 +72,6 @@ const MicroDramas = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-          {PILLS.map((p) => (
-            <span
-              key={p}
-              className="px-5 py-2 border-2 border-foreground/20 rounded-full font-display uppercase text-sm tracking-wider text-foreground/80"
-            >
-              {p}
-            </span>
-          ))}
-        </div>
 
         <div className="flex flex-col items-center text-center gap-8">
           <a
