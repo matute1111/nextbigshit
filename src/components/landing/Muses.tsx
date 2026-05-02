@@ -53,7 +53,7 @@ const Muses = () => {
             />
             <SeedanceStamp
               size="lg"
-              className="absolute z-20 -top-8 -right-4 md:-top-10 md:-right-6 rotate-[-12deg] w-36 h-36 md:w-52 md:h-52 lg:w-60 lg:h-60 pointer-events-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
+              className="absolute z-20 -top-[108px] -right-4 md:-top-[110px] md:-right-6 rotate-[-12deg] w-36 h-36 md:w-52 md:h-52 lg:w-60 lg:h-60 pointer-events-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
             />
           </div>
         </div>
