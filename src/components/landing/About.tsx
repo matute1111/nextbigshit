@@ -4,10 +4,10 @@ import longArm from "@/assets/long-arm.png";
 
 const About = () => {
   const { t } = useLang();
-  const titleP = useParallax<HTMLDivElement>(0.12);
+  const titleP = useParallax<HTMLDivElement>(0.45);
   const reveal = useReveal<HTMLDivElement>(0.2);
-  const armReveal = useReveal<HTMLDivElement>(0.15);
-  const armParallax = useParallax<HTMLDivElement>(-0.1);
+  const armReveal = useReveal<HTMLDivElement>(0.05);
+  const armParallax = useParallax<HTMLDivElement>(-0.35);
 
   return (
     <section id="about" className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden">
