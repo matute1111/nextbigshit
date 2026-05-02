@@ -100,6 +100,16 @@ const About = () => {
           />
         </div>
       </div>
+
+      {/* Section divider title — sits below the arm, full width */}
+      <div className="px-6 md:px-10 mt-10 md:mt-16">
+        <div className="max-w-7xl mx-auto pt-10 md:pt-14 border-t border-border">
+          <h3 className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground text-4xl md:text-6xl lg:text-7xl">
+            {t("about.shift")}
+            <span className="text-primary italic">{t("about.shift.b")}</span>
+          </h3>
+        </div>
+      </div>
     </section>
   );
 };
