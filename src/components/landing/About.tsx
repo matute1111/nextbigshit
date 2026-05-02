@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
 import longArm from "@/assets/long-arm.png";
@@ -6,8 +7,44 @@ const About = () => {
   const { t } = useLang();
   const titleP = useParallax<HTMLDivElement>(0.45);
   const reveal = useReveal<HTMLDivElement>(0.2);
-  const armReveal = useReveal<HTMLDivElement>(0.05);
-  const armParallax = useParallax<HTMLDivElement>(-0.35);
+
+  // Arm slides in from the right, then back out to the right as you keep scrolling
+  const armRef = useRef<HTMLDivElement | null>(null);
+  const [armProgress, setArmProgress] = useState(0); // 0 hidden right, 1 fully in, 0 hidden right again
+
+  useEffect(() => {
+    let raf = 0;
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const el = armRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const center = rect.top + rect.height / 2 - vh / 2;
+      const range = vh * 0.6;
+      const norm = Math.max(-1, Math.min(1, center / range));
+      const p = Math.max(0, 1 - Math.abs(norm));
+      setArmProgress(p);
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        raf = requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
+  // translateX: 100% (off-screen right) -> 0 (in place) -> back to 100%
+  const armTranslate = (1 - armProgress) * 100;
 
   return (
     <section id="about" className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden">
@@ -46,22 +83,21 @@ const About = () => {
         </div>
       </div>
 
-      {/* Long arm sliding in from the right, below all text */}
+      {/* Long arm — pinned to right edge, slides in then back out on scroll, slightly overlaps the heading */}
       <div
-        ref={armReveal.ref}
-        className={`relative mt-20 md:mt-32 w-full overflow-visible transition-all duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          armReveal.visible ? "translate-x-0 opacity-100" : "translate-x-[60%] opacity-0"
-        }`}
+        ref={armRef}
+        className="pointer-events-none relative -mt-16 md:-mt-40 w-full flex justify-end overflow-hidden"
       >
         <div
-          ref={armParallax.ref}
-          className="flex justify-end will-change-transform"
-          style={{ transform: `translate3d(${armParallax.offset}px, 0, 0)` }}
+          className="will-change-transform"
+          style={{
+            transform: `translate3d(${armTranslate}%, 0, 0)`,
+          }}
         >
           <img
             src={longArm}
             alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-            className="w-[180%] md:w-[130%] max-w-none h-auto object-contain -mr-[15%] md:-mr-[8%] drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            className="block w-[60vw] md:w-[55vw] max-w-none h-auto object-contain object-right drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
         </div>
       </div>
