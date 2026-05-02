@@ -49,8 +49,8 @@ const About = () => {
       {/* Long arm sliding in from the right, below all text */}
       <div
         ref={armReveal.ref}
-        className={`relative mt-16 md:mt-24 w-full overflow-hidden transition-all duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          armReveal.visible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+        className={`relative mt-20 md:mt-32 w-full overflow-visible transition-all duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          armReveal.visible ? "translate-x-0 opacity-100" : "translate-x-[60%] opacity-0"
         }`}
       >
         <div
@@ -61,7 +61,7 @@ const About = () => {
           <img
             src={longArm}
             alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-            className="w-[140%] md:w-[110%] max-w-none h-auto object-contain -mr-[10%] md:-mr-[5%] drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)]"
+            className="w-[180%] md:w-[130%] max-w-none h-auto object-contain -mr-[15%] md:-mr-[8%] drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
         </div>
       </div>
