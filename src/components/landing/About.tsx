@@ -78,10 +78,6 @@ const About = () => {
           <p className="text-foreground font-semibold text-2xl md:text-3xl font-display uppercase tracking-tight">
             {t("about.p3.q")} <span className="text-primary">{t("about.p3.a")}</span>
           </p>
-          <p className="text-foreground text-xl md:text-2xl font-display uppercase tracking-tight pt-6 border-t border-border">
-            {t("about.shift")}
-            <span className="text-primary italic">{t("about.shift.b")}</span>
-          </p>
         </div>
       </div>
       </div>
