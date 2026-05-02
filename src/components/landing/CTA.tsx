@@ -26,7 +26,7 @@ const CTA = () => {
 
       <div
         ref={reveal.ref}
-        className={`max-w-7xl mx-auto relative z-30 text-center md:-translate-x-[6%] lg:-translate-x-[9%] reveal ${
+        className={`max-w-7xl mx-auto relative z-30 text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
           reveal.visible ? "is-visible" : ""
         }`}
       >
