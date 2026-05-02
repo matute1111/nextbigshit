@@ -38,18 +38,16 @@ const Hero = () => {
       {/* Hand holding phone — the actual NEXT BIG SH#@! */}
       <div
         ref={handParallax.ref}
-        className="pointer-events-none absolute -right-[12%] md:-right-[6%] bottom-0 h-[48%] md:h-[78%] z-20 will-change-transform animate-hero-in opacity-0"
-        style={{
-          transform: `translate3d(0, ${handParallax.offset}px, 0)`,
-          animationDelay: "500ms",
-          animationFillMode: "forwards",
-        }}
+        className="pointer-events-none absolute -right-[12%] md:-right-[6%] bottom-0 h-[48%] md:h-[78%] z-20 will-change-transform"
+        style={{ transform: `translate3d(0, ${handParallax.offset}px, 0)` }}
       >
-        <img
-          src={heroHand}
-          alt="Mano sosteniendo un teléfono con videos generados por IA"
-          className="h-full w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-        />
+        <div className="h-full w-full animate-hand-rise opacity-0" style={{ animationFillMode: "forwards" }}>
+          <img
+            src={heroHand}
+            alt="Mano sosteniendo un teléfono con videos generados por IA"
+            className="h-full w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+          />
+        </div>
       </div>
 
       {/* THE GIANT TYPE — sized to never overflow */}
