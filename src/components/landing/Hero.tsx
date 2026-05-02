@@ -87,10 +87,10 @@ const Hero = () => {
 
       {/* bottom row */}
       <div className="relative z-30 px-6 md:px-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 items-end animate-fade-in-up">
-        <p className="text-sm md:text-base max-w-xs text-muted-foreground leading-snug">
+        <p className="text-xs md:text-base max-w-xs text-muted-foreground leading-snug">
           {t("hero.tag")}
         </p>
-        <div className="flex justify-center">
+        <div className="hidden md:flex justify-center">
           <a
             href="#about"
             className="group inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] font-bold text-foreground"
