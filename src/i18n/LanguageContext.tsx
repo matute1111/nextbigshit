@@ -105,7 +105,7 @@ const DICT: Dict = {
     es: "Esto está sucediendo.",
     en: "This is happening.",
   },
-  "micro.cta": { es: "Mira una serie ↗", en: "Watch a series ↗" },
+  "micro.cta": { es: "Mira una serie", en: "Watch a series" },
   "services.kicker": { es: "04 / Servicios", en: "04 / Services" },
   "services.title.1": { es: "Una IP factory", en: "A disruptive" },
   "services.title.2": { es: "disruptiva.", en: "IP factory." },
