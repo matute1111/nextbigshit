@@ -1,10 +1,13 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
+import longArm from "@/assets/long-arm.png";
 
 const About = () => {
   const { t } = useLang();
   const titleP = useParallax<HTMLDivElement>(0.12);
   const reveal = useReveal<HTMLDivElement>(0.2);
+  const armReveal = useReveal<HTMLDivElement>(0.15);
+  const armParallax = useParallax<HTMLDivElement>(-0.1);
 
   return (
     <section id="about" className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden">
@@ -40,6 +43,26 @@ const About = () => {
             {t("about.shift")}
             <span className="text-primary italic">{t("about.shift.b")}</span>
           </p>
+        </div>
+      </div>
+
+      {/* Long arm sliding in from the right, below all text */}
+      <div
+        ref={armReveal.ref}
+        className={`relative mt-16 md:mt-24 w-full overflow-hidden transition-all duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          armReveal.visible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+        }`}
+      >
+        <div
+          ref={armParallax.ref}
+          className="flex justify-end will-change-transform"
+          style={{ transform: `translate3d(${armParallax.offset}px, 0, 0)` }}
+        >
+          <img
+            src={longArm}
+            alt="Brazo largo sosteniendo un teléfono con contenido generativo"
+            className="w-[140%] md:w-[110%] max-w-none h-auto object-contain -mr-[10%] md:-mr-[5%] drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)]"
+          />
         </div>
       </div>
     </section>
