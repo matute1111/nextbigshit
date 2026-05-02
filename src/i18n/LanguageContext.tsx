@@ -89,8 +89,8 @@ const DICT: Dict = {
     en: "We dramatically accelerate production, publishing, and feedback. Ideas → viral content in record time.",
   },
   "cta.kicker": { es: "05 / Revolución generativa", en: "05 / Generative revolution" },
-  "cta.title.1": { es: "Build the next", en: "Build the next" },
-  "cta.title.2": { es: "big SH#!T", en: "big SH#!T" },
+  "cta.title.1": { es: "Build together", en: "Build together" },
+  "cta.title.2": { es: "the next big S#!T", en: "the next big S#!T" },
   "cta.desc": {
     es: "Trabajemos juntos en tu idea para hacerla realidad. Te respondemos rápido, prometido.",
     en: "Let's work together to make your idea real. We reply fast, promise.",
