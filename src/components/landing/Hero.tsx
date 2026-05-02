@@ -55,10 +55,10 @@ const Hero = () => {
       {/* THE GIANT TYPE — sized to never overflow */}
       <div
         ref={titleParallax.ref}
-        className="relative z-10 px-3 md:px-6 flex flex-col items-start justify-center flex-1 w-full will-change-transform"
+        className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] flex flex-col items-center justify-center flex-1 w-full will-change-transform"
         style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
       >
-        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-left select-none w-full max-w-full">
+        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">
           <span
             className="block animate-hero-in opacity-0"
             style={{
