@@ -29,7 +29,7 @@ const SiteHeader = () => {
         hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex items-start justify-between px-6 md:px-10 py-5">
+      <div className="flex items-center justify-between px-6 md:px-10 py-5">
         <a href="#" className="font-display text-2xl md:text-3xl tracking-tight text-foreground">
           GENNIAL<span className="text-primary">.</span>
         </a>
