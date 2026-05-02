@@ -12,7 +12,7 @@ import { LanguageProvider, useLang } from "@/i18n/LanguageContext";
 
 const FrontierDivider = () => {
   const { t } = useLang();
-  return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
+  return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} className="-mt-[100px] -mb-[35px]" />;
 };
 
 const DisruptionDivider = () => {
