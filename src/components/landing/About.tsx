@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
-import longArm from "@/assets/long-arm.png";
+import longArm from "@/assets/long-arm-replacement.png";
 
 const About = () => {
   const { t } = useLang();
