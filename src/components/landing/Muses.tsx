@@ -1,26 +1,25 @@
 import SeedanceStamp from "./SeedanceStamp";
+import { useLang } from "@/i18n/LanguageContext";
 
 const Muses = () => {
+  const { t } = useLang();
   return (
     <section id="muses" className="relative bg-background-deeper border-y border-border py-28 md:py-40 px-6 md:px-10 overflow-hidden">
       <div className="pointer-events-none absolute -top-20 right-0 w-[40vw] h-[40vw] rounded-full bg-secondary/20 blur-[120px]" />
       <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 items-center relative z-10">
         <div className="md:col-span-7">
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-6">
-            04 / Tecnología propietaria
+            {t("muses.kicker")}
           </p>
           <h2 className="font-display uppercase text-6xl md:text-8xl lg:text-9xl leading-[0.82] tracking-tight">
             <span className="text-secondary">MUSES</span>
-            <span className="block text-foreground">automatiza.</span>
+            <span className="block text-foreground">{t("muses.title.2")}</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-            Nuestro software propietario que automatiza procesos complejos de
-            creación de contenido. Plug-and-play para integrar nuevas tecnologías
-            emergentes.
+            {t("muses.p1")}
           </p>
           <p className="mt-4 text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
-            Aceleramos dramáticamente el tiempo de producción, publicación y
-            feedback. Ideas → contenido viral en tiempo récord.
+            {t("muses.p2")}
           </p>
         </div>
         <div className="md:col-span-5 relative">

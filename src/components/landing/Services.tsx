@@ -1,44 +1,29 @@
-const SERVICES = [
-  {
-    n: "01",
-    title: "Creación masiva con IA",
-    desc: "Tecnología de vanguardia para producir contenido a escala nunca vista. Cientos de piezas por semana.",
-  },
-  {
-    n: "02",
-    title: "IP Factory",
-    desc: "Del boceto al video: desarrollamos propiedad intelectual, la probamos en redes y pivotamos hasta el máximo engagement.",
-  },
-  {
-    n: "03",
-    title: "Modelo B2B2C",
-    desc: "Creamos canales de contenido para marcas con propiedades intelectuales propias o branded content personalizado.",
-  },
-  {
-    n: "04",
-    title: "Multilenguaje",
-    desc: "Alcanza una audiencia global creando contenidos en múltiples lenguajes de una sola vez.",
-  },
-];
+import { useLang } from "@/i18n/LanguageContext";
 
 const Services = () => {
+  const { t } = useLang();
+  const SERVICES = [
+    { n: "01", title: t("service.01.t"), desc: t("service.01.d") },
+    { n: "02", title: t("service.02.t"), desc: t("service.02.d") },
+    { n: "03", title: t("service.03.t"), desc: t("service.03.d") },
+    { n: "04", title: t("service.04.t"), desc: t("service.04.d") },
+  ];
   return (
     <section id="services" className="relative py-28 md:py-40 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
-              03 / Servicios
+              {t("services.kicker")}
             </p>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.85] tracking-tight max-w-3xl">
-              Una IP factory
+              {t("services.title.1")}
               <br />
-              <span className="text-stroke-orange">disruptiva.</span>
+              <span className="text-stroke-orange">{t("services.title.2")}</span>
             </h2>
           </div>
           <p className="md:max-w-sm text-muted-foreground text-lg leading-relaxed">
-            Transformamos ideas en productos de entretenimiento viral con IA.
-            Nuestro modelo B2B2C crea canales y personajes para marcas.
+            {t("services.intro")}
           </p>
         </div>
 
