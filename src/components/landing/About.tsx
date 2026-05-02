@@ -43,11 +43,12 @@ const About = () => {
     };
   }, []);
 
-  // translateX: 100% (off-screen right) -> 0 (in place) -> back to 100%
-  const armTranslate = (1 - armProgress) * 100;
+  // Subtle slide: only ~25% in/out instead of fully off-screen
+  const armTranslate = (1 - armProgress) * 25;
 
   return (
-    <section id="about" className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden">
+    <section id="about" className="relative py-20 md:py-28 overflow-hidden">
+      <div className="px-6 md:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
         <div
           ref={titleP.ref}
@@ -82,11 +83,12 @@ const About = () => {
           </p>
         </div>
       </div>
+      </div>
 
       {/* Long arm — pinned to right edge, slides in then back out on scroll, slightly overlaps the heading */}
       <div
         ref={armRef}
-        className="pointer-events-none relative -mt-16 md:-mt-40 w-full flex justify-end overflow-hidden"
+        className="pointer-events-none relative -mt-16 md:-mt-40 w-screen flex justify-end overflow-hidden"
       >
         <div
           className="will-change-transform"
