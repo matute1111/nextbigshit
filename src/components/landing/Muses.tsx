@@ -28,12 +28,14 @@ const Muses = () => {
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-6">
             {t("muses.kicker")}
           </p>
-          <h2 className="font-display uppercase text-6xl md:text-8xl lg:text-9xl leading-[0.82] tracking-tight relative inline-block">
-            <SeedanceStamp
-              size="md"
-              className="absolute -top-16 -left-6 md:-top-20 md:-left-10 rotate-[-12deg] z-10"
-            />
-            <span className="text-secondary relative">MUSES</span>
+          <h2 className="font-display uppercase text-6xl md:text-8xl lg:text-9xl leading-[0.82] tracking-tight">
+            <span className="relative inline-block">
+              <SeedanceStamp
+                size="lg"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-12deg] z-10 md:w-72 md:h-72 lg:w-80 lg:h-80 pointer-events-none"
+              />
+              <span className="relative text-secondary">MUSES</span>
+            </span>
             <span className="block text-foreground">{t("muses.title.2")}</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
