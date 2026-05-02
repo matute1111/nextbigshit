@@ -83,19 +83,20 @@ const MicroDramas = () => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center text-center gap-6">
+        <div className="flex flex-col items-center text-center gap-8">
+          <a
+            href="https://www.youtube.com/@HistoriasInfinitasOK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-5 font-display uppercase text-xl tracking-tight hover:bg-foreground transition-all duration-300 hover:-translate-y-0.5 shadow-orange"
+          >
+            {t("micro.cta")}
+            <span className="transition-transform group-hover:translate-x-1">↗</span>
+          </a>
           <p className="font-display uppercase text-2xl md:text-4xl tracking-tight max-w-3xl">
             {t("micro.intertitle.1")}{" "}
             <span className="text-primary italic">{t("micro.intertitle.2")}</span>
           </p>
-          <a
-            href="https://www.youtube.com/@HistoriasInfinitas"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display uppercase tracking-wider text-sm rounded-full hover:opacity-90 transition-opacity"
-          >
-            {t("micro.cta")}
-          </a>
         </div>
       </div>
     </section>
