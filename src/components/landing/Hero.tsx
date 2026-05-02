@@ -11,7 +11,7 @@ const Hero = () => {
   const handParallax = useParallax<HTMLDivElement>(-0.22);
 
   return (
-    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-6 md:pt-28 md:pb-8 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
+    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-20 pb-4 md:pt-28 md:pb-8 gap-4 md:gap-0 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.07] mix-blend-overlay" />
       <div
         ref={blob1.ref}
@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Hand holding phone — the actual NEXT BIG SH#@! */}
       <div
         ref={handParallax.ref}
-        className="pointer-events-none absolute -right-[8%] md:-right-[6%] bottom-0 h-[55%] md:h-[78%] z-20 will-change-transform animate-hero-in opacity-0"
+        className="pointer-events-none absolute -right-[12%] md:-right-[6%] bottom-0 h-[48%] md:h-[78%] z-20 will-change-transform animate-hero-in opacity-0"
         style={{
           transform: `translate3d(0, ${handParallax.offset}px, 0)`,
           animationDelay: "500ms",
@@ -58,11 +58,11 @@ const Hero = () => {
         className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] flex flex-col items-center justify-center flex-1 w-full will-change-transform"
         style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
       >
-        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">
+        <h1 className="font-display uppercase text-foreground leading-[0.82] md:leading-[0.78] tracking-[-0.05em] md:tracking-[-0.06em] text-center select-none w-full max-w-full">
           <span
             className="block animate-hero-in opacity-0"
             style={{
-              fontSize: "clamp(3.5rem, 17vw, 22rem)",
+              fontSize: "clamp(4.5rem, 22vw, 22rem)",
               animationDelay: "120ms",
               animationFillMode: "forwards",
             }}
@@ -72,7 +72,7 @@ const Hero = () => {
           <span
             className="block whitespace-nowrap animate-hero-in opacity-0"
             style={{
-              fontSize: "clamp(3.5rem, 19.5vw, 26rem)",
+              fontSize: "clamp(4.5rem, 25vw, 26rem)",
               animationDelay: "320ms",
               animationFillMode: "forwards",
             }}
@@ -86,11 +86,11 @@ const Hero = () => {
       </div>
 
       {/* bottom row */}
-      <div className="relative z-30 px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-end animate-fade-in-up">
-        <p className="text-sm md:text-base max-w-xs text-muted-foreground leading-snug">
+      <div className="relative z-30 px-6 md:px-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 items-end animate-fade-in-up">
+        <p className="text-xs md:text-base max-w-xs text-muted-foreground leading-snug">
           {t("hero.tag")}
         </p>
-        <div className="flex justify-center">
+        <div className="hidden md:flex justify-center">
           <a
             href="#about"
             className="group inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] font-bold text-foreground"
