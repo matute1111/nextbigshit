@@ -7,7 +7,19 @@ import Muses from "@/components/landing/Muses";
 import CTA from "@/components/landing/CTA";
 import SiteHeader from "@/components/landing/SiteHeader";
 import SiteFooter from "@/components/landing/SiteFooter";
-import { LanguageProvider } from "@/i18n/LanguageContext";
+import SectionDivider from "@/components/landing/SectionDivider";
+import { LanguageProvider, useLang } from "@/i18n/LanguageContext";
+
+const Dividers = {
+  Frontier: () => {
+    const { t } = useLang();
+    return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
+  },
+  Disruption: () => {
+    const { t } = useLang();
+    return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />;
+  },
+};
 
 const Index = () => {
   return (
@@ -18,8 +30,10 @@ const Index = () => {
         <Marquee />
         <About />
         <Stats />
+        <Dividers.Frontier />
         <Services />
         <Muses />
+        <Dividers.Disruption />
         <CTA />
         <SiteFooter />
       </main>
