@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax } from "@/hooks/useParallax";
+import heroHand from "@/assets/hero-hand.png";
 
 const Hero = () => {
   const { t } = useLang();
@@ -7,6 +8,7 @@ const Hero = () => {
   const blob2 = useParallax<HTMLDivElement>(-0.18);
   const titleParallax = useParallax<HTMLDivElement>(-0.08);
   const metaParallax = useParallax<HTMLDivElement>(0.15);
+  const handParallax = useParallax<HTMLDivElement>(-0.22);
 
   return (
     <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-6 md:pt-28 md:pb-8 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
@@ -31,6 +33,23 @@ const Hero = () => {
         <span>{t("meta.cities")}</span>
         <span className="hidden md:inline">{t("meta.tag")}</span>
         <span>N°/001</span>
+      </div>
+
+      {/* Hand holding phone — the actual NEXT BIG SH#@! */}
+      <div
+        ref={handParallax.ref}
+        className="pointer-events-none absolute right-[2%] md:right-[6%] bottom-0 h-[78%] md:h-[95%] z-20 will-change-transform animate-hero-in opacity-0"
+        style={{
+          transform: `translate3d(0, ${handParallax.offset}px, 0)`,
+          animationDelay: "500ms",
+          animationFillMode: "forwards",
+        }}
+      >
+        <img
+          src={heroHand}
+          alt="Mano sosteniendo un teléfono con videos generados por IA"
+          className="h-full w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+        />
       </div>
 
       {/* THE GIANT TYPE — sized to never overflow */}
