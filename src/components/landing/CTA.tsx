@@ -52,30 +52,28 @@ const CTA = () => {
         style={{ transform: `translate3d(0, calc(-50% + ${blob.offset}px), 0)` }}
       />
 
-      {/* Text block — titles sit BELOW image (z-10), description + CTAs sit ABOVE image (z-30) */}
+      {/* Text block — wrapper sits ABOVE image (z-30); only the title is pushed BEHIND image (z-0) */}
       <div
         ref={reveal.ref}
-        className={`max-w-7xl mx-auto relative text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
+        className={`max-w-7xl mx-auto relative z-30 text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
           reveal.visible ? "is-visible" : ""
         }`}
       >
-        <div className="relative z-10">
-          <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
-            {t("cta.kicker")}
-          </p>
-          <div
-            ref={titleP.ref}
-            className="will-change-transform"
-            style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
+        <p className="relative z-30 text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
+          {t("cta.kicker")}
+        </p>
+        <div
+          ref={titleP.ref}
+          className="relative z-0 will-change-transform"
+          style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
+        >
+          <h2
+            className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
+            style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
           >
-            <h2
-              className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
-              style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
-            >
-              <span className="block text-foreground">{t("cta.title.1")}</span>
-              <span className="block text-primary italic">{t("cta.title.2")}</span>
-            </h2>
-          </div>
+            <span className="block text-foreground">{t("cta.title.1")}</span>
+            <span className="block text-primary italic">{t("cta.title.2")}</span>
+          </h2>
         </div>
 
         <p className="relative z-30 mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
