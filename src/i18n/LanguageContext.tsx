@@ -97,14 +97,15 @@ const DICT: Dict = {
   "micro.pill.2": { es: "Automatizado", en: "Automated" },
   "micro.pill.3": { es: "Costo mínimo", en: "Minimal cost" },
   "micro.pill.4": { es: "Escala infinita", en: "Infinite scale" },
-  "micro.impact.lead": {
-    es: "Democratizamos el cine.",
-    en: "We democratize cinema.",
+  "micro.intertitle.1": {
+    es: "Esto no es futuro.",
+    en: "This isn't the future.",
   },
-  "micro.impact.body": {
-    es: "Cualquier voz, en cualquier idioma y desde cualquier rincón del mundo, puede contar su historia con calidad de Hollywood. Más historias, más miradas, un universo cultural más diverso.",
-    en: "Any voice, in any language, from any corner of the world, can tell their story with Hollywood quality. More stories, more perspectives, a more diverse cultural universe.",
+  "micro.intertitle.2": {
+    es: "Esto está sucediendo.",
+    en: "This is happening.",
   },
+  "micro.cta": { es: "Mira una serie ↗", en: "Watch a series ↗" },
   "services.kicker": { es: "04 / Servicios", en: "04 / Services" },
   "services.title.1": { es: "Una IP factory", en: "A disruptive" },
   "services.title.2": { es: "disruptiva.", en: "IP factory." },

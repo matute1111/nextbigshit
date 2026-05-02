@@ -83,12 +83,20 @@ const MicroDramas = () => {
           ))}
         </div>
 
-        <p className="max-w-3xl mx-auto text-center text-lg md:text-xl text-foreground/90 leading-relaxed">
-          <span className="text-primary italic font-display uppercase">
-            {t("micro.impact.lead")}
-          </span>{" "}
-          {t("micro.impact.body")}
-        </p>
+        <div className="flex flex-col items-center text-center gap-6">
+          <p className="font-display uppercase text-2xl md:text-4xl tracking-tight max-w-3xl">
+            {t("micro.intertitle.1")}{" "}
+            <span className="text-primary italic">{t("micro.intertitle.2")}</span>
+          </p>
+          <a
+            href="https://www.youtube.com/@HistoriasInfinitas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display uppercase tracking-wider text-sm rounded-full hover:opacity-90 transition-opacity"
+          >
+            {t("micro.cta")}
+          </a>
+        </div>
       </div>
     </section>
   );
