@@ -42,7 +42,7 @@ const Muses = () => {
         </div>
         <div
           ref={orbP.ref}
-          className="md:col-span-6 relative will-change-transform"
+          className="md:col-span-6 relative will-change-transform mt-[100px]"
           style={{ transform: `translate3d(0, ${orbP.offset}px, 0)` }}
         >
           <div className="relative w-full max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ const Muses = () => {
             />
             <SeedanceStamp
               size="lg"
-              className="absolute z-10 top-4 right-2 md:top-6 md:right-4 rotate-[-12deg] w-32 h-32 md:w-44 md:h-44 lg:w-52 lg:h-52 pointer-events-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
+              className="absolute z-20 -top-8 -right-4 md:-top-10 md:-right-6 rotate-[-12deg] w-36 h-36 md:w-52 md:h-52 lg:w-60 lg:h-60 pointer-events-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
             />
           </div>
         </div>
