@@ -47,6 +47,8 @@ const DICT: Dict = {
   },
   "about.shift.b": { es: "the next big shift.", en: "the next big shift." },
   "stats.kicker": { es: "02 / Tracción real", en: "02 / Real traction" },
+  "stats.shift": { es: "Esto no es un experimento. Es ", en: "This isn't an experiment. It's " },
+  "stats.shift.b": { es: "the next big leap.", en: "the next big leap." },
   "stats.subs": { es: "Suscriptores", en: "Subscribers" },
   "stats.views": { es: "Reproducciones", en: "Views" },
   "stats.videos": { es: "Videos creados", en: "Videos created" },
