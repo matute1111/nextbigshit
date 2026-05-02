@@ -98,12 +98,12 @@ const DICT: Dict = {
   "micro.pill.3": { es: "Costo mínimo", en: "Minimal cost" },
   "micro.pill.4": { es: "Escala infinita", en: "Infinite scale" },
   "micro.intertitle.1": {
-    es: "Esto no es futuro.",
-    en: "This isn't the future.",
+    es: "Esto no es humo. Esto",
+    en: "This isn't smoke. This",
   },
   "micro.intertitle.2": {
-    es: "Esto está sucediendo.",
-    en: "This is happening.",
+    es: "the next big s#!t.",
+    en: "the next big s#!t.",
   },
   "micro.cta": { es: "Mira una serie", en: "Watch a series" },
   "services.kicker": { es: "04 / Servicios", en: "04 / Services" },
