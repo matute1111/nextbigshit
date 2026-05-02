@@ -85,21 +85,21 @@ const About = () => {
       </div>
       </div>
 
-      {/* Long arm — pinned to right edge, slides in then back out on scroll, slightly overlaps the heading */}
+      {/* Long arm — pinned to LEFT edge, slides in then back out on scroll, slightly overlaps the heading */}
       <div
         ref={armRef}
-        className="pointer-events-none relative -mt-16 md:-mt-40 w-screen flex justify-end overflow-hidden"
+        className="pointer-events-none relative -mt-16 md:-mt-40 w-screen flex justify-start overflow-hidden"
       >
         <div
           className="will-change-transform"
           style={{
-            transform: `translate3d(${armTranslate}%, 0, 0)`,
+            transform: `translate3d(${-armTranslate}%, 0, 0)`,
           }}
         >
           <img
             src={longArm}
             alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-            className="block w-[60vw] md:w-[55vw] max-w-none h-auto object-contain object-right drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            className="block w-[60vw] md:w-[55vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] scale-x-[-1]"
           />
         </div>
       </div>
