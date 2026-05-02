@@ -24,9 +24,9 @@ const About = () => {
       const vh = window.innerHeight;
       // distance from viewport center, normalized like useParallax
       const center = rect.top + rect.height / 2 - vh / 2;
-      // Same magnitude as title parallax (0.45) but applied as % horizontal translation
-      // Clamp to a subtle range so it just peeks in/out
-      const t = Math.max(-25, Math.min(25, (center / vh) * 25));
+      // Static while entering / centered, slides slightly off-left only as it leaves upward (center < 0)
+      const norm = center / vh; // negative when leaving above viewport
+      const t = norm < 0 ? Math.max(-20, norm * 30) : 0;
       setArmTranslate(t);
     };
     const onScroll = () => {
