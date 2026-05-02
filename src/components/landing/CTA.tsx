@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
+import handsPhones from "@/assets/hands-phones.png";
 
 const CTA = () => {
   const { t } = useLang();
@@ -8,13 +9,21 @@ const CTA = () => {
   const reveal = useReveal<HTMLDivElement>(0.2);
 
   return (
-    <section id="contact" className="relative py-24 md:py-36 px-6 md:px-10 overflow-hidden">
+    <section id="contact" className="relative pt-24 md:pt-36 pb-0 px-6 md:px-10 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.06]" />
       <div
         ref={blob.ref}
         className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 w-full h-[60vw] bg-primary/15 blur-[160px] will-change-transform"
         style={{ transform: `translate3d(0, calc(-50% + ${blob.offset}px), 0)` }}
       />
+
+      {/* Hands holding phones — pinned to bottom-right, image sits above the BUILD title but below the REEL button */}
+      <img
+        src={handsPhones}
+        alt="Manos sosteniendo teléfonos con contenido generativo"
+        className="pointer-events-none select-none absolute bottom-0 right-0 z-20 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+      />
+
       <div
         ref={reveal.ref}
         className={`max-w-7xl mx-auto relative z-10 text-center reveal ${
@@ -26,11 +35,11 @@ const CTA = () => {
         </p>
         <div
           ref={titleP.ref}
-          className="will-change-transform"
+          className="will-change-transform md:-translate-x-[6%] lg:-translate-x-[8%]"
           style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
         >
           <h2
-            className="font-display uppercase leading-[0.82] tracking-[-0.03em]"
+            className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
             style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
           >
             <span className="block text-foreground">{t("cta.title.1")}</span>
