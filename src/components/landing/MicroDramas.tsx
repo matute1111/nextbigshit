@@ -83,10 +83,13 @@ const MicroDramas = () => {
             {t("micro.cta")}
             <span className="transition-transform group-hover:translate-x-1">↗</span>
           </a>
-          <p className="font-display uppercase text-2xl md:text-4xl tracking-tight max-w-3xl">
+          <h3
+            className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
+            style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}
+          >
             {t("micro.intertitle.1")}{" "}
             <span className="text-primary italic">{t("micro.intertitle.2")}</span>
-          </p>
+          </h3>
         </div>
       </div>
     </section>
