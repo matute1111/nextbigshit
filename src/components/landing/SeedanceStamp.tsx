@@ -1,3 +1,5 @@
+import bytedanceLogo from "@/assets/bytedance.svg";
+
 interface SeedanceStampProps {
   className?: string;
   size?: "sm" | "md" | "lg";
@@ -31,11 +33,16 @@ const SeedanceStamp = ({ className = "", size = "md" }: SeedanceStampProps) => {
           </text>
         </svg>
       </div>
-      <div className="absolute inset-0 flex items-center justify-center text-primary">
-        <span className="font-display text-5xl leading-none">✦</span>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src={bytedanceLogo}
+          alt="Bytedance"
+          className="w-[42%] h-[42%] object-contain"
+        />
       </div>
     </div>
   );
 };
 
 export default SeedanceStamp;
+
