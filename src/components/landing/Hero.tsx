@@ -59,10 +59,7 @@ const Hero = () => {
             }}
           >
             BIG{" "}
-            <span
-              className="text-primary italic"
-              style={{ fontFamily: "'Archivo Black', Impact, sans-serif" }}
-            >
+            <span className="text-primary">
               SH#@!
             </span>
           </span>
