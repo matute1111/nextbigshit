@@ -1,32 +1,62 @@
 import { useLang } from "@/i18n/LanguageContext";
+import { useParallax } from "@/hooks/useParallax";
 
 const Hero = () => {
   const { t } = useLang();
+  const blob1 = useParallax<HTMLDivElement>(0.25);
+  const blob2 = useParallax<HTMLDivElement>(-0.18);
+  const titleParallax = useParallax<HTMLDivElement>(-0.08);
+  const metaParallax = useParallax<HTMLDivElement>(0.15);
+
   return (
-    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-28 pb-8 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
+    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-6 md:pt-28 md:pb-8 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.07] mix-blend-overlay" />
-      <div className="pointer-events-none absolute -top-40 -left-40 w-[60vw] h-[60vw] rounded-full bg-primary/20 blur-[140px]" />
-      <div className="pointer-events-none absolute -bottom-40 -right-40 w-[50vw] h-[50vw] rounded-full bg-secondary/15 blur-[140px]" />
+      <div
+        ref={blob1.ref}
+        className="pointer-events-none absolute -top-40 -left-40 w-[60vw] h-[60vw] rounded-full bg-primary/20 blur-[140px] will-change-transform"
+        style={{ transform: `translate3d(0, ${blob1.offset}px, 0)` }}
+      />
+      <div
+        ref={blob2.ref}
+        className="pointer-events-none absolute -bottom-40 -right-40 w-[50vw] h-[50vw] rounded-full bg-secondary/15 blur-[140px] will-change-transform"
+        style={{ transform: `translate3d(0, ${blob2.offset}px, 0)` }}
+      />
 
       {/* top meta strip */}
-      <div className="relative z-10 px-6 md:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-[10px] md:text-xs uppercase tracking-[0.25em] font-semibold text-muted-foreground">
+      <div
+        ref={metaParallax.ref}
+        className="relative z-10 px-6 md:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-[10px] md:text-xs uppercase tracking-[0.25em] font-semibold text-muted-foreground will-change-transform"
+        style={{ transform: `translate3d(0, ${metaParallax.offset}px, 0)` }}
+      >
         <span>{t("meta.cities")}</span>
         <span className="hidden md:inline">{t("meta.tag")}</span>
         <span>N°/001</span>
       </div>
 
-      {/* THE GIANT TYPE */}
-      <div className="relative z-10 px-3 md:px-6 flex flex-col items-stretch justify-center flex-1">
-        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.065em] text-center select-none w-full">
+      {/* THE GIANT TYPE — sized to never overflow */}
+      <div
+        ref={titleParallax.ref}
+        className="relative z-10 px-3 md:px-6 flex flex-col items-center justify-center flex-1 w-full will-change-transform"
+        style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
+      >
+        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">
           <span
-            className="block"
-            style={{ fontSize: "clamp(4rem, 22vw, 28rem)" }}
+            className="block animate-hero-in opacity-0"
+            style={{
+              fontSize: "clamp(3.5rem, 17vw, 22rem)",
+              animationDelay: "120ms",
+              animationFillMode: "forwards",
+            }}
           >
             THE NEXT
           </span>
           <span
-            className="block whitespace-nowrap"
-            style={{ fontSize: "clamp(4rem, 24vw, 32rem)" }}
+            className="block whitespace-nowrap animate-hero-in opacity-0"
+            style={{
+              fontSize: "clamp(3.5rem, 19.5vw, 26rem)",
+              animationDelay: "320ms",
+              animationFillMode: "forwards",
+            }}
           >
             BIG{" "}
             <span
@@ -40,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* bottom row */}
-      <div className="relative z-10 px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+      <div className="relative z-10 px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-end animate-fade-in-up">
         <p className="text-sm md:text-base max-w-xs text-muted-foreground leading-snug">
           {t("hero.tag")}
         </p>
@@ -50,11 +80,11 @@ const Hero = () => {
             className="group inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] font-bold text-foreground"
           >
             <span>{t("hero.scroll")}</span>
-            <span className="block w-px h-12 bg-foreground/40 group-hover:bg-primary transition-colors" />
+            <span className="block w-px h-12 bg-foreground/40 group-hover:bg-primary transition-colors animate-scroll-line" />
           </a>
         </div>
         <div className="md:text-right text-xs uppercase tracking-[0.25em] font-semibold text-foreground">
-          <span className="inline-block px-3 py-1.5 border border-primary text-primary">
+          <span className="inline-block px-3 py-1.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
             {t("hero.manifesto")}
           </span>
         </div>
