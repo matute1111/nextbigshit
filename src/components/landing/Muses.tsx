@@ -1,6 +1,7 @@
 import SeedanceStamp from "./SeedanceStamp";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
+import musesMonitor from "@/assets/muses-monitor.png";
 
 const Muses = () => {
   const { t } = useLang();
@@ -24,18 +25,12 @@ const Muses = () => {
           reveal.visible ? "is-visible" : ""
         }`}
       >
-        <div className="md:col-span-7">
+        <div className="md:col-span-6">
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-6">
             {t("muses.kicker")}
           </p>
           <h2 className="font-display uppercase text-6xl md:text-8xl lg:text-9xl leading-[0.82] tracking-tight">
-            <span className="relative inline-block">
-              <SeedanceStamp
-                size="lg"
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-12deg] z-10 md:w-72 md:h-72 lg:w-80 lg:h-80 pointer-events-none"
-              />
-              <span className="relative text-secondary">MUSES</span>
-            </span>
+            <span className="text-secondary">MUSES</span>
             <span className="block text-foreground">{t("muses.title.2")}</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
@@ -47,18 +42,19 @@ const Muses = () => {
         </div>
         <div
           ref={orbP.ref}
-          className="md:col-span-5 relative will-change-transform"
+          className="md:col-span-6 relative will-change-transform"
           style={{ transform: `translate3d(0, ${orbP.offset}px, 0)` }}
         >
-          <div className="aspect-square w-full max-w-sm mx-auto relative animate-float-slow">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-3xl opacity-40" />
-            <div className="relative w-full h-full rounded-full border-2 border-primary/40 flex items-center justify-center">
-              <div className="absolute inset-6 rounded-full border border-secondary/40 animate-[spin_30s_linear_infinite]" />
-              <div className="absolute inset-12 rounded-full border border-primary/30 animate-[spin_22s_linear_infinite_reverse]" />
-              <span className="font-display text-7xl md:text-8xl bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
-                ✦
-              </span>
-            </div>
+          <div className="relative w-full max-w-2xl mx-auto">
+            <img
+              src={musesMonitor}
+              alt="Interfaz de Muses corriendo en un monitor"
+              className="relative z-0 w-full h-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            />
+            <SeedanceStamp
+              size="lg"
+              className="absolute z-10 top-4 right-2 md:top-6 md:right-4 rotate-[-12deg] w-32 h-32 md:w-44 md:h-44 lg:w-52 lg:h-52 pointer-events-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
+            />
           </div>
         </div>
       </div>
