@@ -99,7 +99,7 @@ const About = () => {
           <img
             src={longArm}
             alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-            className="block w-[60vw] md:w-[55vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] scale-x-[-1]"
+            className="block w-[60vw] md:w-[55vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
         </div>
       </div>
