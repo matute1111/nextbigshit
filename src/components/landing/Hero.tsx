@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Hand holding phone — the actual NEXT BIG SH#@! */}
       <div
         ref={handParallax.ref}
-        className="pointer-events-none absolute -right-[12%] md:-right-[6%] -bottom-[2.5rem] md:-bottom-[3.5rem] h-[48%] md:h-[78%] z-20 will-change-transform"
+        className="pointer-events-none absolute -right-[12%] md:-right-[6%] -bottom-[4rem] md:-bottom-[5.5rem] h-[48%] md:h-[78%] z-20 will-change-transform"
         style={{ transform: `translate3d(0, ${handParallax.offset}px, 0)` }}
       >
         <div className="h-full w-full animate-hand-rise opacity-0" style={{ animationFillMode: "forwards" }}>
@@ -53,7 +53,7 @@ const Hero = () => {
       {/* THE GIANT TYPE — sized to never overflow */}
       <div
         ref={titleParallax.ref}
-        className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] flex flex-col items-center justify-center flex-1 w-full will-change-transform"
+        className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] -mt-4 md:-mt-8 flex flex-col items-center justify-start flex-1 w-full will-change-transform"
         style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
       >
         <h1 className="font-display uppercase text-foreground leading-[0.82] md:leading-[0.78] tracking-[-0.05em] md:tracking-[-0.06em] text-center select-none w-full max-w-full">
