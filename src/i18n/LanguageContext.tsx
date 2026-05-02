@@ -56,6 +56,10 @@ const DICT: Dict = {
     es: "Historias Infinitas",
     en: "Historias Infinitas",
   },
+  "yt.headline": {
+    es: "donde la tracción se hace en vivo.",
+    en: "where traction happens live.",
+  },
   "yt.desc": {
     es: "Es nuestro canal de YouTube donde experimentamos con producción masiva de microdramas con IA. Publicamos, medimos y aprendemos en vivo. Es nuestro patio de pruebas para the next big SH#@!",
     en: "It's our YouTube channel where we experiment with massive AI microdrama production. We publish, measure, and learn live. Our playground for the next big SH#@!",
