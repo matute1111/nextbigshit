@@ -7,7 +7,7 @@ const SiteFooter = () => {
         </div>
         <div className="text-xs uppercase tracking-[0.25em] font-semibold text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
           <span>© {new Date().getFullYear()} Gennial Studio</span>
-          <span>The Next Big SH#@! ™</span>
+          <span>The Next Big SH#!T ™</span>
           <a href="mailto:info@gennial.ai" className="hover:text-primary transition-colors">
             info@gennial.ai
           </a>

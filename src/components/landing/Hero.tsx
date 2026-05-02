@@ -35,7 +35,7 @@ const Hero = () => {
         <span>N°/001</span>
       </div>
 
-      {/* Hand holding phone — the actual NEXT BIG SH#@! */}
+      {/* Hand holding phone — the actual NEXT BIG SH#!T */}
       <div
         ref={handParallax.ref}
         className="pointer-events-none absolute -right-[12%] md:-right-[6%] -bottom-[4rem] md:-bottom-[5.5rem] h-[48%] md:h-[78%] z-20 will-change-transform"
@@ -77,7 +77,7 @@ const Hero = () => {
           >
             BIG{" "}
             <span className="text-primary">
-              SH#@!
+              SH#!T
             </span>
           </span>
         </h1>
