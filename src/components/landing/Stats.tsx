@@ -108,9 +108,9 @@ const Stats = () => {
         </div>
       </div>
 
-      {/* Section divider title — full width below the section */}
-      <div className="px-6 md:px-10 mt-16 md:mt-24 relative z-10">
-        <div className="max-w-7xl mx-auto pt-10 md:pt-14 border-t border-border text-center">
+      {/* Section divider — unified style */}
+      <div className="relative z-10 px-6 md:px-10 py-10 md:py-14">
+        <div className="max-w-7xl mx-auto text-center">
           <h3
             className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
             style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}
