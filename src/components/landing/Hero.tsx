@@ -7,7 +7,7 @@ const Hero = () => {
   const blob1 = useParallax<HTMLDivElement>(0.25);
   const blob2 = useParallax<HTMLDivElement>(-0.18);
   const titleParallax = useParallax<HTMLDivElement>(-0.08);
-  const metaParallax = useParallax<HTMLDivElement>(0.15);
+  const metaParallax = useParallax<HTMLDivElement>(-0.08);
   const handParallax = useParallax<HTMLDivElement>(-0.22);
 
   return (
