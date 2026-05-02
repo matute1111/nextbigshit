@@ -8,9 +8,10 @@ const About = () => {
   const titleP = useParallax<HTMLDivElement>(0.45);
   const reveal = useReveal<HTMLDivElement>(0.2);
 
-  // Arm slides in from the right, then back out to the right as you keep scrolling
+  // Arm follows scroll at the same speed as the sticky title:
+  // slides in from the left while the section enters, then back out as it leaves.
   const armRef = useRef<HTMLDivElement | null>(null);
-  const [armProgress, setArmProgress] = useState(0); // 0 hidden right, 1 fully in, 0 hidden right again
+  const [armTranslate, setArmTranslate] = useState(25);
 
   useEffect(() => {
     let raf = 0;
@@ -21,11 +22,12 @@ const About = () => {
       if (!el) return;
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
+      // distance from viewport center, normalized like useParallax
       const center = rect.top + rect.height / 2 - vh / 2;
-      const range = vh * 0.6;
-      const norm = Math.max(-1, Math.min(1, center / range));
-      const p = Math.max(0, 1 - Math.abs(norm));
-      setArmProgress(p);
+      // Same magnitude as title parallax (0.45) but applied as % horizontal translation
+      // Clamp to a subtle range so it just peeks in/out
+      const t = Math.max(-25, Math.min(25, (center / vh) * 25));
+      setArmTranslate(t);
     };
     const onScroll = () => {
       if (!ticking) {
@@ -43,8 +45,7 @@ const About = () => {
     };
   }, []);
 
-  // Subtle slide: only ~25% in/out instead of fully off-screen
-  const armTranslate = (1 - armProgress) * 25;
+  // Negative when section is below viewport center (push off-screen left), 0 at center, positive as it leaves
 
   return (
     <section id="about" className="relative py-20 md:py-28 overflow-hidden">
