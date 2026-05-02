@@ -35,7 +35,7 @@ const CTA = () => {
         </p>
         <div
           ref={titleP.ref}
-          className="will-change-transform md:-translate-x-[6%] lg:-translate-x-[8%]"
+          className="will-change-transform"
           style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
         >
           <h2
