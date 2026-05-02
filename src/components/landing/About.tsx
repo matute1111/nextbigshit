@@ -85,7 +85,7 @@ const About = () => {
       {/* Long arm — pinned to LEFT edge, slides in then back out on scroll, slightly overlaps the heading */}
       <div
         ref={armRef}
-        className="pointer-events-none relative -mt-16 md:-mt-40 w-screen flex justify-start overflow-hidden"
+        className="pointer-events-none relative -mt-40 md:-mt-[22rem] lg:-mt-[28rem] w-screen flex justify-start overflow-hidden"
       >
         <div
           className="will-change-transform"
