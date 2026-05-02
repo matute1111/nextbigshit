@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
 import handsPhones from "@/assets/hands-phones.png";
@@ -8,6 +9,40 @@ const CTA = () => {
   const titleP = useParallax<HTMLDivElement>(0);
   const reveal = useReveal<HTMLDivElement>(0.2);
 
+  // Image rises ~100px from below as the section scrolls into view
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [imgY, setImgY] = useState(100);
+
+  useEffect(() => {
+    let raf = 0;
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const el = imgRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      // 0 when image top reaches viewport bottom, 1 when image top reaches viewport center
+      const progress = 1 - rect.top / vh;
+      const clamped = Math.max(0, Math.min(1, progress));
+      setImgY(100 - clamped * 100); // 100px → 0px
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        raf = requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   return (
     <section id="contact" className="relative pt-24 md:pt-36 pb-0 px-6 md:px-10 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.06]" />
@@ -17,36 +52,33 @@ const CTA = () => {
         style={{ transform: `translate3d(0, calc(-50% + ${blob.offset}px), 0)` }}
       />
 
-      {/* Hands holding phones — pinned to bottom-right, sits behind text/buttons */}
-      <img
-        src={handsPhones}
-        alt="Manos sosteniendo teléfonos con contenido generativo"
-        className="pointer-events-none select-none absolute bottom-0 right-0 z-0 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-      />
-
+      {/* Text block — titles sit BELOW image (z-10), description + CTAs sit ABOVE image (z-30) */}
       <div
         ref={reveal.ref}
-        className={`max-w-7xl mx-auto relative z-30 text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
+        className={`max-w-7xl mx-auto relative text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
           reveal.visible ? "is-visible" : ""
         }`}
       >
-        <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
-          {t("cta.kicker")}
-        </p>
-        <div
-          ref={titleP.ref}
-          className="will-change-transform"
-          style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
-        >
-          <h2
-            className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
-            style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
+        <div className="relative z-10">
+          <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
+            {t("cta.kicker")}
+          </p>
+          <div
+            ref={titleP.ref}
+            className="will-change-transform"
+            style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
           >
-            <span className="block text-foreground">{t("cta.title.1")}</span>
-            <span className="block text-primary italic">{t("cta.title.2")}</span>
-          </h2>
+            <h2
+              className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
+              style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
+            >
+              <span className="block text-foreground">{t("cta.title.1")}</span>
+              <span className="block text-primary italic">{t("cta.title.2")}</span>
+            </h2>
+          </div>
         </div>
-        <p className="mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
+
+        <p className="relative z-30 mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
           {t("cta.desc")}
         </p>
         <div className="relative z-30 mt-12 mb-[20vw] md:mb-[10vw] lg:mb-[8vw] flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -67,6 +99,15 @@ const CTA = () => {
           </a>
         </div>
       </div>
+
+      {/* Hands holding phones — above titles (z-20), below description + CTAs (z-30). Rises ~100px on scroll. */}
+      <img
+        ref={imgRef}
+        src={handsPhones}
+        alt="Manos sosteniendo teléfonos con contenido generativo"
+        className="pointer-events-none select-none absolute bottom-0 right-0 z-20 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] will-change-transform"
+        style={{ transform: `translate3d(0, ${imgY}px, 0)` }}
+      />
     </section>
   );
 };
