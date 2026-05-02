@@ -5,30 +5,34 @@ interface SeedanceStampProps {
 
 const SIZES = {
   sm: "w-24 h-24",
-  md: "w-36 h-36",
-  lg: "w-52 h-52",
+  md: "w-40 h-40",
+  lg: "w-56 h-56",
 };
 
 const SeedanceStamp = ({ className = "", size = "md" }: SeedanceStampProps) => {
-  const text = "SEEDANCE INSIDE • SEEDANCE INSIDE • ";
+  const text = "SEEDANCE INSIDE V2.0 • SEEDANCE INSIDE V2.0 • ";
   return (
     <div className={`relative ${SIZES[size]} ${className}`}>
       <div className="absolute inset-0 animate-[spin_18s_linear_infinite]">
-        <svg viewBox="0 0 200 200" className="w-full h-full">
+        <svg viewBox="0 0 200 200" className="w-full h-full overflow-visible">
           <defs>
             <path
               id="seedance-circle"
-              d="M 100, 100 m -82, 0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0"
+              d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"
             />
           </defs>
-          <text className="fill-primary font-black uppercase" style={{ fontSize: "20px", letterSpacing: "0.18em" }}>
-            <textPath href="#seedance-circle">{text + text}</textPath>
+          <text
+            className="fill-primary font-black uppercase"
+            style={{ fontSize: "16px", letterSpacing: "0.18em" }}
+          >
+            <textPath href="#seedance-circle" startOffset="0">
+              {text + text}
+            </textPath>
           </text>
         </svg>
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-primary leading-none">
-        <span className="font-display text-4xl">✦</span>
-        <span className="font-black uppercase tracking-widest mt-1.5 text-sm">v2.0</span>
+      <div className="absolute inset-0 flex items-center justify-center text-primary">
+        <span className="font-display text-5xl leading-none">✦</span>
       </div>
     </div>
   );
