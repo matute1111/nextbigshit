@@ -10,15 +10,14 @@ import SiteFooter from "@/components/landing/SiteFooter";
 import SectionDivider from "@/components/landing/SectionDivider";
 import { LanguageProvider, useLang } from "@/i18n/LanguageContext";
 
-const Dividers = {
-  Frontier: () => {
-    const { t } = useLang();
-    return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
-  },
-  Disruption: () => {
-    const { t } = useLang();
-    return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />;
-  },
+const FrontierDivider = () => {
+  const { t } = useLang();
+  return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
+};
+
+const DisruptionDivider = () => {
+  const { t } = useLang();
+  return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />;
 };
 
 const Index = () => {
@@ -31,9 +30,9 @@ const Index = () => {
         <About />
         <Stats />
         <Services />
-        <Dividers.Frontier />
+        <FrontierDivider />
         <Muses />
-        <Dividers.Disruption />
+        <DisruptionDivider />
         <CTA />
         <SiteFooter />
       </main>
