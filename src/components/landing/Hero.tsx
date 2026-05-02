@@ -58,11 +58,11 @@ const Hero = () => {
         className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] flex flex-col items-center justify-center flex-1 w-full will-change-transform"
         style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
       >
-        <h1 className="font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">
+        <h1 className="font-display uppercase text-foreground leading-[0.82] md:leading-[0.78] tracking-[-0.05em] md:tracking-[-0.06em] text-center select-none w-full max-w-full">
           <span
             className="block animate-hero-in opacity-0"
             style={{
-              fontSize: "clamp(3.5rem, 17vw, 22rem)",
+              fontSize: "clamp(4.5rem, 22vw, 22rem)",
               animationDelay: "120ms",
               animationFillMode: "forwards",
             }}
@@ -72,7 +72,7 @@ const Hero = () => {
           <span
             className="block whitespace-nowrap animate-hero-in opacity-0"
             style={{
-              fontSize: "clamp(3.5rem, 19.5vw, 26rem)",
+              fontSize: "clamp(4.5rem, 25vw, 26rem)",
               animationDelay: "320ms",
               animationFillMode: "forwards",
             }}
