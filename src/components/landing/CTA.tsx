@@ -24,17 +24,19 @@ const CTA = () => {
         <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
           {t("cta.kicker")}
         </p>
-        <h2
-          ref={titleP.ref as never}
-          className="font-display uppercase leading-[0.82] tracking-[-0.03em] will-change-transform"
-          style={{
-            fontSize: "clamp(3rem, 12vw, 13rem)",
-            transform: `translate3d(0, ${titleP.offset}px, 0)`,
-          }}
+        <div
+          ref={titleP.ref}
+          className="will-change-transform"
+          style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
         >
-          <span className="block text-foreground">{t("cta.title.1")}</span>
-          <span className="block text-primary italic">{t("cta.title.2")}</span>
-        </h2>
+          <h2
+            className="font-display uppercase leading-[0.82] tracking-[-0.03em]"
+            style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
+          >
+            <span className="block text-foreground">{t("cta.title.1")}</span>
+            <span className="block text-primary italic">{t("cta.title.2")}</span>
+          </h2>
+        </div>
         <p className="mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
           {t("cta.desc")}
         </p>
