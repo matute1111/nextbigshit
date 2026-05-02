@@ -5,7 +5,7 @@ import longArm from "@/assets/long-arm.png";
 
 const About = () => {
   const { t } = useLang();
-  const titleP = useParallax<HTMLDivElement>(0.92);
+  const titleP = useParallax<HTMLDivElement>(1.4);
   const reveal = useReveal<HTMLDivElement>(0.2);
 
   // Arm follows scroll at the same speed as the sticky title:
