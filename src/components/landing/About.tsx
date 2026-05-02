@@ -24,9 +24,9 @@ const About = () => {
       const vh = window.innerHeight;
       // distance from viewport center, normalized like useParallax
       const center = rect.top + rect.height / 2 - vh / 2;
-      // Static while entering / centered, slides slightly off-left only as it leaves upward (center < 0)
+      // Anchored to the LEFT edge. Static while in view, slides LEFT (under the edge) only as it leaves upward.
       const norm = center / vh; // negative when leaving above viewport
-      const t = norm < 0 ? Math.max(-20, norm * 30) : 0;
+      const t = norm < 0 ? Math.max(-40, norm * 50) : 0; // only negative or zero, never positive
       setArmTranslate(t);
     };
     const onScroll = () => {
@@ -94,7 +94,7 @@ const About = () => {
         <div
           className="will-change-transform"
           style={{
-            transform: `translate3d(${-armTranslate}%, 0, 0)`,
+            transform: `translate3d(${armTranslate}%, 0, 0)`,
           }}
         >
           <img
