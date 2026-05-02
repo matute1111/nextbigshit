@@ -8,7 +8,7 @@ const Hero = () => {
   const blob2 = useParallax<HTMLDivElement>(-0.18);
   const titleParallax = useParallax<HTMLDivElement>(-0.08);
   const metaParallax = useParallax<HTMLDivElement>(-0.08);
-  const handParallax = useParallax<HTMLDivElement>(-0.22);
+  const handParallax = useParallax<HTMLDivElement>(0.18);
 
   return (
     <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-14 pb-4 md:pt-20 md:pb-8 gap-3 md:gap-0 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
