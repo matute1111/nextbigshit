@@ -103,7 +103,7 @@ const About = () => {
 
       {/* Section divider title — sits below the arm, full width */}
       <div className="px-6 md:px-10 mt-10 md:mt-16">
-        <div className="max-w-7xl mx-auto pt-10 md:pt-14 border-t border-border">
+        <div className="max-w-7xl mx-auto pt-10 md:pt-14 border-t border-border text-center">
           <h3
             className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
             style={{ fontSize: "clamp(1.5rem, 5.2vw, 5.5rem)" }}
