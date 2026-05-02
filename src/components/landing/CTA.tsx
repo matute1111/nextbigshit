@@ -49,7 +49,7 @@ const CTA = () => {
         <p className="mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
           {t("cta.desc")}
         </p>
-        <div className="relative z-30 mt-12 mb-[-8vw] md:mb-[-6vw] lg:mb-[-5vw] pb-[55vw] md:pb-[32vw] lg:pb-[28vw] flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="relative z-30 mt-12 mb-[20vw] md:mb-[10vw] lg:mb-[8vw] flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="mailto:info@gennial.ai"
             className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-5 font-display uppercase text-xl tracking-tight hover:bg-foreground transition-all duration-300 hover:-translate-y-0.5 shadow-orange"
