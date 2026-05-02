@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Hand holding phone — the actual NEXT BIG SH#@! */}
       <div
         ref={handParallax.ref}
-        className="pointer-events-none absolute -right-[8%] md:-right-[6%] bottom-0 h-[55%] md:h-[78%] z-20 will-change-transform animate-hero-in opacity-0"
+        className="pointer-events-none absolute -right-[12%] md:-right-[6%] bottom-0 h-[48%] md:h-[78%] z-20 will-change-transform animate-hero-in opacity-0"
         style={{
           transform: `translate3d(0, ${handParallax.offset}px, 0)`,
           animationDelay: "500ms",
