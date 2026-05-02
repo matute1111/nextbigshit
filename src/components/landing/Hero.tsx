@@ -86,7 +86,7 @@ const Hero = () => {
       </div>
 
       {/* bottom row */}
-      <div className="relative z-30 px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-end animate-fade-in-up">
+      <div className="relative z-30 px-6 md:px-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 items-end animate-fade-in-up">
         <p className="text-sm md:text-base max-w-xs text-muted-foreground leading-snug">
           {t("hero.tag")}
         </p>
