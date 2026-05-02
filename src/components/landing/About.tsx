@@ -69,7 +69,7 @@ const About = () => {
         </div>
         <div
           ref={reveal.ref}
-          className={`md:col-span-6 md:col-start-7 md:pt-2 space-y-8 text-lg md:text-xl leading-relaxed text-muted-foreground reveal ${
+          className={`md:col-span-6 md:col-start-7 md:pt-[3.25rem] space-y-8 text-lg md:text-xl leading-relaxed text-muted-foreground reveal ${
             reveal.visible ? "is-visible" : ""
           }`}
         >
