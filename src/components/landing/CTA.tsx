@@ -5,7 +5,7 @@ import handsPhones from "@/assets/hands-phones.png";
 const CTA = () => {
   const { t } = useLang();
   const blob = useParallax<HTMLDivElement>(0.3);
-  const titleP = useParallax<HTMLDivElement>(-0.1);
+  const titleP = useParallax<HTMLDivElement>(0);
   const reveal = useReveal<HTMLDivElement>(0.2);
 
   return (
@@ -17,16 +17,16 @@ const CTA = () => {
         style={{ transform: `translate3d(0, calc(-50% + ${blob.offset}px), 0)` }}
       />
 
-      {/* Hands holding phones — pinned to bottom-right, image sits above the BUILD title but below the REEL button */}
+      {/* Hands holding phones — pinned to bottom-right, sits behind text/buttons */}
       <img
         src={handsPhones}
         alt="Manos sosteniendo teléfonos con contenido generativo"
-        className="pointer-events-none select-none absolute bottom-0 right-0 z-20 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+        className="pointer-events-none select-none absolute bottom-0 right-0 z-0 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
       />
 
       <div
         ref={reveal.ref}
-        className={`max-w-7xl mx-auto relative z-10 text-center reveal ${
+        className={`max-w-7xl mx-auto relative z-30 text-center reveal ${
           reveal.visible ? "is-visible" : ""
         }`}
       >
