@@ -5,8 +5,8 @@ interface Props {
 
 const SectionDivider = ({ text, highlight }: Props) => {
   return (
-    <div className="px-6 md:px-10 py-10 md:py-16">
-      <div className="max-w-7xl mx-auto pt-10 md:pt-14 border-t border-border">
+    <div className="px-6 md:px-10 py-12 md:py-20">
+      <div className="max-w-7xl mx-auto text-center">
         <h3
           className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
           style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}

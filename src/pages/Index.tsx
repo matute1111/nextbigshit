@@ -30,8 +30,8 @@ const Index = () => {
         <Marquee />
         <About />
         <Stats />
-        <Dividers.Frontier />
         <Services />
+        <Dividers.Frontier />
         <Muses />
         <Dividers.Disruption />
         <CTA />

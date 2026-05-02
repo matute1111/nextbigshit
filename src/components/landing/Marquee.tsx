@@ -1,7 +1,7 @@
 const ITEMS = [
   "IA VERTICAL",
   "MICRODRAMAS",
-  "THE NEXT BIG SH#@!",
+  "THE NEXT BIG SH#!T",
   "IP FACTORY",
   "B2B2C",
   "THE NEXT BIG SHIFT",

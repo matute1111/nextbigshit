@@ -15,7 +15,7 @@ const DICT: Dict = {
   },
   "hero.line1": { es: "THE NEXT", en: "THE NEXT" },
   "hero.big": { es: "BIG", en: "BIG" },
-  "hero.shit": { es: "SH#@!", en: "SH#@!" },
+  "hero.shit": { es: "SH#!T", en: "SH#!T" },
   "hero.tag": {
     es: "IA vertical + microdramas. Producimos contenido viral a la velocidad de la cultura.",
     en: "Vertical AI + microdramas. We produce viral content at the speed of culture.",
@@ -67,8 +67,8 @@ const DICT: Dict = {
     en: "where traction happens live.",
   },
   "yt.desc": {
-    es: "Es nuestro canal de YouTube donde experimentamos con producción masiva de microdramas con IA. Publicamos, medimos y aprendemos en vivo. Es nuestro patio de pruebas para the next big SH#@!",
-    en: "It's our YouTube channel where we experiment with massive AI microdrama production. We publish, measure, and learn live. Our playground for the next big SH#@!",
+    es: "Es nuestro canal de YouTube donde experimentamos con producción masiva de microdramas con IA. Publicamos, medimos y aprendemos en vivo. Es nuestro patio de pruebas para the next big SH#!T",
+    en: "It's our YouTube channel where we experiment with massive AI microdrama production. We publish, measure, and learn live. Our playground for the next big SH#!T",
   },
   "yt.cta": { es: "Ver el canal ↗", en: "Watch the channel ↗" },
   "services.kicker": { es: "03 / Servicios", en: "03 / Services" },
@@ -90,7 +90,7 @@ const DICT: Dict = {
   },
   "cta.kicker": { es: "05 / Revolución generativa", en: "05 / Generative revolution" },
   "cta.title.1": { es: "Build the next", en: "Build the next" },
-  "cta.title.2": { es: "big SH#@!", en: "big SH#@!" },
+  "cta.title.2": { es: "big SH#!T", en: "big SH#!T" },
   "cta.desc": {
     es: "Trabajemos juntos en tu idea para hacerla realidad. Te respondemos rápido, prometido.",
     en: "Let's work together to make your idea real. We reply fast, promise.",
