@@ -17,7 +17,7 @@ const FrontierDivider = () => {
 
 const DisruptionDivider = () => {
   const { t } = useLang();
-  return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />;
+  return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} className="mt-[20px]" />;
 };
 
 const Index = () => {
