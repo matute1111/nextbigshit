@@ -53,7 +53,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
         <div
           ref={titleP.ref}
-          className="md:col-span-5 md:sticky md:top-32 md:self-start will-change-transform"
+          className="md:col-span-5 will-change-transform"
           style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
         >
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
