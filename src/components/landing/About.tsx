@@ -45,8 +45,7 @@ const About = () => {
     };
   }, []);
 
-  // Subtle slide: only ~25% in/out instead of fully off-screen
-  const armTranslate = (1 - armProgress) * 25;
+  // Negative when section is below viewport center (push off-screen left), 0 at center, positive as it leaves
 
   return (
     <section id="about" className="relative py-20 md:py-28 overflow-hidden">
