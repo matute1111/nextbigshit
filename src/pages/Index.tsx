@@ -7,20 +7,23 @@ import Muses from "@/components/landing/Muses";
 import CTA from "@/components/landing/CTA";
 import SiteHeader from "@/components/landing/SiteHeader";
 import SiteFooter from "@/components/landing/SiteFooter";
+import { LanguageProvider } from "@/i18n/LanguageContext";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <SiteHeader />
-      <Hero />
-      <Marquee />
-      <About />
-      <Stats />
-      <Services />
-      <Muses />
-      <CTA />
-      <SiteFooter />
-    </main>
+    <LanguageProvider>
+      <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <SiteHeader />
+        <Hero />
+        <Marquee />
+        <About />
+        <Stats />
+        <Services />
+        <Muses />
+        <CTA />
+        <SiteFooter />
+      </main>
+    </LanguageProvider>
   );
 };
 
