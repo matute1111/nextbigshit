@@ -54,7 +54,7 @@ const Stats = () => {
   return (
     <section
       ref={reveal.ref}
-      className="relative bg-background-deeper border-y border-border py-28 md:py-40 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border py-20 md:py-28 px-6 md:px-10 overflow-hidden"
     >
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.05]" />
       <div
@@ -65,7 +65,7 @@ const Stats = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Single unified header for the whole "lab + traction" story */}
-        <div className="text-center mb-20 md:mb-28">
+        <div className="text-center mb-12 md:mb-16">
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
             {t("stats.kicker")} · {t("yt.kicker")}
           </p>
@@ -78,7 +78,7 @@ const Stats = () => {
         </div>
 
         {/* Counter grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6 mb-20 md:mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6 mb-14 md:mb-16">
           {STATS.map((s, i) => (
             <StatCell key={s.label} stat={s} start={reveal.visible} index={i} />
           ))}
