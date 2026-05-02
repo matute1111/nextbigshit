@@ -52,36 +52,44 @@ const CTA = () => {
         style={{ transform: `translate3d(0, calc(-50% + ${blob.offset}px), 0)` }}
       />
 
-      {/* Text block — titles sit BELOW image (z-10), description + CTAs sit ABOVE image (z-30) */}
+      {/* Title block — sits BEHIND image (z-10) */}
+      <div
+        ref={titleP.ref}
+        className="max-w-7xl mx-auto relative z-10 text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] will-change-transform"
+        style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
+      >
+        <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
+          {t("cta.kicker")}
+        </p>
+        <h2
+          className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
+          style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
+        >
+          <span className="block text-foreground">{t("cta.title.1")}</span>
+          <span className="block text-primary italic">{t("cta.title.2")}</span>
+        </h2>
+      </div>
+
+      {/* Hands holding phones — above title (z-20), below description + CTAs (z-30). Rises ~100px on scroll. */}
+      <img
+        ref={imgRef}
+        src={handsPhones}
+        alt="Manos sosteniendo teléfonos con contenido generativo"
+        className="pointer-events-none select-none absolute bottom-0 right-0 z-20 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] will-change-transform"
+        style={{ transform: `translate3d(0, ${imgY}px, 0)` }}
+      />
+
+      {/* Description + CTAs — sits ABOVE image (z-30) */}
       <div
         ref={reveal.ref}
-        className={`max-w-7xl mx-auto relative text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
+        className={`max-w-7xl mx-auto relative z-30 text-center -translate-x-[6%] md:-translate-x-[14%] lg:-translate-x-[18%] reveal ${
           reveal.visible ? "is-visible" : ""
         }`}
       >
-        <div className="relative z-10">
-          <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-8">
-            {t("cta.kicker")}
-          </p>
-          <div
-            ref={titleP.ref}
-            className="will-change-transform"
-            style={{ transform: `translate3d(0, ${titleP.offset}px, 0)` }}
-          >
-            <h2
-              className="font-display uppercase leading-[0.82] tracking-[-0.03em] text-center"
-              style={{ fontSize: "clamp(3rem, 12vw, 13rem)" }}
-            >
-              <span className="block text-foreground">{t("cta.title.1")}</span>
-              <span className="block text-primary italic">{t("cta.title.2")}</span>
-            </h2>
-          </div>
-        </div>
-
-        <p className="relative z-30 mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
+        <p className="mt-12 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
           {t("cta.desc")}
         </p>
-        <div className="relative z-30 mt-12 mb-[20vw] md:mb-[10vw] lg:mb-[8vw] flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 mb-[20vw] md:mb-[10vw] lg:mb-[8vw] flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="mailto:info@gennial.ai"
             className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-5 font-display uppercase text-xl tracking-tight hover:bg-foreground transition-all duration-300 hover:-translate-y-0.5 shadow-orange"
@@ -99,15 +107,6 @@ const CTA = () => {
           </a>
         </div>
       </div>
-
-      {/* Hands holding phones — above titles (z-20), below description + CTAs (z-30). Rises ~100px on scroll. */}
-      <img
-        ref={imgRef}
-        src={handsPhones}
-        alt="Manos sosteniendo teléfonos con contenido generativo"
-        className="pointer-events-none select-none absolute bottom-0 right-0 z-20 w-[60vw] md:w-[42vw] lg:w-[38vw] max-w-[640px] h-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] will-change-transform"
-        style={{ transform: `translate3d(0, ${imgY}px, 0)` }}
-      />
     </section>
   );
 };
