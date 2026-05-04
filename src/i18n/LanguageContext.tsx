@@ -22,7 +22,7 @@ const DICT: Dict = {
   },
   "hero.scroll": { es: "scroll", en: "scroll" },
   "hero.manifesto": { es: "Manifesto / Studio Reel ↗", en: "Manifesto / Studio Reel ↗" },
-  "nav.about": { es: "Nosotros", en: "About" },
+  "nav.about": { es: "Manifiesto", en: "Manifesto" },
   "nav.services": { es: "Servicios", en: "Services" },
   "nav.muses": { es: "Muses", en: "Muses" },
   "nav.contact": { es: "Contacto", en: "Contact" },
