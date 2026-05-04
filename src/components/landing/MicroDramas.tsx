@@ -29,9 +29,9 @@ const MicroDramas = () => {
       if (armEl) {
         const rect = armEl.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        const norm = center / vh;
-        const t = norm < 0 ? Math.max(-40, norm * 50) : 0;
-        setArmTranslate(t);
+        // Start 100px higher (-100), then move down on scroll, hiding behind the table.
+        const offset = Math.max(-100, Math.min(260, -100 + -center * 0.25));
+        setArmTranslate(offset);
       }
 
       const handsEl = handsRef.current;
