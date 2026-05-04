@@ -1,4 +1,5 @@
 import SeedanceStamp from "./SeedanceStamp";
+import SectionDivider from "./SectionDivider";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
 import musesMonitor from "@/assets/muses-monitor.png";
@@ -58,6 +59,7 @@ const Muses = () => {
           </div>
         </div>
       </div>
+      <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
     </section>
   );
 };
