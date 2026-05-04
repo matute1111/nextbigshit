@@ -16,10 +16,6 @@ const FrontierDivider = () => {
   return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
 };
 
-const DisruptionDivider = () => {
-  const { t } = useLang();
-  return <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />;
-};
 
 const Index = () => {
   return (
@@ -34,7 +30,7 @@ const Index = () => {
         <Services />
         <FrontierDivider />
         <Muses />
-        <DisruptionDivider />
+        
         <CTA />
         <SiteFooter />
       </main>

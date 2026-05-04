@@ -1,4 +1,5 @@
 import SeedanceStamp from "./SeedanceStamp";
+import SectionDivider from "./SectionDivider";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
 import musesMonitor from "@/assets/muses-monitor.png";
@@ -12,7 +13,7 @@ const Muses = () => {
   return (
     <section
       id="muses"
-      className="relative bg-background-deeper border-y border-border py-4 md:py-28 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border pt-4 pb-0 md:py-28 px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}
@@ -58,6 +59,7 @@ const Muses = () => {
           </div>
         </div>
       </div>
+      <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
     </section>
   );
 };
