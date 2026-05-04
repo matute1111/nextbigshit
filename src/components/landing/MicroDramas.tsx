@@ -96,13 +96,13 @@ const MicroDramas = () => {
           {/* Mobile hands */}
           <div
             ref={armRef}
-            className="md:hidden pointer-events-none absolute inset-x-0 -top-[18rem] flex justify-center z-0 overflow-visible"
+            className="md:hidden pointer-events-none absolute inset-x-0 -top-[14rem] flex justify-center z-0 overflow-visible"
           >
             <img
               src={microdramaHands}
               alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
               className="block w-[85%] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-              style={{ transform: `translate3d(0, ${handsTranslate}px, 0)` }}
+              style={{ transform: `translate3d(0, ${armTranslate}px, 0)` }}
             />
           </div>
 
