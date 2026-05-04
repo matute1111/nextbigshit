@@ -64,6 +64,7 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />
     </section>
   );
 };

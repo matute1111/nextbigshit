@@ -9,14 +9,7 @@ import CTA from "@/components/landing/CTA";
 import SiteHeader from "@/components/landing/SiteHeader";
 import Preloader from "@/components/landing/Preloader";
 import SiteFooter from "@/components/landing/SiteFooter";
-import SectionDivider from "@/components/landing/SectionDivider";
-import { LanguageProvider, useLang } from "@/i18n/LanguageContext";
-
-const FrontierDivider = () => {
-  const { t } = useLang();
-  return <SectionDivider text={t("frontier.shift")} highlight={t("frontier.shift.b")} />;
-};
-
+import { LanguageProvider } from "@/i18n/LanguageContext";
 
 const Index = () => {
   return (
@@ -31,7 +24,6 @@ const Index = () => {
         <Stats />
         <MicroDramas />
         <Services />
-        <FrontierDivider />
         <CTA />
         <SiteFooter />
       </main>
