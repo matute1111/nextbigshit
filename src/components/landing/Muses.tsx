@@ -13,7 +13,7 @@ const Muses = () => {
   return (
     <section
       id="muses"
-      className="relative bg-background-deeper border-y border-border pt-4 pb-0 md:pt-8 md:pb-28 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border pt-4 pb-0 md:pt-0 md:pb-28 md:-mt-[18px] px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}
