@@ -13,7 +13,7 @@ const Muses = () => {
   return (
     <section
       id="muses"
-      className="relative bg-background-deeper border-y border-border pt-4 pb-0 md:pt-0 md:pb-28 md:-mt-[18px] px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border pt-20 md:pt-28 pb-0 px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}
@@ -43,7 +43,7 @@ const Muses = () => {
         </div>
         <div
           ref={orbP.ref}
-          className="md:col-span-6 relative will-change-transform -mt-2 md:mt-[100px]"
+          className="md:col-span-6 relative will-change-transform"
           style={{ transform: `translate3d(0, ${orbP.offset}px, 0)` }}
         >
           <div className="relative w-full max-w-2xl mx-auto">
@@ -59,9 +59,7 @@ const Muses = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-[160px] md:mt-0">
-        <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
-      </div>
+      <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
     </section>
   );
 };
