@@ -86,7 +86,7 @@ const About = () => {
       {/* Long arm — passes UNDER the title on mobile, slides in then back out on scroll */}
       <div
         ref={armRef}
-        className="pointer-events-none relative mt-10 md:-mt-[14.5rem] lg:-mt-[20.5rem] w-screen flex justify-start overflow-hidden z-0 md:-ml-[50px]"
+        className="pointer-events-none relative mt-10 md:-mt-[14.5rem] lg:-mt-[20.5rem] w-screen flex justify-start overflow-hidden z-0 -ml-[100px] md:-ml-[50px]"
       >
         <div
           className="will-change-transform"
@@ -97,7 +97,7 @@ const About = () => {
           <img
             src={longArm}
             alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-            className="block w-[78vw] md:w-[55vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            className="block w-[101vw] md:w-[55vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
         </div>
       </div>
