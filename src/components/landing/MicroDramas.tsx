@@ -29,9 +29,9 @@ const MicroDramas = () => {
       if (armEl) {
         const rect = armEl.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        const norm = center / vh;
-        const t = norm < 0 ? Math.max(-40, norm * 50) : 0;
-        setArmTranslate(t);
+        // Start 100px higher (-100), then move down on scroll, hiding behind the table.
+        const offset = Math.max(-100, Math.min(260, -100 + -center * 0.25));
+        setArmTranslate(offset);
       }
 
       const handsEl = handsRef.current;
@@ -96,13 +96,13 @@ const MicroDramas = () => {
           {/* Mobile hands */}
           <div
             ref={armRef}
-            className="md:hidden pointer-events-none absolute inset-x-0 -top-[18rem] flex justify-center z-0 overflow-visible"
+            className="md:hidden pointer-events-none absolute inset-x-0 -top-[14rem] flex justify-center z-0 overflow-visible"
           >
             <img
               src={microdramaHands}
               alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
               className="block w-[85%] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-              style={{ transform: `translate3d(0, ${handsTranslate}px, 0)` }}
+              style={{ transform: `translate3d(0, ${armTranslate}px, 0)` }}
             />
           </div>
 
