@@ -109,7 +109,7 @@ const Stats = () => {
       </div>
 
       {/* Section divider — unified style */}
-      <div className="relative z-10 px-6 md:px-10 pt-10 md:pt-14 pb-0 -mb-[100px]">
+      <div className="relative z-10 px-6 md:px-10 pt-10 md:pt-14 pb-6 md:pb-10">
         <div className="max-w-7xl mx-auto text-center">
           <h3
             className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
