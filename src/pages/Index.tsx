@@ -7,6 +7,7 @@ import MicroDramas from "@/components/landing/MicroDramas";
 import Muses from "@/components/landing/Muses";
 import CTA from "@/components/landing/CTA";
 import SiteHeader from "@/components/landing/SiteHeader";
+import Preloader from "@/components/landing/Preloader";
 import SiteFooter from "@/components/landing/SiteFooter";
 import SectionDivider from "@/components/landing/SectionDivider";
 import { LanguageProvider, useLang } from "@/i18n/LanguageContext";
@@ -20,6 +21,7 @@ const FrontierDivider = () => {
 const Index = () => {
   return (
     <LanguageProvider>
+      <Preloader />
       <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
         <SiteHeader />
         <Hero />
