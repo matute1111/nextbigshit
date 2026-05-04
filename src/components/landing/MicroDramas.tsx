@@ -77,7 +77,7 @@ const MicroDramas = () => {
       />
 
       <div ref={reveal.ref} className="max-w-7xl mx-auto relative z-10">
-        <div className="mb-16">
+        <div className="mb-16 relative z-20">
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
             {t("micro.kicker")}
           </p>
