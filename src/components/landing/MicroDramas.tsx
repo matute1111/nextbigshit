@@ -29,8 +29,8 @@ const MicroDramas = () => {
       if (armEl) {
         const rect = armEl.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        // Start 100px higher (-100), then move down on scroll, hiding behind the table.
-        const offset = Math.max(-100, Math.min(260, -100 + -center * 0.25));
+        // Subtle downward drift so the image slides behind the table on scroll.
+        const offset = Math.max(0, Math.min(180, -center * 0.18));
         setArmTranslate(offset);
       }
 
