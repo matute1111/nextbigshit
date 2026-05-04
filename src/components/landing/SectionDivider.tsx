@@ -6,7 +6,7 @@ interface Props {
 
 const SectionDivider = ({ text, highlight, className = "" }: Props) => {
   return (
-    <div className={`relative z-10 px-6 md:px-10 py-10 md:py-14 ${className}`}>
+    <div className={`relative z-10 px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-28 ${className}`}>
       <div className="max-w-7xl mx-auto text-center">
         <h3
           className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground md:whitespace-nowrap"

@@ -55,7 +55,7 @@ const Stats = () => {
   return (
     <section
       ref={reveal.ref}
-      className="relative bg-background-deeper border-y border-border py-20 md:py-28 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border pt-20 md:pt-28 pb-0 px-6 md:px-10 overflow-hidden"
     >
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.05]" />
       <div

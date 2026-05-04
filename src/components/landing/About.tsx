@@ -49,7 +49,7 @@ const About = () => {
   // Negative when section is below viewport center (push off-screen left), 0 at center, positive as it leaves
 
   return (
-    <section id="about" className="relative py-20 md:py-28 overflow-hidden">
+    <section id="about" className="relative pt-20 md:pt-28 pb-0 overflow-hidden">
       <div className="px-6 md:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16 relative z-10">
         <div
