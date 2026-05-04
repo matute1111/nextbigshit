@@ -91,6 +91,7 @@ const MicroDramas = () => {
             <span className="text-primary italic">{t("micro.intertitle.2")}</span>
           </h3>
         </div>
+        <div className="max-w-7xl mx-auto mt-10 md:mt-14 border-t border-border" />
       </div>
     </section>
   );
