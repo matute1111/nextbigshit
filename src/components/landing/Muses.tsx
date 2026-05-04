@@ -12,7 +12,7 @@ const Muses = () => {
   return (
     <section
       id="muses"
-      className="relative bg-background-deeper border-y border-border py-20 md:py-28 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border py-10 md:py-28 px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}
@@ -42,7 +42,7 @@ const Muses = () => {
         </div>
         <div
           ref={orbP.ref}
-          className="md:col-span-6 relative will-change-transform mt-[100px]"
+          className="md:col-span-6 relative will-change-transform mt-4 md:mt-[100px]"
           style={{ transform: `translate3d(0, ${orbP.offset}px, 0)` }}
         >
           <div className="relative w-full max-w-2xl mx-auto">
