@@ -8,7 +8,7 @@ const Hero = () => {
   const blob2 = useParallax<HTMLDivElement>(-0.18);
   const titleParallax = useParallax<HTMLDivElement>(-0.08);
   const metaParallax = useParallax<HTMLDivElement>(-0.08);
-  const handParallax = useParallax<HTMLDivElement>(0.08);
+  const handParallax = useParallax<HTMLDivElement>(0.35);
 
   return (
     <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-32 pb-4 md:pt-40 md:pb-8 gap-3 md:gap-6 overflow-hidden bg-gradient-to-b from-background-deeper via-background to-background">
@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Hand holding phone — the actual NEXT BIG SH#!T */}
       <div
         ref={handParallax.ref}
-        className="pointer-events-none absolute -right-[12%] md:-right-[6%] -bottom-[4rem] md:-bottom-[5.5rem] h-[48%] md:h-[78%] z-20 will-change-transform"
+        className="pointer-events-none absolute -right-[18%] md:-right-[6%] -bottom-[3rem] md:-bottom-[5.5rem] h-[78%] md:h-[78%] z-20 will-change-transform"
         style={{ transform: `translate3d(0, ${handParallax.offset}px, 0)` }}
       >
         <div className="h-full w-full animate-hand-rise opacity-0" style={{ animationFillMode: "forwards" }}>
@@ -53,10 +53,18 @@ const Hero = () => {
       {/* THE GIANT TYPE — sized to never overflow */}
       <div
         ref={titleParallax.ref}
-        className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] mt-4 md:mt-6 flex flex-col items-center justify-start flex-1 w-full will-change-transform"
+        className="relative z-10 px-3 md:px-6 md:pr-[12%] lg:pr-[15%] mt-4 md:mt-6 flex flex-col items-start md:items-center justify-start flex-1 w-full will-change-transform"
         style={{ transform: `translate3d(0, ${titleParallax.offset}px, 0)` }}
       >
-        <h1 className="font-display uppercase text-foreground leading-[0.82] md:leading-[0.78] tracking-[-0.05em] md:tracking-[-0.06em] text-center select-none w-full max-w-full">
+        {/* Mobile: one word per line, left-aligned */}
+        <h1 className="md:hidden font-display uppercase text-foreground leading-[0.82] tracking-[-0.05em] text-left select-none w-full max-w-full">
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "120ms", animationFillMode: "forwards" }}>THE</span>
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "220ms", animationFillMode: "forwards" }}>NEXT</span>
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "320ms", animationFillMode: "forwards" }}>BIG</span>
+          <span className="block text-primary animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "420ms", animationFillMode: "forwards" }}>SH#!T</span>
+        </h1>
+        {/* Desktop: original layout */}
+        <h1 className="hidden md:block font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">
           <span
             className="block animate-hero-in opacity-0"
             style={{
