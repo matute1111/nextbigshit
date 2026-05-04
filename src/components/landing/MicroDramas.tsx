@@ -112,7 +112,7 @@ const MicroDramas = () => {
         <div className="relative">
           <div
             ref={handsRef}
-            className="hidden md:flex pointer-events-none absolute inset-x-0 -top-[29.375rem] lg:-top-[33.375rem] justify-center z-0 overflow-visible pl-[8%]"
+            className="hidden md:flex pointer-events-none absolute inset-x-0 -top-[26.25rem] lg:-top-[30.25rem] justify-center z-0 overflow-visible pl-[8%]"
           >
             <img
               src={microdramaHands}
