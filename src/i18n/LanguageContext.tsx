@@ -32,15 +32,21 @@ const DICT: Dict = {
   "about.title.2": { es: "generación", en: "generative" },
   "about.title.3": { es: "generativa.", en: "generation." },
   "about.p1": {
-    es: "Creamos videos a la velocidad de la cultura — produciendo cantidades masivas de contenido que evoluciona en tiempo real.",
-    en: "We create videos at the speed of culture — producing massive amounts of content that evolves in real time.",
+    es: "Amamos el cine y amamos el arte: creemos en su poder para imaginar mundos, revelar conflictos humanos y construir nuevas formas de sensibilidad.",
+    en: "We love cinema and we love art: we believe in their power to imagine worlds, reveal human conflicts, and build new forms of sensibility.",
   },
   "about.p2": {
-    es: "Publicamos, medimos, iteramos y volvemos a publicar. Siempre aprendiendo de audiencias reales con agentes de IA y herramientas generativas.",
-    en: "We publish, measure, iterate, and publish again. Always learning from real audiences with AI agents and generative tools.",
+    es: "Creemos en la tecnología y en la IA como una fuerza capaz de expandir la creación y abrir lenguajes narrativos inéditos.",
+    en: "We believe in technology and AI as a force capable of expanding creation and opening unprecedented narrative languages.",
   },
-  "about.p3.q": { es: "¿Nuestro superpoder?", en: "Our superpower?" },
-  "about.p3.a": { es: "Capturar la atención.", en: "Capturing attention." },
+  "about.p3.q": {
+    es: "No usamos la IA para reemplazar la mirada artística:",
+    en: "We don't use AI to replace the artistic gaze:",
+  },
+  "about.p3.a": {
+    es: "la usamos para amplificarla y explorar el futuro de las historias.",
+    en: "we use it to amplify it and explore the future of stories.",
+  },
   "about.shift": {
     es: "Esto no es una tendencia. Es ",
     en: "This isn't a trend. It's ",
