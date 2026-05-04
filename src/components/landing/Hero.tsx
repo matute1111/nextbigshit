@@ -58,10 +58,10 @@ const Hero = () => {
       >
         {/* Mobile: one word per line, left-aligned */}
         <h1 className="md:hidden font-display uppercase text-foreground leading-[0.82] tracking-[-0.05em] text-left select-none w-full max-w-full">
-          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "120ms", animationFillMode: "forwards" }}>THE</span>
-          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "220ms", animationFillMode: "forwards" }}>NEXT</span>
-          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "320ms", animationFillMode: "forwards" }}>BIG</span>
-          <span className="block text-primary animate-hero-in opacity-0" style={{ fontSize: "clamp(3.5rem, 20vw, 8rem)", animationDelay: "420ms", animationFillMode: "forwards" }}>SH#!T</span>
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(4.5rem, 26vw, 11rem)", animationDelay: "120ms", animationFillMode: "forwards" }}>THE</span>
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(4.5rem, 26vw, 11rem)", animationDelay: "220ms", animationFillMode: "forwards" }}>NEXT</span>
+          <span className="block animate-hero-in opacity-0" style={{ fontSize: "clamp(4.5rem, 26vw, 11rem)", animationDelay: "320ms", animationFillMode: "forwards" }}>BIG</span>
+          <span className="block text-primary animate-hero-in opacity-0" style={{ fontSize: "clamp(4.5rem, 26vw, 11rem)", animationDelay: "420ms", animationFillMode: "forwards" }}>SH#!T</span>
         </h1>
         {/* Desktop: original layout */}
         <h1 className="hidden md:block font-display uppercase text-foreground leading-[0.78] tracking-[-0.06em] text-center select-none w-full max-w-full">

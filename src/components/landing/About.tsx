@@ -51,7 +51,7 @@ const About = () => {
   return (
     <section id="about" className="relative py-20 md:py-28 overflow-hidden">
       <div className="px-6 md:px-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16 relative z-10">
         <div
           ref={titleP.ref}
           className="md:col-span-5 will-change-transform"
@@ -60,7 +60,7 @@ const About = () => {
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
             {t("about.kicker")}
           </p>
-          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight">
+          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight relative z-10">
             {t("about.title.1")}
             <br />
             <span className="text-primary italic">{t("about.title.2")}</span>
@@ -83,10 +83,10 @@ const About = () => {
       </div>
       </div>
 
-      {/* Long arm — pinned to LEFT edge, slides in then back out on scroll, slightly overlaps the heading */}
+      {/* Long arm — passes UNDER the title on mobile, slides in then back out on scroll */}
       <div
         ref={armRef}
-        className="pointer-events-none relative -mt-32 md:-mt-[14.5rem] lg:-mt-[20.5rem] w-screen flex justify-start overflow-hidden"
+        className="pointer-events-none relative -mt-64 sm:-mt-72 md:-mt-[14.5rem] lg:-mt-[20.5rem] w-screen flex justify-start overflow-hidden z-0"
       >
         <div
           className="will-change-transform"
