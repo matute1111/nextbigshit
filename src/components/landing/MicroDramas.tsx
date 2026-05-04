@@ -114,12 +114,12 @@ const MicroDramas = () => {
         <div className="relative">
           <div
             ref={handsRef}
-            className="hidden md:flex pointer-events-none absolute inset-x-0 -top-[20rem] lg:-top-[24rem] justify-center z-0 overflow-visible pl-[8%]"
+            className="hidden md:flex pointer-events-none absolute inset-x-0 -top-[29.375rem] lg:-top-[33.375rem] justify-center z-0 overflow-visible pl-[8%]"
           >
             <img
               src={microdramaHands}
               alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
-              className="block w-[49vw] max-w-[574px] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              className="block w-[49vw] max-w-[574px] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] ml-[150px]"
               style={{ transform: `translate3d(0, ${handsTranslate}px, 0)` }}
             />
           </div>
