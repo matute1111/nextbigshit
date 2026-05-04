@@ -96,7 +96,7 @@ const MicroDramas = () => {
           {/* Mobile hands */}
           <div
             ref={armRef}
-            className="md:hidden pointer-events-none absolute inset-x-0 -top-[14rem] flex justify-center z-0 overflow-visible"
+            className="md:hidden pointer-events-none absolute inset-x-0 -top-[6rem] flex justify-center z-0 overflow-visible"
           >
             <img
               src={microdramaHands}
