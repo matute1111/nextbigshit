@@ -99,7 +99,7 @@ const DICT: Dict = {
   "micro.pill.4": { es: "Escala infinita", en: "Infinite scale" },
   "micro.intertitle.1": {
     es: "Esto no es humo. Esto",
-    en: "This isn't smoke. This",
+    en: "This isn't hype. This",
   },
   "micro.intertitle.2": {
     es: "the next big s#!t.",
