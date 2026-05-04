@@ -91,25 +91,22 @@ const MicroDramas = () => {
           </p>
         </div>
 
-        {/* Mobile hands — only visible on mobile, sits below intro text */}
-        <div
-          ref={armRef}
-          className="md:hidden pointer-events-none relative mb-10 -mx-6 w-screen flex justify-start overflow-hidden"
-        >
+        {/* Hands — emerge above the grid, slide down and hide behind it on scroll */}
+        <div className="relative">
+          {/* Mobile hands */}
           <div
-            className="will-change-transform"
-            style={{ transform: `translate3d(${armTranslate}%, 0, 0)` }}
+            ref={armRef}
+            className="md:hidden pointer-events-none absolute inset-x-0 -top-[18rem] flex justify-center z-0 overflow-visible"
           >
             <img
               src={microdramaHands}
               alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
-              className="block w-[90vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              className="block w-[85%] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              style={{ transform: `translate3d(0, ${handsTranslate}px, 0)` }}
             />
           </div>
-        </div>
 
-        {/* Desktop hands — emerge above the grid, slide down and hide behind it on scroll */}
-        <div className="relative">
+          {/* Desktop hands */}
           <div
             ref={handsRef}
             className="hidden md:flex pointer-events-none absolute inset-x-0 -top-[29.375rem] lg:-top-[33.375rem] justify-center z-0 overflow-visible pl-[8%]"
