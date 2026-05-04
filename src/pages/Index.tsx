@@ -21,6 +21,7 @@ const FrontierDivider = () => {
 const Index = () => {
   return (
     <LanguageProvider>
+      <Preloader />
       <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
         <SiteHeader />
         <Hero />
