@@ -94,7 +94,7 @@ const MicroDramas = () => {
         {/* Mobile hands — in flow below intro, slides down behind the table on scroll */}
         <div
           ref={armRef}
-          className="md:hidden pointer-events-none relative mt-[10px] -mb-12 flex justify-center z-0 overflow-visible"
+          className="md:hidden pointer-events-none relative mt-[-40px] -mb-12 flex justify-center z-0 overflow-visible"
         >
           <img
             src={microdramaHands}
