@@ -23,6 +23,15 @@ const SiteHeader = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleNavClick = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#${id}`);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/40 transition-transform duration-300 ${
