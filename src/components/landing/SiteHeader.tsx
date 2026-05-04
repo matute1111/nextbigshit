@@ -34,10 +34,10 @@ const SiteHeader = () => {
           GENNIAL<span className="text-primary">.</span>STUDIO
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
-          <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
-          <a href="#services" className="hover:text-primary transition-colors">{t("nav.services")}</a>
-          <a href="#muses" className="hover:text-primary transition-colors">{t("nav.muses")}</a>
-          <a href="#contact" className="hover:text-primary transition-colors">{t("nav.contact")}</a>
+          <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">{t("nav.about")}</a>
+          <a href="#muses" onClick={handleNavClick("muses")} className="hover:text-primary transition-colors">{t("nav.muses")}</a>
+          <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">{t("nav.services")}</a>
+          <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">{t("nav.contact")}</a>
         </nav>
         <div className="flex items-center gap-4">
           <button
