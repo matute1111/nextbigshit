@@ -23,6 +23,15 @@ const SiteHeader = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleNavClick = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#${id}`);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/40 transition-transform duration-300 ${
@@ -34,10 +43,10 @@ const SiteHeader = () => {
           GENNIAL<span className="text-primary">.</span>STUDIO
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
-          <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
-          <a href="#services" className="hover:text-primary transition-colors">{t("nav.services")}</a>
-          <a href="#muses" className="hover:text-primary transition-colors">{t("nav.muses")}</a>
-          <a href="#contact" className="hover:text-primary transition-colors">{t("nav.contact")}</a>
+          <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">{t("nav.about")}</a>
+          <a href="#muses" onClick={handleNavClick("muses")} className="hover:text-primary transition-colors">{t("nav.muses")}</a>
+          <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">{t("nav.services")}</a>
+          <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">{t("nav.contact")}</a>
         </nav>
         <div className="flex items-center gap-4">
           <button
