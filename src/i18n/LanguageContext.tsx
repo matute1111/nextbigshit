@@ -6,8 +6,8 @@ type Dict = Record<string, { es: string; en: string }>;
 
 const DICT: Dict = {
   "meta.cities": {
-    es: "EST. 2024 — BUENOS AIRES / MADRID / MONTEVIDEO",
-    en: "EST. 2024 — BUENOS AIRES / MADRID / MONTEVIDEO",
+    es: "GENNIAL.STUDIO",
+    en: "GENNIAL.STUDIO",
   },
   "meta.tag": {
     es: "IA · VERTICAL · MICRODRAMAS",
