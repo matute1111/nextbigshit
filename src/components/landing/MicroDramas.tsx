@@ -81,12 +81,12 @@ const MicroDramas = () => {
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
             {t("micro.kicker")}
           </p>
-          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight max-w-3xl">
+          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight md:max-w-[50%] md:pr-6">
             {t("micro.title.1")}
             <br />
             <span className="text-primary italic">{t("micro.title.2")}</span>
           </h2>
-          <p className="mt-8 max-w-xl text-muted-foreground text-lg leading-relaxed">
+          <p className="mt-8 text-muted-foreground text-lg leading-relaxed md:max-w-[50%] md:pr-6">
             {t("micro.intro")}
           </p>
         </div>
