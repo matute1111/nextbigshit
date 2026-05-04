@@ -6,13 +6,15 @@ interface SeedanceStampProps {
 }
 
 const SIZES = {
-  sm: "w-24 h-24",
-  md: "w-40 h-40",
-  lg: "w-56 h-56",
+  sm: "w-20 h-20",
+  md: "w-32 h-32",
+  lg: "w-44 h-44",
 };
 
 const SeedanceStamp = ({ className = "", size = "md" }: SeedanceStampProps) => {
   const text = "SEEDANCE INSIDE V2.0 • SEEDANCE INSIDE V2.0 • ";
+  // Circumference for r=78 ≈ 490
+  const circumference = 2 * Math.PI * 78;
   return (
     <div className={`relative ${SIZES[size]} ${className}`}>
       <div className="absolute inset-0 animate-[spin_18s_linear_infinite]">
@@ -25,10 +27,15 @@ const SeedanceStamp = ({ className = "", size = "md" }: SeedanceStampProps) => {
           </defs>
           <text
             className="fill-primary font-black uppercase"
-            style={{ fontSize: "16px", letterSpacing: "0.18em" }}
+            style={{ fontSize: "16px", letterSpacing: "0.14em" }}
           >
-            <textPath href="#seedance-circle" startOffset="0">
-              {text + text}
+            <textPath
+              href="#seedance-circle"
+              startOffset="0"
+              textLength={circumference}
+              lengthAdjust="spacingAndGlyphs"
+            >
+              {text}
             </textPath>
           </text>
         </svg>
