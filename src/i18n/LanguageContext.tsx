@@ -90,8 +90,8 @@ const DICT: Dict = {
   },
   "micro.step3.t": { es: "Producción calidad cine", en: "Cinema-grade production" },
   "micro.step3.d": {
-    es: "Render automatizado con modelos generativos de última generación. Fotografía, voces y sonido nivel pantalla grande, en minutos.",
-    en: "Automated rendering with state-of-the-art generative models. Cinematography, voices and sound at big-screen quality, in minutes.",
+    es: "Render automatizado con modelos de última generación. Fotografía, voces y sonido nivel pantalla grande, en minutos. Multilenguaje desde la incepción.",
+    en: "Automated rendering with state-of-the-art models. Cinematography, voices and sound at big-screen quality, in minutes. Multilingual from inception.",
   },
   "micro.pill.1": { es: "Inmediato", en: "Instant" },
   "micro.pill.2": { es: "Automatizado", en: "Automated" },
