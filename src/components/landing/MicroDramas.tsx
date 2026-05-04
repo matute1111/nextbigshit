@@ -91,7 +91,7 @@ const MicroDramas = () => {
           </p>
         </div>
 
-        {/* Mobile arm — only visible on mobile, sits below intro text */}
+        {/* Mobile hands — only visible on mobile, sits below intro text */}
         <div
           ref={armRef}
           className="md:hidden pointer-events-none relative mb-10 -mx-6 w-screen flex justify-start overflow-hidden"
@@ -101,9 +101,9 @@ const MicroDramas = () => {
             style={{ transform: `translate3d(${armTranslate}%, 0, 0)` }}
           >
             <img
-              src={longArm}
-              alt="Brazo largo sosteniendo un teléfono con contenido generativo"
-              className="block w-[60vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              src={microdramaHands}
+              alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
+              className="block w-[90vw] max-w-none h-auto object-contain object-left drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
