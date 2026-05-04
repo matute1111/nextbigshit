@@ -59,7 +59,9 @@ const Muses = () => {
           </div>
         </div>
       </div>
-      <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
+      <div className="-mt-[160px] md:mt-0">
+        <SectionDivider text={t("disruption.shift")} highlight={t("disruption.shift.b")} />
+      </div>
     </section>
   );
 };
