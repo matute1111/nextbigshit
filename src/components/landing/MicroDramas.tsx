@@ -29,8 +29,8 @@ const MicroDramas = () => {
       if (armEl) {
         const rect = armEl.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        // Start 100px higher (-100), then move down on scroll, hiding behind the table.
-        const offset = Math.max(-100, Math.min(260, -100 + -center * 0.25));
+        // Subtle downward drift so the image slides behind the table on scroll.
+        const offset = Math.max(0, Math.min(180, -center * 0.18));
         setArmTranslate(offset);
       }
 
@@ -91,20 +91,21 @@ const MicroDramas = () => {
           </p>
         </div>
 
-        {/* Hands — emerge above the grid, slide down and hide behind it on scroll */}
+        {/* Mobile hands — in flow below intro, slides down behind the table on scroll */}
+        <div
+          ref={armRef}
+          className="md:hidden pointer-events-none relative mt-10 -mb-12 flex justify-center z-0 overflow-visible"
+        >
+          <img
+            src={microdramaHands}
+            alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
+            className="block w-[85%] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            style={{ transform: `translate3d(0, ${armTranslate}px, 0)` }}
+          />
+        </div>
+
+        {/* Desktop hands — emerge above the grid, slide down and hide behind it on scroll */}
         <div className="relative">
-          {/* Mobile hands */}
-          <div
-            ref={armRef}
-            className="md:hidden pointer-events-none absolute inset-x-0 -top-[14rem] flex justify-center z-0 overflow-visible"
-          >
-            <img
-              src={microdramaHands}
-              alt="Tres manos sosteniendo teléfonos con escenas de microdramas"
-              className="block w-[85%] h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-              style={{ transform: `translate3d(0, ${armTranslate}px, 0)` }}
-            />
-          </div>
 
           {/* Desktop hands */}
           <div
