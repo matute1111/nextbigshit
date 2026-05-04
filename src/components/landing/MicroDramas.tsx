@@ -68,7 +68,7 @@ const MicroDramas = () => {
   return (
     <section
       id="microdramas"
-      className="relative pt-20 md:pt-28 px-6 md:px-10 overflow-hidden"
+      className="relative pt-20 md:pt-28 pb-0 px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}

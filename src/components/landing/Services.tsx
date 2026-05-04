@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useReveal, useParallax } from "@/hooks/useParallax";
+import SectionDivider from "./SectionDivider";
 
 const Services = () => {
   const { t } = useLang();
