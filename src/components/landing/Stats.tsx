@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useCountUp, useReveal, useParallax } from "@/hooks/useParallax";
+import SectionDivider from "./SectionDivider";
 
 interface StatItem {
   target: number;
@@ -54,7 +55,7 @@ const Stats = () => {
   return (
     <section
       ref={reveal.ref}
-      className="relative bg-background-deeper border-y border-border pt-20 md:pt-28 pb-10 md:pb-14 px-6 md:px-10 overflow-hidden"
+      className="relative bg-background-deeper border-y border-border py-20 md:py-28 px-6 md:px-10 overflow-hidden"
     >
       <div className="pointer-events-none absolute inset-0 bg-noise opacity-[0.05]" />
       <div
@@ -109,17 +110,7 @@ const Stats = () => {
       </div>
 
       {/* Section divider — unified style */}
-      <div className="relative z-10 px-6 md:px-10 pt-10 md:pt-14">
-        <div className="max-w-7xl mx-auto text-center">
-          <h3
-            className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
-            style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}
-          >
-            {t("stats.shift")}
-            <span className="text-primary italic">{t("stats.shift.b")}</span>
-          </h3>
-        </div>
-      </div>
+      <SectionDivider text={t("stats.shift")} highlight={t("stats.shift.b")} />
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
+import SectionDivider from "./SectionDivider";
 
 const MicroDramas = () => {
   const { t } = useLang();
@@ -22,7 +23,7 @@ const MicroDramas = () => {
   return (
     <section
       id="microdramas"
-      className="relative pt-20 md:pt-28 pb-[30px] md:pb-[62px] px-6 md:px-10 overflow-hidden"
+      className="relative pt-20 md:pt-28 px-6 md:px-10 overflow-hidden"
     >
       <div
         ref={blob.ref}
@@ -83,16 +84,9 @@ const MicroDramas = () => {
             {t("micro.cta")}
             <span className="transition-transform group-hover:translate-x-1">↗</span>
           </a>
-          <h3
-            className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
-            style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}
-          >
-            {t("micro.intertitle.1")}{" "}
-            <span className="text-primary italic">{t("micro.intertitle.2")}</span>
-          </h3>
         </div>
-        <div className="mt-10 md:mt-14 border-t border-border" />
       </div>
+      <SectionDivider text={t("micro.intertitle.1") + " "} highlight={t("micro.intertitle.2")} />
     </section>
   );
 };

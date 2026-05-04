@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
+import SectionDivider from "./SectionDivider";
 import longArm from "@/assets/long-arm-replacement.png";
 
 const About = () => {
@@ -102,17 +103,7 @@ const About = () => {
       </div>
 
       {/* Section divider — unified style */}
-      <div className="relative z-10 px-6 md:px-10 pt-10 md:pt-14 pb-0 -mb-[100px]">
-        <div className="max-w-7xl mx-auto text-center">
-          <h3
-            className="font-display uppercase tracking-[-0.02em] leading-[0.9] text-foreground whitespace-nowrap"
-            style={{ fontSize: "clamp(1.4rem, 4.8vw, 5rem)" }}
-          >
-            {t("about.shift")}
-            <span className="text-primary italic">{t("about.shift.b")}</span>
-          </h3>
-        </div>
-      </div>
+      <SectionDivider text={t("about.shift")} highlight={t("about.shift.b")} />
     </section>
   );
 };
