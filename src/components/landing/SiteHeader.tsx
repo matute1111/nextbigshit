@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
+import gennialLogo from "@/assets/gennial-logo.png";
 
 const SiteHeader = () => {
   const { t, lang, setLang } = useLang();
@@ -39,8 +40,8 @@ const SiteHeader = () => {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-5">
-        <a href="#" className="font-display text-3xl tracking-tight text-foreground">
-          GENNIAL<span className="text-primary">.</span>STUDIO
+        <a href="#" className="flex items-center" aria-label="Gennial Studio">
+          <img src={gennialLogo} alt="Gennial Studio" className="h-8 md:h-10 w-auto" />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
           <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">{t("nav.about")}</a>
