@@ -30,15 +30,26 @@ const Muses = () => {
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-6">
             {t("muses.kicker")}
           </p>
-          <h2 className="font-display uppercase text-6xl md:text-8xl lg:text-9xl leading-[0.82] tracking-tight">
-            <span className="text-secondary">MUSES</span>
-            <span className="block text-foreground">{t("muses.title.2")}</span>
+          <h2 className="font-display uppercase text-6xl md:text-7xl lg:text-8xl leading-[0.82] tracking-tight">
+            <span className="text-secondary">MUSES</span>{" "}
+            <span className="text-foreground">{t("muses.title.2")}</span>
+            <span className="block text-foreground">{t("muses.title.3")}</span>
+            <span className="block text-secondary">{t("muses.title.4")}</span>
           </h2>
-          <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+          <p className="mt-8 text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
             {t("muses.p1")}
           </p>
-          <p className="mt-4 text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
+          <p className="mt-4 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
             {t("muses.p2")}
+          </p>
+          <p className="mt-4 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+            {t("muses.p3")}
+          </p>
+          <p className="mt-4 text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
+            {t("muses.p4")}
+          </p>
+          <p className="mt-4 text-base md:text-lg text-secondary font-display uppercase tracking-tight leading-snug max-w-xl">
+            {t("muses.p5")}
           </p>
         </div>
         <div
