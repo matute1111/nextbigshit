@@ -94,7 +94,7 @@ const CTA = () => {
             href="mailto:info@gennial.ai"
             className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-5 font-display uppercase text-xl tracking-tight hover:bg-foreground transition-all duration-300 hover:-translate-y-0.5 shadow-orange"
           >
-            info@gennial.ai
+            {t("cta.talk")}
             <span className="transition-transform group-hover:translate-x-1">↗</span>
           </a>
           <a
@@ -106,6 +106,11 @@ const CTA = () => {
             {t("cta.reel")}
           </a>
         </div>
+        <p className="text-base md:text-lg text-muted-foreground mb-12">
+          <a href="mailto:info@gennial.ai" className="hover:text-primary transition-colors">
+            info@gennial.ai
+          </a>
+        </p>
       </div>
     </section>
   );

@@ -75,10 +75,10 @@ const About = () => {
           }`}
         >
           <p>{t("about.p1")}</p>
-          <p>{t("about.p2")}</p>
           <p className="text-foreground text-2xl md:text-3xl font-display uppercase tracking-tight">
             {t("about.p3.q")} <span className="text-primary">{t("about.p3.a")}</span>
           </p>
+          <p>{t("about.p2")}</p>
         </div>
       </div>
       </div>
