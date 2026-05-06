@@ -17,8 +17,8 @@ const DICT: Dict = {
   "hero.big": { es: "BIG", en: "BIG" },
   "hero.shit": { es: "SHIFT", en: "SHIFT" },
   "hero.tag": {
-    es: "Creamos IPs, microdramas y canales de entretenimiento con IA. Del concepto al contenido publicado, medido y optimizado a la velocidad de la cultura.",
-    en: "We create IPs, microdramas and entertainment channels with AI. From concept to published, measured and optimized content at the speed of culture.",
+    es: "Creamos IPs, microdramas y canales de entretenimiento que aprenden y evolucionan.",
+    en: "We create IPs, microdramas and entertainment channels that learn and evolve.",
   },
   "hero.scroll": { es: "scroll", en: "scroll" },
   "hero.manifesto": { es: "Manifiesto / Studio Reel ↗", en: "Manifesto / Studio Reel ↗" },
@@ -33,20 +33,20 @@ const DICT: Dict = {
   "about.title.2": { es: "generación", en: "generative" },
   "about.title.3": { es: "generativa.", en: "generation." },
   "about.p1": {
-    es: "Amamos el cine. Amamos el arte. Y creemos que la tecnología puede abrir una nueva etapa para las historias.",
-    en: "We love cinema. We love art. And we believe technology can open a new chapter for storytelling.",
+    es: "La industria audiovisual aprendió a obedecer al algoritmo. Nosotros preferimos hackearlo.",
+    en: "The audiovisual industry learned to obey the algorithm. We prefer to hack it.",
+  },
+  "about.p2": {
+    es: "Amamos el cine, el arte y las historias que revelan algo profundo sobre lo humano. También creemos que la IA puede abrir una nueva etapa creativa: más veloz, más experimental, más impredecible.",
+    en: "We love cinema, art and stories that reveal something deep about the human. We also believe AI can open a new creative stage: faster, more experimental, more unpredictable.",
   },
   "about.p3.q": {
-    es: "No usamos la IA para reemplazar la mirada artística.",
+    es: "No usamos IA para reemplazar la mirada artística.",
     en: "We don't use AI to replace the artistic gaze.",
   },
   "about.p3.a": {
-    es: "La usamos para expandirla: para imaginar mundos, revelar conflictos humanos y explorar lenguajes narrativos que todavía no existen.",
-    en: "We use it to expand it: to imagine worlds, reveal human conflicts and explore narrative languages that don't yet exist.",
-  },
-  "about.p2": {
-    es: "La industria aprendió a producir para plataformas, algoritmos y hábitos de consumo cada vez más veloces. Nosotros queremos ir un paso más allá: no obedecer al algoritmo, sino entenderlo, hackearlo y construir nuevas formas de entretenimiento alrededor de él.",
-    en: "The industry learned to produce for platforms, algorithms and ever-faster consumption habits. We want to go one step further: not obey the algorithm, but understand it, hack it, and build new forms of entertainment around it.",
+    es: "La usamos para multiplicarla.",
+    en: "We use it to multiply it.",
   },
   "about.shift": {
     es: "Esto no es una tendencia. Es ",
