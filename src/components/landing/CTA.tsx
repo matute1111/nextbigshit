@@ -110,7 +110,7 @@ const CTA = () => {
           <a href="mailto:info@gennial.ai" className="hover:text-primary transition-colors">
             info@gennial.ai
           </a>
-        </div>
+        </p>
       </div>
     </section>
   );
