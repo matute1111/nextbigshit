@@ -1,13 +1,18 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/useParallax";
+import logoGuapaletas from "@/assets/clients/guapaletas.png";
+import logoGoye from "@/assets/clients/abuela-goye.png";
+import logoPersicco from "@/assets/clients/persicco.png";
+import logoCannes from "@/assets/clients/festival-cannes.png";
 
-const CLIENTS = [
-  "Guapaletas",
-  "Magnaverum",
-  "La Abuela Goye",
-  "Persicco",
-  "Flixxo",
-  "Bennu.tv",
+const CLIENTS: { name: string; logo?: string }[] = [
+  { name: "Guapaletas", logo: logoGuapaletas },
+  { name: "Magnaverum" },
+  { name: "La Abuela Goye", logo: logoGoye },
+  { name: "Persicco", logo: logoPersicco },
+  { name: "Festival de Cannes", logo: logoCannes },
+  { name: "Flixxo" },
+  { name: "Bennu.tv" },
 ];
 
 const Clients = () => {
@@ -29,14 +34,23 @@ const Clients = () => {
 
         {/* Logo strip */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-border border border-border mb-12">
-          {CLIENTS.map((name) => (
+          {CLIENTS.map((c) => (
             <div
-              key={name}
+              key={c.name}
               className="bg-background flex items-center justify-center px-4 py-8 md:py-10 group hover:bg-primary/5 transition-colors"
             >
-              <span className="font-display uppercase text-xl md:text-2xl tracking-tight text-foreground/80 group-hover:text-primary transition-colors text-center">
-                {name}
-              </span>
+              {c.logo ? (
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  loading="lazy"
+                  className="max-h-16 md:max-h-20 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+                />
+              ) : (
+                <span className="font-display uppercase text-xl md:text-2xl tracking-tight text-foreground/80 group-hover:text-primary transition-colors text-center">
+                  {c.name}
+                </span>
+              )}
             </div>
           ))}
         </div>
