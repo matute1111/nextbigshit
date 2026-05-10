@@ -23,8 +23,8 @@ const Index = () => {
         <SiteHeader />
         <Hero />
         <Marquee />
-        <About />
         <Verticals />
+        <About />
         <Muses />
         <Stats />
         <MicroDramas />
