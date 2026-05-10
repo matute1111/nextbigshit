@@ -31,10 +31,10 @@ const DICT: Dict = {
   "nav.contact": { es: "Contacto", en: "Contact" },
   "nav.live": { es: "Live", en: "Live" },
 
-  "about.kicker": { es: "01 / Manifiesto", en: "01 / Manifesto" },
-  "about.title.1": { es: "Somos la", en: "We are the" },
-  "about.title.2": { es: "generación", en: "generative" },
-  "about.title.3": { es: "generativa.", en: "generation." },
+  "about.kicker": { es: "02 / Manifiesto", en: "02 / Manifesto" },
+  "about.title.1": { es: "Por qué", en: "Why we" },
+  "about.title.2": { es: "lo", en: "do" },
+  "about.title.3": { es: "hacemos.", en: "it." },
   "about.p1": {
     es: "La industria audiovisual aprendió a obedecer al algoritmo. Nosotros preferimos hackearlo.",
     en: "The audiovisual industry learned to obey the algorithm. We prefer to hack it.",
@@ -58,7 +58,7 @@ const DICT: Dict = {
   "about.shift.b": { es: "the next big shift.", en: "the next big shift." },
 
   // ===== VERTICALS (NEW) =====
-  "vert.kicker": { es: "02 / Qué es Gennial", en: "02 / What is Gennial" },
+  "vert.kicker": { es: "01 / Qué es Gennial", en: "01 / What is Gennial" },
   "vert.title.1": { es: "Dos verticales", en: "Two verticals" },
   "vert.title.2": { es: "en loop permanente.", en: "in permanent loop." },
   "vert.intro": {
@@ -82,7 +82,7 @@ const DICT: Dict = {
   "vert.loop": { es: "Studio ↔ Lab · loop permanente", en: "Studio ↔ Lab · permanent loop" },
 
   // ===== STATS / CASE STUDIES =====
-  "stats.kicker": { es: "03 / Casos de éxito · Tracción real", en: "03 / Proof in action · Real traction" },
+  "stats.kicker": { es: "04 / Casos de éxito · Tracción real", en: "04 / Proof in action · Real traction" },
   "stats.title.1": { es: "Contenido viral", en: "Viral content" },
   "stats.title.2": { es: "a la velocidad de la cultura.", en: "at the speed of culture." },
   "stats.intro": {
@@ -168,10 +168,10 @@ const DICT: Dict = {
   },
 
   // ===== MUSES (expanded) =====
-  "muses.kicker": { es: "04 / Tecnología propietaria · Gennial.Lab", en: "04 / Proprietary tech · Gennial.Lab" },
-  "muses.title.2": { es: "automatiza.", en: "automates." },
-  "muses.title.3": { es: "La visión", en: "The vision" },
-  "muses.title.4": { es: "dirige.", en: "directs." },
+  "muses.kicker": { es: "03 / Cómo lo hacemos · Gennial.Lab", en: "03 / How we do it · Gennial.Lab" },
+  "muses.title.2": { es: "Cómo", en: "How" },
+  "muses.title.3": { es: "lo hacemos.", en: "we do it." },
+  "muses.title.4": { es: "Gennial.Lab", en: "Gennial.Lab" },
   "muses.p1": {
     es: "MUSES es el sistema propietario de producción audiovisual de Gennial.Lab. +20 agentes de IA que automatizan el ciclo completo de creación de contenido narrativo.",
     en: "MUSES is Gennial.Lab's proprietary audiovisual production system. 20+ AI agents that automate the full cycle of narrative content creation.",
