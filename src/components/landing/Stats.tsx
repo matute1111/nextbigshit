@@ -112,7 +112,7 @@ const Stats = () => {
           {/* Capybara — sits to the right of the title and gets covered by the table below */}
           <div
             ref={capyRef}
-            className="pointer-events-none absolute right-0 -bottom-[70%] md:-bottom-[60%] w-[71%] sm:w-[61%] md:w-[58%] lg:w-[51%] max-w-[782px] z-0 overflow-visible"
+            className="pointer-events-none absolute right-0 -bottom-[70%] md:-bottom-[60%] w-[78%] sm:w-[67%] md:w-[64%] lg:w-[56%] max-w-[860px] z-0 overflow-visible"
           >
             <img
               src={guapoCapybara}
@@ -125,7 +125,7 @@ const Stats = () => {
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
               {t("stats.kicker")}
             </p>
-            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
+            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-[60%]">
               {t("stats.title.1")}
               <br />
               <span className="text-primary italic">{t("stats.title.2")}</span>
