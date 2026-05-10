@@ -79,9 +79,6 @@ const About = () => {
           <blockquote className="border-l-2 border-primary pl-6 md:pl-8 py-2 font-display uppercase text-2xl md:text-3xl lg:text-4xl tracking-tight leading-[1.05] text-foreground">
             Somos la <span className="text-primary italic">generación generativa</span>. No usamos la IA para reemplazar la mirada artística. La usamos para <span className="text-primary italic">multiplicarla</span>.
           </blockquote>
-          <p className="text-foreground text-2xl md:text-3xl font-display uppercase tracking-tight">
-            {t("about.p3.q")} <span className="text-primary">{t("about.p3.a")}</span>
-          </p>
         </div>
       </div>
       </div>
