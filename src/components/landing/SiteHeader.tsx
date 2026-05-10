@@ -43,10 +43,13 @@ const SiteHeader = () => {
         <a href="#" className="flex items-center" aria-label="Gennial Studio">
           <img src={gennialLogo} alt="Gennial Studio" className="h-10 md:h-12 w-auto" />
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
           <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">{t("nav.about")}</a>
+          <a href="#verticals" onClick={handleNavClick("verticals")} className="hover:text-primary transition-colors">{t("nav.verticals")}</a>
           <a href="#muses" onClick={handleNavClick("muses")} className="hover:text-primary transition-colors">{t("nav.muses")}</a>
+          <a href="#cases" onClick={handleNavClick("cases")} className="hover:text-primary transition-colors">{t("nav.cases")}</a>
           <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">{t("nav.services")}</a>
+          <a href="#team" onClick={handleNavClick("team")} className="hover:text-primary transition-colors">{t("nav.team")}</a>
           <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">{t("nav.contact")}</a>
         </nav>
         <div className="flex items-center gap-4">
@@ -60,7 +63,7 @@ const SiteHeader = () => {
             <span className={lang === "en" ? "text-primary" : ""}>EN</span>
           </button>
           <a
-            href="mailto:info@gennial.ai"
+            href="mailto:adrian@gennial.ai"
             className="hidden md:inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-foreground"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-flicker" />
