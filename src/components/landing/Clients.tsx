@@ -4,15 +4,16 @@ import logoGuapaletas from "@/assets/clients/guapaletas.png";
 import logoGoye from "@/assets/clients/abuela-goye.png";
 import logoPersicco from "@/assets/clients/persicco.png";
 import logoCannes from "@/assets/clients/festival-cannes.png";
+import logoFlixxo from "@/assets/clients/flixxo.png";
+import logoBennu from "@/assets/clients/bennu-tv.png";
 
 const CLIENTS: { name: string; logo?: string }[] = [
   { name: "Guapaletas", logo: logoGuapaletas },
   { name: "Magnaverum" },
   { name: "La Abuela Goye", logo: logoGoye },
   { name: "Persicco", logo: logoPersicco },
-  { name: "Festival de Cannes", logo: logoCannes },
-  { name: "Flixxo" },
-  { name: "Bennu.tv" },
+  { name: "Flixxo", logo: logoFlixxo },
+  { name: "Bennu.tv", logo: logoBennu },
 ];
 
 const Clients = () => {
@@ -56,8 +57,14 @@ const Clients = () => {
         </div>
 
         {/* Cannes credential */}
-        <div className="border border-primary/40 p-6 md:p-10 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-          <div className="flex-shrink-0">
+        <div className="relative overflow-hidden border border-primary/40 p-6 md:p-10 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+          <img
+            src={logoCannes}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none select-none absolute right-0 top-1/2 -translate-y-1/2 h-[180%] w-auto opacity-10 object-contain"
+          />
+          <div className="relative flex-shrink-0">
             <span className="font-display uppercase text-xs tracking-[0.3em] text-primary block mb-2">
               ★ Selección oficial
             </span>
@@ -65,7 +72,7 @@ const Clients = () => {
               {t("clients.cannes.tag")}
             </p>
           </div>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed md:border-l md:border-border md:pl-10">
+          <p className="relative text-base md:text-lg text-muted-foreground leading-relaxed md:border-l md:border-border md:pl-10">
             {t("clients.cannes.desc")}
           </p>
         </div>
