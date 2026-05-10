@@ -47,7 +47,6 @@ const Muses = () => {
             {t("muses.kicker")}
           </p>
           <h2 className="font-display uppercase text-6xl md:text-7xl lg:text-8xl leading-[0.82] tracking-tight">
-            <span className="text-secondary">MUSES</span>{" "}
             <span className="text-foreground">{t("muses.title.2")}</span>
             <span className="block text-foreground">{t("muses.title.3")}</span>
             <span className="block text-secondary">{t("muses.title.4")}</span>
