@@ -1,6 +1,8 @@
+import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useCountUp, useReveal, useParallax } from "@/hooks/useParallax";
 import SectionDivider from "./SectionDivider";
+import guapoCapybara from "@/assets/guapo-capybara.png";
 
 interface Metric {
   target: number;
@@ -44,6 +46,39 @@ const Stats = () => {
   const reveal = useReveal<HTMLDivElement>(0.2);
   const blob = useParallax<HTMLDivElement>(0.2);
 
+  // Capybara: drifts down behind the table on scroll (same feel as MicroDramas hands)
+  const capyRef = useRef<HTMLDivElement | null>(null);
+  const [capyTranslate, setCapyTranslate] = useState(0);
+
+  useEffect(() => {
+    let raf = 0;
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const el = capyRef.current;
+      if (!el) return;
+      const vh = window.innerHeight;
+      const rect = el.getBoundingClientRect();
+      const center = rect.top + rect.height / 2 - vh / 2;
+      const offset = Math.max(-40, Math.min(140, -center * 0.18));
+      setCapyTranslate(offset);
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        raf = requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   const GUAPO: Metric[] = [
     { target: 2.3, prefix: "+", suffix: "M", decimals: 1, label: "Views Instagram" },
     { target: 9.5, suffix: "%", decimals: 1, label: "Engagement rate" },
@@ -73,22 +108,37 @@ const Stats = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="mb-14 md:mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
-            {t("stats.kicker")}
-          </p>
-          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
-            {t("stats.title.1")}
-            <br />
-            <span className="text-primary italic">{t("stats.title.2")}</span>
-          </h2>
-          <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-            {t("stats.intro")}
-          </p>
+        <div className="mb-14 md:mb-20 relative">
+          {/* Capybara — sits to the right of the title and gets covered by the table below */}
+          <div
+            ref={capyRef}
+            className="pointer-events-none absolute right-0 md:-right-4 lg:-right-10 -bottom-[35%] md:-bottom-[30%] w-[42%] sm:w-[36%] md:w-[34%] lg:w-[30%] max-w-[460px] z-0 overflow-visible"
+          >
+            <img
+              src={guapoCapybara}
+              alt="Carpincho Guapo mostrando un teléfono con contenido viral"
+              className="block w-full h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              style={{ transform: `translate3d(0, ${capyTranslate}px, 0)` }}
+            />
+          </div>
+          <div className="relative z-10">
+            <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
+              {t("stats.kicker")}
+            </p>
+            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
+              {t("stats.title.1")}
+              <br />
+              <span className="text-primary italic">{t("stats.title.2")}</span>
+            </h2>
+            <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+              {t("stats.intro")}
+            </p>
+          </div>
         </div>
 
         {/* Two case studies */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border mb-14 md:mb-16">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border mb-14 md:mb-16">
+
           {/* GUAPO */}
           <div className="bg-background p-8 md:p-12">
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3">
