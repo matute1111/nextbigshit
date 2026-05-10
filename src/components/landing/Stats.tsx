@@ -125,7 +125,7 @@ const Stats = () => {
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
               {t("stats.kicker")}
             </p>
-            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
+            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-[60%]">
               {t("stats.title.1")}
               <br />
               <span className="text-primary italic">{t("stats.title.2")}</span>
