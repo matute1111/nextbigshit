@@ -46,7 +46,39 @@ const Stats = () => {
   const reveal = useReveal<HTMLDivElement>(0.2);
   const blob = useParallax<HTMLDivElement>(0.2);
 
-  const GUAPO: Metric[] = [
+  // Capybara: drifts down behind the table on scroll (same feel as MicroDramas hands)
+  const capyRef = useRef<HTMLDivElement | null>(null);
+  const [capyTranslate, setCapyTranslate] = useState(0);
+
+  useEffect(() => {
+    let raf = 0;
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const el = capyRef.current;
+      if (!el) return;
+      const vh = window.innerHeight;
+      const rect = el.getBoundingClientRect();
+      const center = rect.top + rect.height / 2 - vh / 2;
+      const offset = Math.max(-40, Math.min(140, -center * 0.18));
+      setCapyTranslate(offset);
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        raf = requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
     { target: 2.3, prefix: "+", suffix: "M", decimals: 1, label: "Views Instagram" },
     { target: 9.5, suffix: "%", decimals: 1, label: "Engagement rate" },
     { target: 90, suffix: "%", label: "No-seguidores" },
