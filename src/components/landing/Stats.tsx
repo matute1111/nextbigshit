@@ -79,6 +79,7 @@ const Stats = () => {
     };
   }, []);
 
+  const GUAPO: Metric[] = [
     { target: 2.3, prefix: "+", suffix: "M", decimals: 1, label: "Views Instagram" },
     { target: 9.5, suffix: "%", decimals: 1, label: "Engagement rate" },
     { target: 90, suffix: "%", label: "No-seguidores" },
