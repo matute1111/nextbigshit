@@ -106,15 +106,6 @@ const CTA = () => {
             {t("cta.reel")}
           </a>
         </div>
-        <p className="text-base md:text-lg text-muted-foreground mb-12 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-          <a href="mailto:adrian@gennial.ai" className="hover:text-primary transition-colors">
-            adrian@gennial.ai
-          </a>
-          <span className="hidden sm:inline opacity-40">·</span>
-          <a href="mailto:mati@gennial.ai" className="hover:text-primary transition-colors">
-            mati@gennial.ai
-          </a>
-        </p>
       </div>
     </section>
   );
