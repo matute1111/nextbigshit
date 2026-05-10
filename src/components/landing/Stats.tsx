@@ -112,7 +112,7 @@ const Stats = () => {
           {/* Capybara — sits to the right of the title and gets covered by the table below */}
           <div
             ref={capyRef}
-            className="pointer-events-none absolute -right-[80px] md:-right-[100px] bottom-[calc(-60%+140px)] md:bottom-[calc(-60%+100px)] w-[94%] sm:w-[80%] md:w-[77%] lg:w-[67%] max-w-[1032px] z-0 overflow-visible"
+            className="pointer-events-none absolute -right-[50px] md:-right-[100px] bottom-[calc(-60%+140px)] md:bottom-[calc(-60%+100px)] w-[113%] sm:w-[80%] md:w-[77%] lg:w-[67%] max-w-[1032px] z-0 overflow-visible"
           >
             <img
               src={guapoCapybara}
@@ -130,7 +130,10 @@ const Stats = () => {
               <br />
               <span className="text-primary italic">{t("stats.title.2")}</span>
             </h2>
-            <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+            <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl md:hidden">
+              Publicamos, medimos, aprendemos y volvemos a crear.
+            </p>
+            <p className="hidden md:block mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
               {t("stats.intro")}
             </p>
           </div>
