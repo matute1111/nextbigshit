@@ -1,6 +1,8 @@
+import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
 import { useCountUp, useReveal, useParallax } from "@/hooks/useParallax";
 import SectionDivider from "./SectionDivider";
+import guapoCapybara from "@/assets/guapo-capybara.png";
 
 interface Metric {
   target: number;
