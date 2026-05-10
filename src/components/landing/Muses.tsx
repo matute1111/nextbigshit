@@ -17,6 +17,11 @@ const Muses = () => {
     { name: t("muses.mod.3.name"), status: t("muses.mod.3.status"), desc: t("muses.mod.3.desc") },
     { name: t("muses.mod.4.name"), status: t("muses.mod.4.status"), desc: t("muses.mod.4.desc") },
     { name: t("muses.mod.5.name"), status: t("muses.mod.5.status"), desc: t("muses.mod.5.desc") },
+    {
+      name: "MUSES FUTURE",
+      status: "CONCEPTO",
+      desc: "Estamos diseñando el futuro del audiovisual. Todo está por venir.",
+    },
   ];
 
   const statusClass = (s: string) =>
