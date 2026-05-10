@@ -112,7 +112,8 @@ const Stats = () => {
           {/* Capybara — sits to the right of the title and gets covered by the table below */}
           <div
             ref={capyRef}
-            className="pointer-events-none absolute right-0 -bottom-[70%] md:-bottom-[60%] w-[78%] sm:w-[67%] md:w-[64%] lg:w-[56%] max-w-[860px] z-0 overflow-visible"
+            className="pointer-events-none absolute -right-[50px] w-[94%] sm:w-[80%] md:w-[77%] lg:w-[67%] max-w-[1032px] z-0 overflow-visible"
+            style={{ bottom: "calc(-60% + 100px)" }}
           >
             <img
               src={guapoCapybara}
