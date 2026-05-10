@@ -43,14 +43,22 @@ const SiteHeader = () => {
         <a href="#" className="flex items-center" aria-label="Gennial Studio">
           <img src={gennialLogo} alt="Gennial Studio" className="h-10 md:h-12 w-auto" />
         </a>
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
-          <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">{t("nav.about")}</a>
-          <a href="#verticals" onClick={handleNavClick("verticals")} className="hover:text-primary transition-colors">{t("nav.verticals")}</a>
-          <a href="#muses" onClick={handleNavClick("muses")} className="hover:text-primary transition-colors">{t("nav.muses")}</a>
-          <a href="#cases" onClick={handleNavClick("cases")} className="hover:text-primary transition-colors">{t("nav.cases")}</a>
-          <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">{t("nav.services")}</a>
-          <a href="#team" onClick={handleNavClick("team")} className="hover:text-primary transition-colors">{t("nav.team")}</a>
-          <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">{t("nav.contact")}</a>
+        <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-sm uppercase tracking-widest font-semibold text-foreground">
+          <a href="#verticals" onClick={handleNavClick("verticals")} className="hover:text-primary transition-colors">
+            <span className="text-primary mr-1.5">01</span>Qué
+          </a>
+          <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">
+            <span className="text-primary mr-1.5">02</span>Por qué
+          </a>
+          <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">
+            <span className="text-primary mr-1.5">03</span>Cómo
+          </a>
+          <a href="#clients" onClick={handleNavClick("clients")} className="hover:text-primary transition-colors">
+            <span className="text-primary mr-1.5">08</span>Clientes
+          </a>
+          <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">
+            <span className="text-primary mr-1.5">10</span>Contacto
+          </a>
         </nav>
         <div className="flex items-center gap-4">
           <button
