@@ -9,6 +9,7 @@ const Team = () => {
     { name: t("team.1.name"), role: t("team.1.role"), bio: t("team.1.bio"), initials: "AG" },
     { name: t("team.2.name"), role: t("team.2.role"), bio: t("team.2.bio"), initials: "M" },
     { name: t("team.3.name"), role: t("team.3.role"), bio: t("team.3.bio"), initials: "PL" },
+    { name: t("team.4.name"), role: t("team.4.role"), bio: t("team.4.bio"), initials: "AA" },
   ];
 
   return (
