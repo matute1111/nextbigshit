@@ -40,11 +40,8 @@ const SiteHeader = () => {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-5">
-        <a href="#" className="flex items-baseline" aria-label="Gennial Studio">
-          <span className="font-display uppercase text-3xl md:text-4xl tracking-tight leading-none text-foreground">
-            Gennial
-          </span>
-          <span className="ml-1 w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary self-end mb-1.5 md:mb-2" />
+        <a href="#" className="font-display uppercase text-3xl md:text-4xl tracking-tight leading-none text-foreground" aria-label="Gennial Studio">
+          Gennial<span className="text-primary">.</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
           <a href="#verticals" onClick={handleNavClick("verticals")} className="hover:text-primary transition-colors">
