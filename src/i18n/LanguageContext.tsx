@@ -6,25 +6,28 @@ type Dict = Record<string, { es: string; en: string }>;
 
 const DICT: Dict = {
   "meta.cities": {
-    es: "Gennial Studio",
-    en: "Gennial Studio",
+    es: "Gennial · AI-Native Content Studio",
+    en: "Gennial · AI-Native Content Studio",
   },
   "meta.tag": {
-    es: "IA · VERTICAL · MICRODRAMAS",
-    en: "AI · VERTICAL · MICRODRAMAS",
+    es: "Studio + Lab · IP Factory · Vertical AI",
+    en: "Studio + Lab · IP Factory · Vertical AI",
   },
   "hero.line1": { es: "THE NEXT", en: "THE NEXT" },
   "hero.big": { es: "BIG", en: "BIG" },
   "hero.shit": { es: "SHIFT", en: "SHIFT" },
   "hero.tag": {
-    es: "Creamos IPs, microdramas y canales de entretenimiento que aprenden y evolucionan.",
-    en: "We create IPs, microdramas and entertainment channels that learn and evolve.",
+    es: "Estudio AI-nativo de contenido. El estudio crea, el laboratorio potencia. Un loop permanente que acumula inteligencia con cada frame.",
+    en: "AI-native content studio. The studio creates, the lab powers it. A permanent loop that gets smarter with every frame.",
   },
   "hero.scroll": { es: "scroll", en: "scroll" },
   "hero.manifesto": { es: "Manifiesto / Studio Reel ↗", en: "Manifesto / Studio Reel ↗" },
   "nav.about": { es: "Manifiesto", en: "Manifesto" },
+  "nav.verticals": { es: "Verticales", en: "Verticals" },
   "nav.services": { es: "Servicios", en: "Services" },
   "nav.muses": { es: "Muses", en: "Muses" },
+  "nav.cases": { es: "Casos", en: "Cases" },
+  "nav.team": { es: "Equipo", en: "Team" },
   "nav.contact": { es: "Contacto", en: "Contact" },
   "nav.live": { es: "Live", en: "Live" },
 
@@ -54,38 +57,66 @@ const DICT: Dict = {
   },
   "about.shift.b": { es: "the next big shift.", en: "the next big shift." },
 
-  "stats.kicker": { es: "03 / Tracción real · Nuestro laboratorio", en: "03 / Real traction · Our lab" },
+  // ===== VERTICALS (NEW) =====
+  "vert.kicker": { es: "02 / Qué es Gennial", en: "02 / What is Gennial" },
+  "vert.title.1": { es: "Dos verticales", en: "Two verticals" },
+  "vert.title.2": { es: "en loop permanente.", en: "in permanent loop." },
+  "vert.intro": {
+    es: "Un estudio AI-nativo de contenido digital. El estudio crea. El laboratorio potencia. Cada producción alimenta el desarrollo del Lab. Cada herramienta del Lab mejora la próxima producción.",
+    en: "An AI-native digital content studio. The studio creates. The lab powers. Every production feeds the Lab. Every Lab tool improves the next production.",
+  },
+  "vert.studio.tag": { es: "Vertical creativa", en: "Creative vertical" },
+  "vert.studio.name": { es: "Gennial.Studio", en: "Gennial.Studio" },
+  "vert.studio.shift": { es: "the next big H!T", en: "the next big H!T" },
+  "vert.studio.desc": {
+    es: "Producimos contenido audiovisual para marcas, creadores y plataformas. Personajes, universos narrativos y ecosistemas de contenido construidos para ser virales. No somos una agencia: somos una IP factory.",
+    en: "We produce audiovisual content for brands, creators and platforms. Characters, narrative universes and content ecosystems built to go viral. We're not an agency — we're an IP factory.",
+  },
+  "vert.lab.tag": { es: "Vertical tecnológica", en: "Tech vertical" },
+  "vert.lab.name": { es: "Gennial.Lab", en: "Gennial.Lab" },
+  "vert.lab.shift": { es: "the next big LEAP", en: "the next big LEAP" },
+  "vert.lab.desc": {
+    es: "Desarrollamos las herramientas de IA generativa que hacen posible todo lo que Studio produce en volumen y escala — y las ponemos a disposición de la industria. El sistema acumula inteligencia con cada frame.",
+    en: "We develop the generative AI tools that power everything Studio produces at volume and scale — and we make them available to the industry. The system gets smarter with every frame.",
+  },
+  "vert.loop": { es: "Studio ↔ Lab · loop permanente", en: "Studio ↔ Lab · permanent loop" },
+
+  // ===== STATS / CASE STUDIES =====
+  "stats.kicker": { es: "03 / Casos de éxito · Tracción real", en: "03 / Proof in action · Real traction" },
+  "stats.title.1": { es: "Contenido viral", en: "Viral content" },
+  "stats.title.2": { es: "a la velocidad de la cultura.", en: "at the speed of culture." },
+  "stats.intro": {
+    es: "No testeamos en una sala cerrada. Publicamos, medimos, aprendemos y volvemos a crear. Cada video es una hipótesis. Cada audiencia, una respuesta.",
+    en: "We don't test in a closed room. We publish, measure, learn and create again. Every video is a hypothesis. Every audience, an answer.",
+  },
+  "case.guapo.tag": { es: "Brand IP · Guapaletas", en: "Brand IP · Guapaletas" },
+  "case.guapo.name": { es: "Guapo Capibara", en: "Guapo Capibara" },
+  "case.guapo.desc": {
+    es: "Carpincho embajador de marca. Un personaje con identidad propia que vive en redes como un creador de contenido.",
+    en: "Capybara brand ambassador. A character with its own identity, living on social like a creator.",
+  },
+  "case.hi.tag": { es: "IP propia · Flagship channel", en: "Owned IP · Flagship channel" },
+  "case.hi.name": { es: "Historias Infinitas", en: "Historias Infinitas" },
+  "case.hi.desc": {
+    es: "Nuestra fábrica de personajes. Canal flagship de contenido infantil y familiar. Probamos personajes, temas y formatos en tiempo real.",
+    en: "Our character factory. Flagship kids and family channel. We test characters, themes and formats in real time.",
+  },
   "stats.shift": { es: "Esto no es un experimento. Es ", en: "This isn't an experiment. It's " },
   "stats.shift.b": { es: "the next big leap.", en: "the next big leap." },
   "frontier.shift": { es: "Esto no es formato. Es ", en: "This isn't a format. It's " },
   "frontier.shift.b": { es: "the next frontier.", en: "the next frontier." },
   "disruption.shift": { es: "Esto no es futuro. Es ", en: "This isn't the future. It's " },
   "disruption.shift.b": { es: "the next big disruption.", en: "the next big disruption." },
-  "stats.subs": { es: "Suscriptores", en: "Subscribers" },
-  "stats.views": { es: "Reproducciones", en: "Views" },
-  "stats.videos": { es: "Videos creados", en: "Videos created" },
-  "stats.days": { es: "Días no-stop", en: "Days non-stop" },
-  "yt.kicker": { es: "Nuestro laboratorio", en: "Our lab" },
-  "yt.title": {
-    es: "Historias Infinitas",
-    en: "Historias Infinitas",
-  },
-  "yt.headline": {
-    es: "donde la tracción se hace en vivo.",
-    en: "where traction happens live.",
-  },
-  "yt.desc": {
-    es: "Historias Infinitas es nuestro laboratorio vivo de producción generativa. Un canal donde experimentamos con microdramas, personajes, formatos y narrativas creadas con IA, publicadas directamente frente a audiencias reales. No testeamos en una sala cerrada: publicamos, medimos, aprendemos y volvemos a crear. Cada video es una hipótesis. Cada audiencia, una respuesta. Cada dato, una nueva decisión creativa.",
-    en: "Historias Infinitas is our living lab of generative production. A channel where we experiment with microdramas, characters, formats and narratives built with AI, released directly in front of real audiences. We don't test in a closed room: we publish, measure, learn and create again. Every video is a hypothesis. Every audience, an answer. Every data point, a new creative decision.",
-  },
+
+  "yt.kicker": { es: "Nuestro laboratorio vivo", en: "Our living lab" },
   "yt.cta": { es: "Ver el canal ↗", en: "Watch the channel ↗" },
 
-  "micro.kicker": { es: "04 / IA Vertical · Microdramas", en: "04 / Vertical AI · Microdramas" },
+  "micro.kicker": { es: "05 / IA Vertical · Microdramas", en: "05 / Vertical AI · Microdramas" },
   "micro.title.1": { es: "Microdramas", en: "Microdramas" },
   "micro.title.2": { es: "diseñados para el scroll.", en: "designed for the scroll." },
   "micro.intro": {
-    es: "Creamos series verticales pensadas para capturar atención desde el primer segundo. Historias de alto impacto emocional, estructura serial, cliffhangers constantes y producción optimizada para plataformas móviles. La IA nos permite acelerar cada etapa del proceso sin perder intención narrativa: concepto, personajes, episodios, imágenes, voces, edición y adaptación multilenguaje.",
-    en: "We create vertical series designed to capture attention from the first second. High emotional impact stories, serial structure, constant cliffhangers and production optimized for mobile platforms. AI lets us accelerate every stage of the process without losing narrative intent: concept, characters, episodes, images, voices, editing and multilingual adaptation.",
+    es: "Series verticales pensadas para capturar atención desde el primer segundo. Alto impacto emocional, estructura serial, cliffhangers constantes. La IA acelera cada etapa sin perder intención narrativa: concepto, personajes, episodios, voces, edición y adaptación multilenguaje.",
+    en: "Vertical series built to capture attention from second one. High emotional impact, serial structure, constant cliffhangers. AI accelerates every stage without losing narrative intent.",
   },
   "micro.step1.t": { es: "Estructura narrativa", en: "Narrative structure" },
   "micro.step1.d": {
@@ -95,86 +126,164 @@ const DICT: Dict = {
   "micro.step2.t": { es: "Microepisodios", en: "Microepisodes" },
   "micro.step2.d": {
     es: "Fragmentamos cada historia en cápsulas verticales con ritmo, gancho y resolución parcial. Cada episodio tiene una función: abrir deseo, revelar tensión y empujar al siguiente.",
-    en: "We split each story into vertical capsules with rhythm, hook and partial payoff. Every episode has a job: open desire, reveal tension and push to the next.",
+    en: "We split each story into vertical capsules with rhythm, hook and partial payoff.",
   },
   "micro.step3.t": { es: "Producción calidad cine", en: "Cinema-grade production" },
   "micro.step3.d": {
-    es: "Usamos modelos de última generación para generar imagen, voz, sonido y edición con estándares visuales premium. Contenido serial en minutos. No en meses.",
-    en: "We use state-of-the-art models to generate image, voice, sound and editing with premium visual standards. Serial content in minutes. Not months.",
+    es: "Modelos de última generación para imagen, voz, sonido y edición con estándares premium. Contenido serial en minutos. No en meses.",
+    en: "State-of-the-art models for image, voice, sound and editing. Serial content in minutes, not months.",
   },
-  "micro.intertitle.1": {
-    es: "Esto no es humo. Es",
-    en: "This isn't hype. It's",
-  },
-  "micro.intertitle.2": {
-    es: "the next big sh#!t.",
-    en: "the next big sh#!t.",
-  },
+  "micro.intertitle.1": { es: "Esto no es humo. Es", en: "This isn't hype. It's" },
+  "micro.intertitle.2": { es: "the next big sh#!t.", en: "the next big sh#!t." },
   "micro.cta": { es: "Mirá una serie", en: "Watch a series" },
 
-  "services.kicker": { es: "05 / Servicios", en: "05 / Services" },
-  "services.title.1": { es: "Una IP factory", en: "A disruptive" },
-  "services.title.2": { es: "disruptiva.", en: "IP factory." },
+  // ===== SERVICES (reframed by audience) =====
+  "services.kicker": { es: "06 / Posicionamiento · Para quién", en: "06 / Positioning · Who for" },
+  "services.title.1": { es: "Lo decimos distinto", en: "We say it differently" },
+  "services.title.2": { es: "según quién escuche.", en: "depending on who's listening." },
   "services.intro": {
-    es: "Transformamos ideas, marcas y territorios narrativos en productos de entretenimiento capaces de vivir en redes, crecer con audiencias y escalar en múltiples formatos. No hacemos piezas sueltas: creamos sistemas narrativos. Nuestro modelo combina estrategia creativa, producción generativa, publicación constante y aprendizaje basado en datos.",
-    en: "We turn ideas, brands and narrative territories into entertainment products that live on social, grow with audiences and scale across formats. We don't make one-offs: we build narrative systems. Our model blends creative strategy, generative production, constant publishing and data-driven learning.",
+    es: "Trabajamos con marcas, creadores, plataformas e inversores. Una sola fábrica narrativa. Cuatro formas de capturar valor.",
+    en: "We work with brands, creators, platforms and investors. One narrative factory. Four ways to capture value.",
   },
 
-  "muses.kicker": { es: "02 / Tecnología propietaria", en: "02 / Proprietary tech" },
+  "service.01.t": { es: "Para Marcas", en: "For Brands" },
+  "service.01.d": {
+    es: "Personajes y universos con identidad narrativa propia. Del brief al primer episodio en días. Velocidad para subirse a cualquier tendencia y construir audiencia propia desde el contenido.",
+    en: "Characters and universes with their own narrative identity. From brief to first episode in days. Speed to ride any trend and build owned audiences through content.",
+  },
+  "service.02.t": { es: "Para Creadores", en: "For Creators" },
+  "service.02.d": {
+    es: "Amplificamos la visión creativa con tecnología. Más volumen, más velocidad, sin perder la voz. Una infraestructura para producir más rápido, probar más ideas y aprender con audiencias reales.",
+    en: "We amplify creative vision with technology. More volume, more speed, same voice. Infrastructure to produce faster, test more ideas and learn with real audiences.",
+  },
+  "service.03.t": { es: "Para Plataformas", en: "For Platforms" },
+  "service.03.d": {
+    es: "Contenido narrativo seriado que vive dentro del ecosistema del cliente y construye audiencia propia. Canales, personajes y narrativas que conectan con comunidades reales, no sólo con targets.",
+    en: "Serialized narrative content that lives within the client's ecosystem and builds its own audience. Channels, characters and narratives connecting with real communities.",
+  },
+  "service.04.t": { es: "Para Inversores", en: "For Investors" },
+  "service.04.d": {
+    es: "Clientes activos, audiencias reales y validación de la industria global. Un modelo escalable con riesgo controlado: tecnología propietaria, IPs propias y demanda B2B activa.",
+    en: "Active clients, real audiences and global industry validation. A scalable model with controlled risk: proprietary tech, owned IPs and active B2B demand.",
+  },
+
+  // ===== MUSES (expanded) =====
+  "muses.kicker": { es: "04 / Tecnología propietaria · Gennial.Lab", en: "04 / Proprietary tech · Gennial.Lab" },
   "muses.title.2": { es: "automatiza.", en: "automates." },
   "muses.title.3": { es: "La visión", en: "The vision" },
   "muses.title.4": { es: "dirige.", en: "directs." },
   "muses.p1": {
-    es: "MUSES es nuestro software propietario para crear contenido narrativo con IA de punta, procesos automatizados y dirección creativa humana.",
-    en: "MUSES is our proprietary software for creating narrative content with cutting-edge AI, automated processes and human creative direction.",
+    es: "MUSES es el sistema propietario de producción audiovisual de Gennial.Lab. +20 agentes de IA que automatizan el ciclo completo de creación de contenido narrativo.",
+    en: "MUSES is Gennial.Lab's proprietary audiovisual production system. 20+ AI agents that automate the full cycle of narrative content creation.",
   },
   "muses.p2": {
-    es: "Integra herramientas emergentes, modelos generativos y flujos de producción en un sistema plug-and-play capaz de acelerar todo el ciclo creativo.",
-    en: "It integrates emerging tools, generative models and production flows into a plug-and-play system that accelerates the entire creative cycle.",
+    es: "Diferentes módulos que responden a necesidades del negocio y oportunidades comerciales. De una idea: personajes, arcos, episodios, imágenes, voces, videos y versiones multilenguaje.",
+    en: "Different modules that respond to business needs and commercial opportunities. From a single idea: characters, arcs, episodes, images, voices, videos and multilingual versions.",
   },
-  "muses.p3": {
-    es: "De una idea puede construir personajes, arcos narrativos, episodios, imágenes, voces, videos y versiones multilenguaje.",
-    en: "From a single idea it can build characters, story arcs, episodes, images, voices, videos and multilingual versions.",
+  "muses.seedance.title": { es: "Powered by Seedance 2.0 · ByteDance", en: "Powered by Seedance 2.0 · ByteDance" },
+  "muses.seedance.desc": {
+    es: "El modelo dominante a nivel global para producción de video narrativo. Gennial es el primer estudio en Latinoamérica con acceso directo.",
+    en: "The dominant model globally for narrative video production. Gennial is the first studio in Latin America with direct access.",
   },
-  "muses.p4": {
-    es: "No reemplaza al creador. Le da una infraestructura para producir más rápido, probar más ideas y aprender con audiencias reales.",
-    en: "It doesn't replace the creator. It gives them an infrastructure to produce faster, test more ideas and learn with real audiences.",
+  "muses.modules.title": { es: "Los módulos", en: "The modules" },
+  "muses.mod.1.name": { es: "Muses Studio", en: "Muses Studio" },
+  "muses.mod.1.status": { es: "LIVE", en: "LIVE" },
+  "muses.mod.1.desc": {
+    es: "El motor de producción. Concepto, guión, publicación y medición. El análisis mejora el siguiente output.",
+    en: "The production engine. Concept, script, publishing and measurement. Analysis feeds the next output.",
   },
-  "muses.p5": {
-    es: "Ideas → pilotos → publicación → medición → aprendizaje → nuevas historias.",
-    en: "Ideas → pilots → publishing → measurement → learning → new stories.",
+  "muses.mod.2.name": { es: "Muses Micro", en: "Muses Micro" },
+  "muses.mod.2.status": { es: "LIVE", en: "LIVE" },
+  "muses.mod.2.desc": {
+    es: "Un prompt. Una serie completa. Genera biblia de producción con personajes, locaciones y storylines episódicos.",
+    en: "One prompt. A full series. Generates a production bible with characters, locations and episodic storylines.",
+  },
+  "muses.mod.3.name": { es: "Muses React", en: "Muses React" },
+  "muses.mod.3.status": { es: "BETA", en: "BETA" },
+  "muses.mod.3.desc": {
+    es: "Personajes sintéticos para livestreams. Reaccionan en vivo a eventos y comentan con autonomía narrativa.",
+    en: "Synthetic characters for livestreams. React live to events and comment with narrative autonomy.",
+  },
+  "muses.mod.4.name": { es: "Muses Focus", en: "Muses Focus" },
+  "muses.mod.4.status": { es: "CONCEPTO", en: "CONCEPT" },
+  "muses.mod.4.desc": {
+    es: "Focus group sintético. Simula cómo responde tu audiencia antes de publicar.",
+    en: "Synthetic focus group. Simulates how your audience will respond before publishing.",
+  },
+  "muses.mod.5.name": { es: "Muses Scan", en: "Muses Scan" },
+  "muses.mod.5.status": { es: "CONCEPTO", en: "CONCEPT" },
+  "muses.mod.5.desc": {
+    es: "Inteligencia visual frame a frame. Puntúa la intensidad emocional de cada momento del video.",
+    en: "Frame-by-frame visual intelligence. Scores the emotional intensity of every moment of the video.",
   },
 
-  "cta.kicker": { es: "06 / Revolución generativa", en: "06 / Generative revolution" },
+  // ===== DIFFERENTIAL (NEW) =====
+  "diff.kicker": { es: "07 / El diferencial", en: "07 / The edge" },
+  "diff.title.1": { es: "Lo que nos separa", en: "What separates us" },
+  "diff.title.2": { es: "del mercado.", en: "from the market." },
+  "diff.1.t": { es: "Continuidad narrativa sin iteración manual", en: "Narrative continuity without manual iteration" },
+  "diff.1.d": {
+    es: "Series con coherencia narrativa a través de episodios sin intervención manual. Un proceso original que no existe en el mercado.",
+    en: "Series with narrative coherence across episodes without manual intervention. An original process that doesn't exist in the market.",
+  },
+  "diff.2.t": { es: "El loop Studio ↔ Lab", en: "The Studio ↔ Lab loop" },
+  "diff.2.d": {
+    es: "Cada producción alimenta el desarrollo del Lab. Cada herramienta del Lab mejora la próxima producción. El sistema acumula inteligencia con cada frame.",
+    en: "Every production feeds the Lab. Every Lab tool improves the next production. The system gets smarter with every frame.",
+  },
+  "diff.3.t": { es: "Muses sobre Seedance 2.0", en: "Muses on Seedance 2.0" },
+  "diff.3.d": {
+    es: "Muses corre sobre el modelo dominante a nivel global para producción de video narrativo. Primer estudio en Latinoamérica con acceso directo.",
+    en: "Muses runs on the dominant global model for narrative video. First studio in Latin America with direct access.",
+  },
+  "diff.4.t": { es: "Human in the loop", en: "Human in the loop" },
+  "diff.4.d": {
+    es: "Cada personaje y episodio pasa por un equipo creativo que supervisa, cura y decide. La IA produce a escala. Los humanos garantizan que valga la pena ver.",
+    en: "Every character and episode goes through a creative team that supervises, curates and decides. AI produces at scale. Humans make sure it's worth watching.",
+  },
+
+  // ===== CLIENTS (NEW) =====
+  "clients.kicker": { es: "08 / Clientes & validación", en: "08 / Clients & validation" },
+  "clients.title": { es: "Marcas y partners activos.", en: "Active brands & partners." },
+  "clients.cannes.tag": { es: "Cannes Marché du Film 2026", en: "Cannes Marché du Film 2026" },
+  "clients.cannes.desc": {
+    es: "Gennial presente por invitación del Ministerio de Cultura de Buenos Aires. Keynote de Adrian Garelik y demo de Muses.Micro como fábrica de microdramas.",
+    en: "Gennial present by invitation of the Buenos Aires Ministry of Culture. Keynote by Adrian Garelik and live demo of Muses.Micro as a microdrama factory.",
+  },
+
+  // ===== TEAM (NEW) =====
+  "team.kicker": { es: "09 / El equipo", en: "09 / The team" },
+  "team.title.1": { es: "Cineastas, ingenieros", en: "Filmmakers, engineers" },
+  "team.title.2": { es: "y operadores.", en: "and operators." },
+  "team.1.name": { es: "Adrian Garelik", en: "Adrian Garelik" },
+  "team.1.role": { es: "CEO & Co-fundador", en: "CEO & Co-founder" },
+  "team.1.bio": {
+    es: "Emprendedor serial en tecnología y entretenimiento. Construyó y escaló compañías en LATAM y EE.UU. Speaker invitado en Cannes Marché du Film 2026.",
+    en: "Serial entrepreneur in tech and entertainment. Built and scaled companies across LATAM and the US. Invited speaker at Cannes Marché du Film 2026.",
+  },
+  "team.2.name": { es: "Mati", en: "Mati" },
+  "team.2.role": { es: "Co-fundador & CTO", en: "Co-founder & CTO" },
+  "team.2.bio": {
+    es: "Arquitecto del stack generativo de Gennial. Lidera el desarrollo de Muses y la infraestructura de producción audiovisual con +20 agentes de IA.",
+    en: "Architect of Gennial's generative stack. Leads the development of Muses and the audiovisual production infrastructure with 20+ AI agents.",
+  },
+  "team.3.name": { es: "Pedro Levati", en: "Pedro Levati" },
+  "team.3.role": { es: "Director Creativo", en: "Creative Director" },
+  "team.3.bio": {
+    es: "Guionista y director audiovisual. Profesor de guión en Universidad del Cine y ETER. Jurado en el INCAA. Créditos en Amazon Prime y Flixxo/Luzu TV.",
+    en: "Screenwriter and audiovisual director. Screenplay professor at Universidad del Cine and ETER. INCAA jury. Credits at Amazon Prime and Flixxo/Luzu TV.",
+  },
+
+  // ===== CTA =====
+  "cta.kicker": { es: "10 / Revolución generativa", en: "10 / Generative revolution" },
   "cta.title.1": { es: "Build together", en: "Build together" },
-  "cta.title.2": { es: "the next big SH#!T", en: "the next big SH#!T" },
+  "cta.title.2": { es: "the next big SH!FT", en: "the next big SH!FT" },
   "cta.desc": {
-    es: "Tenés una marca, una IP, una idea o un universo posible. Nosotros podemos convertirlo en una prueba viva: un piloto, una serie, un canal o una máquina narrativa lista para salir al mundo. Creamos rápido. Publicamos rápido. Aprendemos rápido. Pero no confundimos velocidad con vacío: la tecnología acelera, la historia decide.",
-    en: "You have a brand, an IP, an idea or a possible universe. We can turn it into a living test: a pilot, a series, a channel or a narrative machine ready to go out into the world. We create fast. We publish fast. We learn fast. But we don't confuse speed with emptiness: technology accelerates, the story decides.",
+    es: "Tenés una marca, una IP, una idea o un universo posible. Lo convertimos en una prueba viva: un piloto, una serie, un canal o una máquina narrativa lista para salir al mundo. Creamos rápido. Publicamos rápido. Aprendemos rápido. Pero no confundimos velocidad con vacío: la tecnología acelera, la historia decide.",
+    en: "You have a brand, an IP, an idea or a possible universe. We turn it into a living test: a pilot, a series, a channel or a narrative machine ready to ship. We create fast. We publish fast. We learn fast. But we don't confuse speed with emptiness: tech accelerates, story decides.",
   },
   "cta.talk": { es: "Hablemos ↗", en: "Let's talk ↗" },
   "cta.reel": { es: "Ver el reel ↗", en: "Watch the reel ↗" },
-
-  "service.01.t": { es: "Creación masiva con IA", en: "Massive AI creation" },
-  "service.01.d": {
-    es: "Producimos contenido a una escala imposible para los modelos tradicionales. Cientos de piezas por semana, con dirección creativa, consistencia estética y velocidad de publicación.",
-    en: "We produce content at a scale impossible for traditional models. Hundreds of pieces per week, with creative direction, aesthetic consistency and publishing speed.",
-  },
-  "service.02.t": { es: "IP Factory", en: "IP Factory" },
-  "service.02.d": {
-    es: "Del boceto al piloto. Del piloto al canal. Del canal a una propiedad intelectual validada por audiencia real. Creamos personajes, universos, series y formatos con potencial de expansión.",
-    en: "From sketch to pilot. From pilot to channel. From channel to an IP validated by a real audience. We create characters, universes, series and formats with expansion potential.",
-  },
-  "service.03.t": { es: "Modelo B2B2C", en: "B2B2C Model" },
-  "service.03.d": {
-    es: "Trabajamos con marcas, plataformas y partners que quieren construir audiencias propias a través de entretenimiento. Creamos canales, personajes y narrativas que conectan con comunidades reales, no sólo con targets.",
-    en: "We work with brands, platforms and partners that want to build their own audiences through entertainment. We create channels, characters and narratives that connect with real communities, not just targets.",
-  },
-  "service.04.t": { es: "Multilenguaje", en: "Multilingual" },
-  "service.04.d": {
-    es: "Diseñamos contenidos para escalar globalmente desde el origen. Una misma IP puede hablar distintos idiomas, adaptarse a distintos mercados y crecer en múltiples territorios.",
-    en: "We design content to scale globally from day one. A single IP can speak different languages, adapt to different markets and grow across territories.",
-  },
 };
 
 interface Ctx {
