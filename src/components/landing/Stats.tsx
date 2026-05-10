@@ -108,22 +108,37 @@ const Stats = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="mb-14 md:mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
-            {t("stats.kicker")}
-          </p>
-          <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
-            {t("stats.title.1")}
-            <br />
-            <span className="text-primary italic">{t("stats.title.2")}</span>
-          </h2>
-          <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-            {t("stats.intro")}
-          </p>
+        <div className="mb-14 md:mb-20 relative">
+          {/* Capybara — sits to the right of the title and gets covered by the table below */}
+          <div
+            ref={capyRef}
+            className="pointer-events-none absolute right-0 md:-right-4 lg:-right-10 -bottom-[35%] md:-bottom-[30%] w-[42%] sm:w-[36%] md:w-[34%] lg:w-[30%] max-w-[460px] z-0 overflow-visible"
+          >
+            <img
+              src={guapoCapybara}
+              alt="Carpincho Guapo mostrando un teléfono con contenido viral"
+              className="block w-full h-auto object-contain will-change-transform drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+              style={{ transform: `translate3d(0, ${capyTranslate}px, 0)` }}
+            />
+          </div>
+          <div className="relative z-10">
+            <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">
+              {t("stats.kicker")}
+            </p>
+            <h2 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.85] max-w-4xl">
+              {t("stats.title.1")}
+              <br />
+              <span className="text-primary italic">{t("stats.title.2")}</span>
+            </h2>
+            <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+              {t("stats.intro")}
+            </p>
+          </div>
         </div>
 
         {/* Two case studies */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border mb-14 md:mb-16">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border mb-14 md:mb-16">
+
           {/* GUAPO */}
           <div className="bg-background p-8 md:p-12">
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3">
