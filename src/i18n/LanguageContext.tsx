@@ -288,7 +288,7 @@ const DICT: Dict = {
     es: "Tenés una marca, una IP, una idea o un universo posible. Lo convertimos en una prueba viva: un piloto, una serie, un canal o una máquina narrativa lista para salir al mundo. Creamos rápido. Publicamos rápido. Aprendemos rápido. Pero no confundimos velocidad con vacío: la tecnología acelera, la historia decide.",
     en: "You have a brand, an IP, an idea or a possible universe. We turn it into a living test: a pilot, a series, a channel or a narrative machine ready to ship. We create fast. We publish fast. We learn fast. But we don't confuse speed with emptiness: tech accelerates, story decides.",
   },
-  "cta.talk": { es: "Hablemos ↗", en: "Let's talk ↗" },
+  "cta.talk": { es: "Book a demo ↗", en: "Book a demo ↗" },
   "cta.reel": { es: "Ver el reel ↗", en: "Watch the reel ↗" },
 };
 
