@@ -261,7 +261,7 @@ const DICT: Dict = {
     es: "Emprendedor serial en tecnología y entretenimiento. Construyó y escaló compañías en LATAM y EE.UU. Speaker invitado en Cannes Marché du Film 2026.",
     en: "Serial entrepreneur in tech and entertainment. Built and scaled companies across LATAM and the US. Invited speaker at Cannes Marché du Film 2026.",
   },
-  "team.2.name": { es: "Mati", en: "Mati" },
+  "team.2.name": { es: "Mati Albaca", en: "Mati Albaca" },
   "team.2.role": { es: "Co-fundador & CTO", en: "Co-founder & CTO" },
   "team.2.bio": {
     es: "Arquitecto del stack generativo de Gennial. Lidera el desarrollo de Muses y la infraestructura de producción audiovisual con +20 agentes de IA.",
