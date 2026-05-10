@@ -253,8 +253,8 @@ const DICT: Dict = {
 
   // ===== TEAM (NEW) =====
   "team.kicker": { es: "09 / El equipo", en: "09 / The team" },
-  "team.title.1": { es: "Cineastas, ingenieros", en: "Filmmakers, engineers" },
-  "team.title.2": { es: "y operadores.", en: "and operators." },
+  "team.title.1": { es: "Los humanos", en: "The humans" },
+  "team.title.2": { es: "del loop.", en: "in the loop." },
   "team.1.name": { es: "Adrian Garelik", en: "Adrian Garelik" },
   "team.1.role": { es: "CEO & Co-fundador", en: "CEO & Co-founder" },
   "team.1.bio": {
@@ -272,6 +272,12 @@ const DICT: Dict = {
   "team.3.bio": {
     es: "Guionista y director audiovisual. Profesor de guión en Universidad del Cine y ETER. Jurado en el INCAA. Créditos en Amazon Prime y Flixxo/Luzu TV.",
     en: "Screenwriter and audiovisual director. Screenplay professor at Universidad del Cine and ETER. INCAA jury. Credits at Amazon Prime and Flixxo/Luzu TV.",
+  },
+  "team.4.name": { es: "Ana Alderete", en: "Ana Alderete" },
+  "team.4.role": { es: "CMO", en: "CMO" },
+  "team.4.bio": {
+    es: "Lidera la estrategia de marca, posicionamiento y go-to-market de Gennial. Conecta producto, narrativa y audiencia para que cada IP encuentre su mercado.",
+    en: "Leads Gennial's brand strategy, positioning and go-to-market. Connects product, narrative and audience so every IP finds its market.",
   },
 
   // ===== CTA =====
