@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLang } from "@/i18n/LanguageContext";
-import gennialLogo from "@/assets/gennial-logo.png";
+
 
 const SiteHeader = () => {
   const { t, lang, setLang } = useLang();
@@ -40,10 +40,13 @@ const SiteHeader = () => {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-5">
-        <a href="#" className="flex items-center" aria-label="Gennial Studio">
-          <img src={gennialLogo} alt="Gennial Studio" className="h-10 md:h-12 w-auto" />
+        <a href="#" className="flex items-baseline" aria-label="Gennial Studio">
+          <span className="font-display uppercase text-3xl md:text-4xl tracking-tight leading-none text-foreground">
+            Gennial
+          </span>
+          <span className="ml-1 w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary self-end mb-1.5 md:mb-2" />
         </a>
-        <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-sm uppercase tracking-widest font-semibold text-foreground">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm uppercase tracking-widest font-semibold text-foreground">
           <a href="#verticals" onClick={handleNavClick("verticals")} className="hover:text-primary transition-colors">
             <span className="text-primary mr-1.5">01</span>Qué
           </a>
@@ -52,12 +55,6 @@ const SiteHeader = () => {
           </a>
           <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">
             <span className="text-primary mr-1.5">03</span>Cómo
-          </a>
-          <a href="#clients" onClick={handleNavClick("clients")} className="hover:text-primary transition-colors">
-            <span className="text-primary mr-1.5">08</span>Clientes
-          </a>
-          <a href="#contact" onClick={handleNavClick("contact")} className="hover:text-primary transition-colors">
-            <span className="text-primary mr-1.5">10</span>Contacto
           </a>
         </nav>
         <div className="flex items-center gap-4">
