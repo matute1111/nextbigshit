@@ -9,6 +9,7 @@ const Team = () => {
     { name: t("team.1.name"), role: t("team.1.role"), bio: t("team.1.bio"), initials: "AG" },
     { name: t("team.2.name"), role: t("team.2.role"), bio: t("team.2.bio"), initials: "M" },
     { name: t("team.3.name"), role: t("team.3.role"), bio: t("team.3.bio"), initials: "PL" },
+    { name: t("team.4.name"), role: t("team.4.role"), bio: t("team.4.bio"), initials: "AA" },
   ];
 
   return (
@@ -25,7 +26,7 @@ const Team = () => {
           </h2>
         </div>
 
-        <div ref={reveal.ref} className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+        <div ref={reveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {PEOPLE.map((p, i) => (
             <div
               key={p.name}
