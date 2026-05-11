@@ -9,27 +9,6 @@ const Muses = () => {
   const blob = useParallax<HTMLDivElement>(0.25);
   const orbP = useParallax<HTMLDivElement>(-0.15);
   const reveal = useReveal<HTMLDivElement>(0.2);
-  const modulesReveal = useReveal<HTMLDivElement>(0.15);
-
-  const MODULES = [
-    { name: t("muses.mod.1.name"), status: t("muses.mod.1.status"), desc: t("muses.mod.1.desc") },
-    { name: t("muses.mod.2.name"), status: t("muses.mod.2.status"), desc: t("muses.mod.2.desc") },
-    { name: t("muses.mod.3.name"), status: t("muses.mod.3.status"), desc: t("muses.mod.3.desc") },
-    { name: t("muses.mod.4.name"), status: t("muses.mod.4.status"), desc: t("muses.mod.4.desc") },
-    { name: t("muses.mod.5.name"), status: t("muses.mod.5.status"), desc: t("muses.mod.5.desc") },
-    {
-      name: "MUSES FUTURE",
-      status: "CONCEPTO",
-      desc: "Estamos diseñando el futuro del audiovisual. Todo está por venir.",
-    },
-  ];
-
-  const statusClass = (s: string) =>
-    s === "LIVE"
-      ? "bg-primary text-primary-foreground"
-      : s === "BETA"
-      ? "bg-secondary text-secondary-foreground"
-      : "border border-foreground/40 text-foreground/70";
 
   return (
     <section
