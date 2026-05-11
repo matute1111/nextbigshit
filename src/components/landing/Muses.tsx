@@ -1,4 +1,3 @@
-import SeedanceStamp from "./SeedanceStamp";
 import SectionDivider from "./SectionDivider";
 import { useLang } from "@/i18n/LanguageContext";
 import { useParallax, useReveal } from "@/hooks/useParallax";
