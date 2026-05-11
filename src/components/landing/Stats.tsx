@@ -80,9 +80,9 @@ const Stats = () => {
   }, []);
 
   const GUAPO: Metric[] = [
-    { target: 2.3, prefix: "+", suffix: "M", decimals: 1, label: "Views Instagram" },
+    { target: 4.5, prefix: "+", suffix: "M", decimals: 1, label: "Views Instagram" },
     { target: 9.5, suffix: "%", decimals: 1, label: "Engagement rate" },
-    { target: 90, suffix: "%", label: "No-seguidores" },
+    { target: 30, suffix: "%", label: "Crecimiento followers semanal" },
     { target: 9, prefix: "×", label: "Consultas comerciales" },
   ];
 
@@ -158,6 +158,14 @@ const Stats = () => {
                 <MetricCell key={m.label} metric={m} start={reveal.visible} index={i} accent="primary" />
               ))}
             </div>
+            <a
+              href="https://www.instagram.com/guapo.capibara/"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 group inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] font-bold text-foreground hover:text-primary transition-colors"
+            >
+              {t("ig.cta")}
+            </a>
           </div>
 
           {/* HISTORIAS INFINITAS */}
