@@ -131,7 +131,7 @@ const Stats = () => {
               <span className="text-primary italic">{t("stats.title.2")}</span>
             </h2>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl md:hidden">
-              Publicamos, medimos, aprendemos y volvemos a crear.
+              {t("stats.intro.short")}
             </p>
             <p className="hidden md:block mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
               {t("stats.intro")}
