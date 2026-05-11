@@ -62,8 +62,20 @@ const DICT: Dict = {
   "vert.title.1": { es: "Dos verticales", en: "Two verticals" },
   "vert.title.2": { es: "en loop permanente.", en: "in permanent loop." },
   "vert.intro": {
-    es: "Un estudio AI-nativo de contenido digital. El estudio crea. El laboratorio potencia. Cada producción alimenta el desarrollo del Lab. Cada herramienta del Lab mejora la próxima producción.",
-    en: "An AI-native digital content studio. The studio creates. The lab powers. Every production feeds the Lab. Every Lab tool improves the next production.",
+    es: "Estudio audiovisual AI-nativo y laboratorio. Un loop permanente que se vuelve más inteligente con cada frame.",
+    en: "AI-native audiovisual studio and lab. A permanent loop that gets smarter with every frame.",
+  },
+  "about.quote": {
+    es: "Somos la __generación generativa__. No usamos la IA para reemplazar la mirada artística. La usamos para __multiplicarla__.",
+    en: "We are the __generative generation__. We don't use AI to replace the artistic gaze. We use it to __multiply it__.",
+  },
+  "muses.agents.label": {
+    es: "Agentes de IA\nen producción",
+    en: "AI agents\nin production",
+  },
+  "stats.intro.short": {
+    es: "Publicamos, medimos, aprendemos y volvemos a crear.",
+    en: "We publish, measure, learn and create again.",
   },
   "vert.studio.tag": { es: "Vertical creativa", en: "Creative vertical" },
   "vert.studio.name": { es: "Gennial.Studio", en: "Gennial.Studio" },

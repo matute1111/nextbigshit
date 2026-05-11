@@ -48,9 +48,8 @@ const Muses = () => {
             <span className="font-display text-6xl md:text-7xl text-secondary leading-none tabular-nums">
               +60
             </span>
-            <span className="text-sm md:text-base uppercase tracking-[0.2em] font-bold text-muted-foreground leading-tight">
-              Agentes de IA<br />
-              en producción
+            <span className="text-sm md:text-base uppercase tracking-[0.2em] font-bold text-muted-foreground leading-tight whitespace-pre-line">
+              {t("muses.agents.label")}
             </span>
           </div>
         </div>
