@@ -103,7 +103,7 @@ const About = () => {
       </div>
 
       {/* Section divider — unified style */}
-      <SectionDivider text={t("about.shift")} highlight={t("about.shift.b")} />
+      <SectionDivider text={t("about.shift")} highlight={t("about.shift.b")} className="md:!pt-[114px]" />
     </section>
   );
 };
