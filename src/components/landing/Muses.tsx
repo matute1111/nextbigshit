@@ -65,10 +65,10 @@ const Muses = () => {
             {t("muses.p2")}
           </p>
 
-          {/* +20 agents counter */}
+          {/* +60 agents counter */}
           <div className="mt-8 flex items-center gap-5 border-t border-border pt-6 max-w-xl">
             <span className="font-display text-6xl md:text-7xl text-secondary leading-none tabular-nums">
-              +20
+              +60
             </span>
             <span className="text-sm md:text-base uppercase tracking-[0.2em] font-bold text-muted-foreground leading-tight">
               Agentes de IA<br />
@@ -107,38 +107,6 @@ const Muses = () => {
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed md:border-l md:border-border md:pl-10">
             {t("muses.seedance.desc")}
           </p>
-        </div>
-      </div>
-
-      {/* Modules grid */}
-      <div ref={modulesReveal.ref} className="max-w-7xl mx-auto relative z-10 mt-16 md:mt-20">
-        <p className="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-8">
-          {t("muses.modules.title")}
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-          {MODULES.map((m, i) => (
-            <div
-              key={m.name}
-              className="bg-background-deeper p-6 md:p-8 transition-all duration-700"
-              style={{
-                opacity: modulesReveal.visible ? 1 : 0,
-                transform: modulesReveal.visible ? "translateY(0)" : "translateY(30px)",
-                transitionDelay: `${i * 90}ms`,
-              }}
-            >
-              <div className="flex items-center justify-between mb-4">
-                <h4 className="font-display uppercase text-xl md:text-2xl tracking-tight text-foreground">
-                  {m.name}
-                </h4>
-                <span className={`text-[10px] uppercase tracking-[0.2em] font-bold px-2 py-1 ${statusClass(m.status)}`}>
-                  {m.status}
-                </span>
-              </div>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                {m.desc}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
 
