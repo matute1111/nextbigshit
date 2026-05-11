@@ -77,7 +77,13 @@ const About = () => {
           <p>{t("about.p1")}</p>
           <p>{t("about.p2")}</p>
           <blockquote className="border-l-2 border-primary pl-6 md:pl-8 py-2 font-display uppercase text-2xl md:text-3xl lg:text-4xl tracking-tight leading-[1.05] text-foreground">
-            Somos la <span className="text-primary italic">generación generativa</span>. No usamos la IA para reemplazar la mirada artística. La usamos para <span className="text-primary italic">multiplicarla</span>.
+            {t("about.quote").split(/(__[^_]+__)/g).map((part, i) =>
+              part.startsWith("__") && part.endsWith("__") ? (
+                <span key={i} className="text-primary italic">{part.slice(2, -2)}</span>
+              ) : (
+                <span key={i}>{part}</span>
+              )
+            )}
           </blockquote>
         </div>
       </div>
