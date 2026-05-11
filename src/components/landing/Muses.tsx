@@ -70,7 +70,7 @@ const Muses = () => {
       </div>
 
       {/* Seedance highlight band */}
-      <div className="max-w-7xl mx-auto relative z-10 mt-12 md:-mt-[70px]">
+      <div className="max-w-7xl mx-auto relative z-10 mt-12 md:mt-[30px]">
         <div className="border-y-2 border-secondary/40 py-8 md:py-10 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
           <div className="flex-shrink-0">
             <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-secondary mb-2">★ Acceso directo · LATAM</p>
