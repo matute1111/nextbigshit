@@ -110,6 +110,7 @@ const DICT: Dict = {
 
   "yt.kicker": { es: "Nuestro laboratorio vivo", en: "Our living lab" },
   "yt.cta": { es: "Ver el canal ↗", en: "Watch the channel ↗" },
+  "ig.cta": { es: "Ver en Instagram ↗", en: "See on Instagram ↗" },
 
   "micro.kicker": { es: "05 / IA Vertical · Microdramas", en: "05 / Vertical AI · Microdramas" },
   "micro.title.1": { es: "Microdramas", en: "Microdramas" },
@@ -173,8 +174,8 @@ const DICT: Dict = {
   "muses.title.3": { es: "AUTOMATIZA", en: "AUTOMATES" },
   "muses.title.4": { es: "", en: "" },
   "muses.p1": {
-    es: "MUSES es el sistema propietario de producción audiovisual de Gennial.Lab. +20 agentes de IA que automatizan el ciclo completo de creación de contenido narrativo.",
-    en: "MUSES is Gennial.Lab's proprietary audiovisual production system. 20+ AI agents that automate the full cycle of narrative content creation.",
+    es: "MUSES es el sistema propietario de producción audiovisual de Gennial.Lab. +60 agentes de IA que automatizan el ciclo completo de creación de contenido narrativo.",
+    en: "MUSES is Gennial.Lab's proprietary audiovisual production system. 60+ AI agents that automate the full cycle of narrative content creation.",
   },
   "muses.p2": {
     es: "Diferentes módulos que responden a necesidades del negocio y oportunidades comerciales. De una idea: personajes, arcos, episodios, imágenes, voces, videos y versiones multilenguaje.",
