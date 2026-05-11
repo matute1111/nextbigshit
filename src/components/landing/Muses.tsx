@@ -53,8 +53,10 @@ const Muses = () => {
           </p>
           <h2 className="font-display uppercase text-6xl md:text-7xl lg:text-8xl leading-[0.82] tracking-tight">
             <span className="text-foreground">{t("muses.title.2")}</span>
-            <span className="block text-foreground">{t("muses.title.3")}</span>
-            <span className="block text-secondary">{t("muses.title.4")}</span>
+            <span className="block text-secondary">{t("muses.title.3")}</span>
+            {t("muses.title.4") && (
+              <span className="block text-secondary">{t("muses.title.4")}</span>
+            )}
           </h2>
           <p className="mt-8 text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
             {t("muses.p1")}
@@ -94,7 +96,7 @@ const Muses = () => {
       </div>
 
       {/* Seedance highlight band */}
-      <div className="max-w-7xl mx-auto relative z-10 mt-16 md:mt-20">
+      <div className="max-w-7xl mx-auto relative z-10 -mt-[86px] md:-mt-[70px]">
         <div className="border-y-2 border-secondary/40 py-8 md:py-10 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
           <div className="flex-shrink-0">
             <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-secondary mb-2">★ Acceso directo · LATAM</p>

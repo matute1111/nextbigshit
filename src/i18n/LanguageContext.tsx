@@ -168,10 +168,10 @@ const DICT: Dict = {
   },
 
   // ===== MUSES (expanded) =====
-  "muses.kicker": { es: "03 / Cómo lo hacemos · Gennial.Lab", en: "03 / How we do it · Gennial.Lab" },
-  "muses.title.2": { es: "Cómo", en: "How" },
-  "muses.title.3": { es: "lo hacemos.", en: "we do it." },
-  "muses.title.4": { es: "Gennial.Lab", en: "Gennial.Lab" },
+  "muses.kicker": { es: "03 / COMO LO HACEMOS - GENNIAL.LAB", en: "03 / HOW WE DO IT - GENNIAL.LAB" },
+  "muses.title.2": { es: "MUSES", en: "MUSES" },
+  "muses.title.3": { es: "AUTOMATIZA", en: "AUTOMATES" },
+  "muses.title.4": { es: "", en: "" },
   "muses.p1": {
     es: "MUSES es el sistema propietario de producción audiovisual de Gennial.Lab. +20 agentes de IA que automatizan el ciclo completo de creación de contenido narrativo.",
     en: "MUSES is Gennial.Lab's proprietary audiovisual production system. 20+ AI agents that automate the full cycle of narrative content creation.",
