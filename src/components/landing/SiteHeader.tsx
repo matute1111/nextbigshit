@@ -50,7 +50,7 @@ const SiteHeader = () => {
           <a href="#about" onClick={handleNavClick("about")} className="hover:text-primary transition-colors">
             <span className="text-primary mr-1.5">02</span>Por qué
           </a>
-          <a href="#services" onClick={handleNavClick("services")} className="hover:text-primary transition-colors">
+          <a href="#muses" onClick={handleNavClick("muses")} className="hover:text-primary transition-colors">
             <span className="text-primary mr-1.5">03</span>Cómo
           </a>
         </nav>

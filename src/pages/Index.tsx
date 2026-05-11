@@ -1,13 +1,12 @@
 import Hero from "@/components/landing/Hero";
 import Marquee from "@/components/landing/Marquee";
+import CannesBadge from "@/components/landing/CannesBadge";
 import About from "@/components/landing/About";
 import Verticals from "@/components/landing/Verticals";
 import Stats from "@/components/landing/Stats";
-import Services from "@/components/landing/Services";
 import MicroDramas from "@/components/landing/MicroDramas";
 import Muses from "@/components/landing/Muses";
 import Differential from "@/components/landing/Differential";
-import Clients from "@/components/landing/Clients";
 import Team from "@/components/landing/Team";
 import CTA from "@/components/landing/CTA";
 import SiteHeader from "@/components/landing/SiteHeader";
@@ -23,14 +22,13 @@ const Index = () => {
         <SiteHeader />
         <Hero />
         <Marquee />
+        <CannesBadge />
         <Verticals />
         <About />
         <Muses />
         <Stats />
         <MicroDramas />
-        <Services />
         <Differential />
-        <Clients />
         <Team />
         <CTA />
         <SiteFooter />
