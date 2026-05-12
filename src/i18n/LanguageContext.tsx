@@ -272,8 +272,8 @@ const DICT: Dict = {
   "team.1.name": { es: "Adrian Garelik", en: "Adrian Garelik" },
   "team.1.role": { es: "CEO & Co-fundador", en: "CEO & Co-founder" },
   "team.1.bio": {
-    es: "Emprendedor serial en tecnología y entretenimiento. Construyó y escaló compañías en LATAM y EE.UU. Speaker invitado en Cannes Marché du Film 2026.",
-    en: "Serial entrepreneur in tech and entertainment. Built and scaled companies across LATAM and the US. Invited speaker at Cannes Marché du Film 2026.",
+    es: "Emprendedor serial en tecnología y entretenimiento, acreditado en producciones de Netflix, HBO y Disney. Founder de Flixxo.",
+    en: "Serial entrepreneur in tech and entertainment, credited on Netflix, HBO and Disney productions. Founder of Flixxo.",
   },
   "team.2.name": { es: "Mati Albaca", en: "Mati Albaca" },
   "team.2.role": { es: "Co-fundador & CTO", en: "Co-founder & CTO" },
