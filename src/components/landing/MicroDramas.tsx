@@ -144,17 +144,6 @@ const MicroDramas = () => {
         </div>
 
 
-        <div className="flex flex-col items-center text-center gap-8">
-          <a
-            href="https://www.youtube.com/@HistoriasInfinitasOK"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-5 font-display uppercase text-xl tracking-tight hover:bg-foreground transition-all duration-300 hover:-translate-y-0.5 shadow-orange"
-          >
-            {t("micro.cta")}
-            <span className="transition-transform group-hover:translate-x-1">↗</span>
-          </a>
-        </div>
       </div>
       <SectionDivider text={t("micro.intertitle.1") + " "} highlight={t("micro.intertitle.2")} />
     </section>

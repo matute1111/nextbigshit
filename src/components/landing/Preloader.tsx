@@ -50,7 +50,7 @@ const Preloader = () => {
     >
       <div className="flex flex-col items-center gap-6">
         <div className="font-display uppercase text-3xl md:text-5xl tracking-tight text-foreground">
-          THE NEXT <span className="text-primary">BIG SH#!T</span>
+          THE NEXT <span className="text-primary">BIG SHIFT</span>
         </div>
         <div className="h-[2px] w-40 overflow-hidden bg-border">
           <div className="h-full w-1/3 bg-primary animate-[preloader-slide_1.2s_ease-in-out_infinite]" />
