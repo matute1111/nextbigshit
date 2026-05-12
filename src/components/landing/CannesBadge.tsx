@@ -14,7 +14,7 @@ const CannesBadge = () => {
             src={logoCannes}
             alt=""
             aria-hidden="true"
-            className="pointer-events-none select-none absolute right-0 top-1/2 -translate-y-1/2 h-[180%] w-auto opacity-10 object-contain"
+            className="pointer-events-none select-none absolute right-0 top-1/2 -translate-y-1/2 h-[180%] w-auto opacity-30 object-contain"
           />
           <div className="relative flex-shrink-0">
             <span className="font-display uppercase text-xs tracking-[0.3em] text-primary block mb-2">

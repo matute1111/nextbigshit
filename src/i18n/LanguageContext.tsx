@@ -79,7 +79,7 @@ const DICT: Dict = {
   },
   "vert.studio.tag": { es: "Vertical creativa", en: "Creative vertical" },
   "vert.studio.name": { es: "Gennial.Studio", en: "Gennial.Studio" },
-  "vert.studio.shift": { es: "the next big H!T", en: "the next big H!T" },
+  "vert.studio.shift": { es: "the next big HIT", en: "the next big HIT" },
   "vert.studio.desc": {
     es: "Producimos contenido audiovisual para marcas, creadores y plataformas. Personajes, universos narrativos y ecosistemas de contenido construidos para ser virales. No somos una agencia: somos una IP factory.",
     en: "We produce audiovisual content for brands, creators and platforms. Characters, narrative universes and content ecosystems built to go viral. We're not an agency — we're an IP factory.",
