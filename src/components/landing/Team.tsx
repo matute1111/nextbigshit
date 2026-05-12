@@ -1,15 +1,19 @@
 import { useLang } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/useParallax";
+import adrianImg from "@/assets/team-adrian.jpg";
+import matiImg from "@/assets/team-mati.jpg";
+import anaImg from "@/assets/team-ana.jpg";
+import pedroImg from "@/assets/team-pedro.jpg";
 
 const Team = () => {
   const { t } = useLang();
   const reveal = useReveal<HTMLDivElement>(0.15);
 
   const PEOPLE = [
-    { name: t("team.1.name"), role: t("team.1.role"), bio: t("team.1.bio"), initials: "AG" },
-    { name: t("team.2.name"), role: t("team.2.role"), bio: t("team.2.bio"), initials: "MA" },
-    { name: t("team.3.name"), role: t("team.3.role"), bio: t("team.3.bio"), initials: "PL" },
-    { name: t("team.4.name"), role: t("team.4.role"), bio: t("team.4.bio"), initials: "AA" },
+    { name: t("team.1.name"), role: t("team.1.role"), bio: t("team.1.bio"), initials: "AG", photo: adrianImg },
+    { name: t("team.2.name"), role: t("team.2.role"), bio: t("team.2.bio"), initials: "MA", photo: matiImg },
+    { name: t("team.3.name"), role: t("team.3.role"), bio: t("team.3.bio"), initials: "PL", photo: pedroImg },
+    { name: t("team.4.name"), role: t("team.4.role"), bio: t("team.4.bio"), initials: "AA", photo: anaImg },
   ];
 
   return (
@@ -37,8 +41,16 @@ const Team = () => {
                 transitionDelay: `${i * 120}ms`,
               }}
             >
-              <div className="aspect-square w-full mb-6 bg-gradient-to-br from-primary/20 to-secondary/10 flex items-center justify-center border border-border">
-                <span className="font-display uppercase text-7xl md:text-8xl tracking-tight text-primary">
+              <div className="relative aspect-square w-full mb-6 overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/10 border border-border group">
+                <img
+                  src={p.photo}
+                  alt={p.name}
+                  className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 transition-all duration-700 group-hover:grayscale-0"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-primary/30 mix-blend-color transition-opacity duration-700 group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <span className="absolute bottom-3 right-4 font-display uppercase text-5xl tracking-tight text-primary/80 mix-blend-screen">
                   {p.initials}
                 </span>
               </div>
