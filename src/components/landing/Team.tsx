@@ -47,6 +47,7 @@ const Team = () => {
                   alt={p.name}
                   className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 transition-all duration-700 group-hover:grayscale-0"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-primary/30 mix-blend-color transition-opacity duration-700 group-hover:opacity-0" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
