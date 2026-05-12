@@ -92,21 +92,14 @@ const Hero = () => {
       </div>
 
       {/* bottom row */}
-      <div className="relative z-30 px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-end animate-fade-in-up">
-        <div className="hidden md:flex justify-center">
-          <a
-            href="#about"
-            className="group inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] font-bold text-foreground"
-          >
-            <span>{t("hero.scroll")}</span>
-            <span className="block w-px h-12 bg-foreground/40 group-hover:bg-primary transition-colors animate-scroll-line" />
-          </a>
-        </div>
-        <div className="md:text-right text-xs uppercase tracking-[0.25em] font-semibold text-foreground">
-          <span className="inline-block px-3 py-1.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
-            {t("hero.manifesto")}
-          </span>
-        </div>
+      <div className="relative z-30 px-6 md:px-10 flex justify-center items-end animate-fade-in-up">
+        <a
+          href="#about"
+          className="group hidden md:inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] font-bold text-foreground"
+        >
+          <span>{t("hero.scroll")}</span>
+          <span className="block w-px h-12 bg-foreground/40 group-hover:bg-primary transition-colors animate-scroll-line" />
+        </a>
       </div>
     </section>
   );
