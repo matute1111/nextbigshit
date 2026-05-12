@@ -258,10 +258,11 @@ const DICT: Dict = {
   // ===== CLIENTS (NEW) =====
   "clients.kicker": { es: "08 / Clientes & validación", en: "08 / Clients & validation" },
   "clients.title": { es: "Marcas y partners activos.", en: "Active brands & partners." },
+  "clients.cannes.kicker": { es: "GENNIAL ON TOUR", en: "GENNIAL ON TOUR" },
   "clients.cannes.tag": { es: "Cannes Marché du Film 2026", en: "Cannes Marché du Film 2026" },
   "clients.cannes.desc": {
-    es: "Gennial presente por invitación del Ministerio de Cultura de Buenos Aires. Keynote de Adrian Garelik y demo de Muses.Micro como fábrica de microdramas.",
-    en: "Gennial present by invitation of the Buenos Aires Ministry of Culture. Keynote by Adrian Garelik and live demo of Muses.Micro as a microdrama factory.",
+    es: "Gennial estará presente en el festival de cine más importante del mundo, con una keynote de nuestro CEO Adrián Garelik y una demo de MUSES.MICRO, la factoria de microseries verticales automatizada.",
+    en: "Gennial will be present at the world's most important film festival, with a keynote by our CEO Adrián Garelik and a demo of MUSES.MICRO, the automated vertical microseries factory.",
   },
 
   // ===== TEAM (NEW) =====
