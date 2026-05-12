@@ -18,7 +18,7 @@ const CannesBadge = () => {
           />
           <div className="relative flex-shrink-0">
             <span className="font-display uppercase text-xs tracking-[0.3em] text-primary block mb-2">
-              ★ {t("clients.cannes.kicker") || "Selección oficial"}
+              ★ {t("clients.cannes.kicker")}
             </span>
             <p className="font-display uppercase text-2xl md:text-3xl tracking-tight leading-none text-foreground">
               {t("clients.cannes.tag")}
