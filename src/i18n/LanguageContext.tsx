@@ -17,8 +17,8 @@ const DICT: Dict = {
   "hero.big": { es: "BIG", en: "BIG" },
   "hero.shit": { es: "SHIFT", en: "SHIFT" },
   "hero.tag": {
-    es: "Estudio AI-nativo de contenido. El estudio crea, el laboratorio potencia. Un loop permanente que acumula inteligencia con cada frame.",
-    en: "AI-native content studio. The studio creates, the lab powers it. A permanent loop that gets smarter with every frame.",
+    es: "STUDIO+LAB. Un loop permanente que acumula inteligencia con cada frame.",
+    en: "STUDIO+LAB. A permanent loop that gets smarter with every frame.",
   },
   "hero.scroll": { es: "scroll", en: "scroll" },
   "hero.manifesto": { es: "Manifiesto / Studio Reel ↗", en: "Manifesto / Studio Reel ↗" },
