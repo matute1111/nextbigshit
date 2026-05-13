@@ -1,0 +1,14 @@
+# Gennial Studio
+
+> AI-native studio + lab building vertical microdramas and viral content at the speed of culture. The Next Big Shift.
+
+Gennial Studio is an IA STUDIO+LAB producing vertical microdramas and short-form viral content. Founded by Adrian Garelik (serial tech & entertainment entrepreneur, founder of Flixxo, credits with Netflix, HBO and Disney).
+
+## Pages
+
+- [Home](/): Overview of Gennial Studio — what we do, why, how, team, and contact.
+
+## Contact
+
+- info@gennial.ai
+- adrian@gennial.ai

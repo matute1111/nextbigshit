@@ -45,6 +45,10 @@ const Hero = () => {
           <img
             src={heroHand}
             alt="Mano sosteniendo un teléfono con videos generados por IA"
+            width={960}
+            height={1664}
+            fetchPriority="high"
+            decoding="async"
             className="h-full w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
         </div>
