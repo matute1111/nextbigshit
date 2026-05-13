@@ -13,10 +13,17 @@ import SiteHeader from "@/components/landing/SiteHeader";
 import Preloader from "@/components/landing/Preloader";
 import SiteFooter from "@/components/landing/SiteFooter";
 import { LanguageProvider } from "@/i18n/LanguageContext";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
     <LanguageProvider>
+      <Helmet>
+        <title>Gennial Studio — The Next Big Shift</title>
+        <meta name="description" content="Gennial Studio: IA STUDIO+LAB. Vertical microdramas y contenido viral a la velocidad de la cultura." />
+        <link rel="canonical" href="https://gennial.ai/" />
+        <meta property="og:url" content="https://gennial.ai/" />
+      </Helmet>
       <Preloader />
       <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
         <SiteHeader />
