@@ -261,8 +261,8 @@ const DICT: Dict = {
   "clients.cannes.kicker": { es: "GENNIAL ON TOUR", en: "GENNIAL ON TOUR" },
   "clients.cannes.tag": { es: "Cannes Marché du Film 2026", en: "Cannes Marché du Film 2026" },
   "clients.cannes.desc": {
-    es: "Gennial estará presente en el festival de cine más importante del mundo, con una keynote de nuestro CEO Adrián Garelik y una demo de MUSES.MICRO, la factoria de microseries verticales automatizada.",
-    en: "Gennial will be present at the world's most important film festival, with a keynote by our CEO Adrián Garelik and a demo of MUSES.MICRO, the automated vertical microseries factory.",
+    es: "Gennial estuvo presente en el festival de cine más importante del mundo, con una keynote de nuestro CEO Adrián Garelik y una demo de MUSES.MICRO, la factoria de microseries verticales automatizada.",
+    en: "Gennial was present at the world's most important film festival, with a keynote by our CEO Adrián Garelik and a demo of MUSES.MICRO, the automated vertical microseries factory.",
   },
 
   // ===== TEAM (NEW) =====
